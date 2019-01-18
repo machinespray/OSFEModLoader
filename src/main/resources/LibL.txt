@@ -1,0 +1,115 @@
+function WaitForSeconds(item, seconds)
+	local timer = 0
+
+	while true do
+		timer = timer + item.GetDeltaTime()
+		coroutine.yield(timer)
+
+		if (timer > seconds) then
+			break
+		end
+	end
+	-- local frames = seconds*60
+	-- WaitForFrames(frames-1)
+end
+
+function WaitForFrames(frames)
+	local r =  0
+
+	while true do
+		r = r + 1
+		coroutine.yield(r)
+		if (r >= frames) then
+			break
+		end
+	end
+end
+
+function WaitUntil(being, state)
+	while true do
+		coroutine.yield()
+		
+		if (being.mov.state == state) then
+			break
+		end
+	end
+end
+
+function WaitWhileMoving(spell)
+	WaitWhileBeingState(spell.being, State.Moving)
+end
+
+function WaitWhileBeingState(being, state)
+	-- being.mov.lerpTime = 0.12
+	
+	while true do
+		coroutine.yield()
+		
+		if (being.mov.state ~= state) then
+			break
+		end
+	end
+	-- being.mov.lerpTime = 0.1
+end
+
+function GetLength(T)
+	local count = 0
+	for _ in pairs(T) do count = count + 1 end
+	return count
+end
+
+function GetVal(T, num)
+	local count = 0
+	for _, tile in ipairs(T) do
+		if (count == num) then
+			return tile
+		end
+		
+		count = count + 1
+	end
+end
+
+function PlaceStatusNoDuration(spell, status)
+	if (spell.currentApp.fTrigger == FTrigger.OnHit) then
+		spell.hitBeing.AddStatus(status, spell.currentApp.amount)
+	elseif (spell.currentApp.fTrigger == FTrigger.OnEnemyHit) then
+		spell.being.lastTargetHit.AddStatus(status, spell.currentApp.amount)
+	elseif (spell.currentApp.fTrigger == FTrigger.OnEnemySpawn) then
+		spell.ctrl.sp.lastSpawnedBeing.AddStatus(status, spell.currentApp.amount)
+	else
+		spell.statusApps.Add(StatusApp(status, spell.currentApp.amount, 0, spell.currentApp.fTrigger))
+	end
+end
+
+function PlaceStatusWithDuration(spell, status)
+	if (spell.currentApp.fTrigger == FTrigger.OnHit) then
+		spell.hitBeing.AddStatus(status, spell.currentApp.amount, spell.currentApp.duration)
+	elseif (spell.currentApp.fTrigger == FTrigger.OnEnemyHit) then
+		spell.being.lastTargetHit.AddStatus(status, spell.currentApp.amount, spell.currentApp.duration)
+	elseif (spell.currentApp.fTrigger == FTrigger.OnEnemySpawn) then
+		spell.ctrl.sp.lastSpawnedBeing.AddStatus(status, spell.currentApp.amount, spell.currentApp.duration)
+	else
+		spell.being.AddStatus(status, spell.currentApp.amount, spell.currentApp.duration)
+	end
+end
+
+function CreateShotAfter (spell, tile, delay, setToGunPoint) 
+	spell.spell.CreateShotAfter (spell, tile, delay, setToGunPoint)
+end
+
+function CreateLerperAfter (spell, tile, delay, setToGunPoint) 
+	spell.spell.CreateLerperAfter (spell, tile, delay, setToGunPoint)
+end
+
+function CreateEffectAfter (spell, tile, delay, duration) 
+	spell.spell.CreateEffectAfter (spell, tile, delay, duration)
+end
+
+function SummonAfter (spell, tile, delay, savedApp) 
+	spell.spell.SummonAfter (spell, tile, delay, savedApp)
+end
+
+--Modded Lua
+function Custom (spell)
+    _G[spell.currentApp.value](spell)
+end
