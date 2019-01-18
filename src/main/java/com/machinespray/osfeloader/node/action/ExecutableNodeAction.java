@@ -2,7 +2,6 @@ package com.machinespray.osfeloader.node.action;
 
 import org.w3c.dom.Node;
 
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public abstract class ExecutableNodeAction {
@@ -12,7 +11,7 @@ public abstract class ExecutableNodeAction {
 		return new ExecutableNodeAction() {
 			@Override
 			public void run(Node node) {
-					System.out.println(node.getNodeName());
+				System.out.println(node.getNodeName());
 			}
 		};
 	}

@@ -1,11 +1,10 @@
 package com.machinespray.osfeloader.handler;
 
 import com.machinespray.osfeloader.Helper;
+import com.machinespray.osfeloader.XmlHolder;
 import com.machinespray.osfeloader.node.LinkedDefaultMutableNode;
-import com.machinespray.osfeloader.node.action.ExecutableNodeAction;
 import com.machinespray.osfeloader.node.action.NodeActionDisable;
 import com.machinespray.osfeloader.node.action.NodeActionElement;
-import com.machinespray.osfeloader.xmlHolder;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -21,10 +20,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class SaveHandler {
-	public static void doOutput(xmlHolder holder) throws IOException, TransformerException {
-		if(holder.nodeToTree.get(null)!=null)
-		if(!holder.nodeToTree.get(null).isEnabled())
-			disableNormals(holder);
+	public static void doOutput(XmlHolder holder) throws IOException, TransformerException {
+		if (holder.nodeToTree.get(null) != null)
+			if (!holder.nodeToTree.get(null).isEnabled())
+				disableNormals(holder);
 		migrateCustoms(holder);
 		//Setup the transformer (changes the Document to the .xml file)
 		Transformer transformer = TransformerFactory.newInstance().newTransformer();
@@ -42,13 +41,13 @@ public class SaveHandler {
 		output.close();
 	}
 
-	private static void disableNormals(xmlHolder holder) {
+	private static void disableNormals(XmlHolder holder) {
 		NodeList normals = holder.defaultSpellDoc.getChildNodes().item(0).getChildNodes();
 		Helper.iterateNodes(normals, new NodeActionDisable());
 	}
 
 	//Moves Custom(non vanilla) spells into the main tree to prepare for exporting.
-	private static void migrateCustoms(xmlHolder holder) {
+	private static void migrateCustoms(XmlHolder holder) {
 		//Iterate through each "Spells.xml"
 		for (Element e : holder.customs) {
 			NodeActionElement elementList = new NodeActionElement();
@@ -73,7 +72,7 @@ public class SaveHandler {
 
 	//Deals with groups of custom spells
 	//TODO make this neater, and probably combine with the above function
-	private static void migrateGroupedCustoms(xmlHolder holder, Node n) {
+	private static void migrateGroupedCustoms(XmlHolder holder, Node n) {
 		NodeList spells = n.getChildNodes();
 		for (int i = 0; i < spells.getLength(); i++) {
 			Node spell = spells.item(i);

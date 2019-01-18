@@ -2,24 +2,20 @@ package com.machinespray.osfeloader;
 
 import com.machinespray.osfeloader.frame.DialogDisplaySpells;
 import com.machinespray.osfeloader.frame.DialogError;
-import com.machinespray.osfeloader.handler.LuaHandler;
-import com.machinespray.osfeloader.handler.SaveHandler;
-import org.xml.sax.SAXException;
 
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.*;
-import java.util.Objects;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 
 public class Main {
 	public static final xmlHolder spellHolder = new xmlHolder("Spells.xml");
 	public static final xmlHolder artifactHolder = new xmlHolder("Artifacts.xml");
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		try {
 			spellHolder.initXMLObjects();
 			artifactHolder.initXMLObjects();
 			startUi();
-		}catch (Exception e){
+		} catch (Exception e) {
 			handleError(e);
 		}
 	}

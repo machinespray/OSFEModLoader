@@ -1,7 +1,6 @@
 package com.machinespray.osfeloader;
 
 import com.machinespray.osfeloader.node.LinkedDefaultMutableNode;
-import com.machinespray.osfeloader.node.LinkedSimpleMutableNode;
 import com.machinespray.osfeloader.node.action.NodeActionList;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -21,7 +20,7 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class xmlHolder {
+public class XmlHolder {
 	private static final Pattern groupPattern = Pattern.compile("name=\"(.+)\"");
 	public final String name;
 	public Document defaultSpellDoc;
@@ -29,17 +28,17 @@ public class xmlHolder {
 	public HashMap<Node, LinkedDefaultMutableNode> nodeToTree = new HashMap<>();
 	private DefaultMutableTreeNode defaultMutableTreeNode;
 
-	public xmlHolder(String name) {
+	public XmlHolder(String name) {
 		this.name = name;
 	}
 
 	public void initXMLObjects() throws ParserConfigurationException, SAXException, IOException {
-			InputStream xmlReader = tryLoadXML("/"+name);
-			defaultSpellDoc = parseXml(xmlReader);
-			NodeActionList defaultSpells = new NodeActionList();
-			Helper.iterateNodes(defaultSpellDoc.getDocumentElement().getChildNodes(), defaultSpells);
-			initiateTree(defaultSpells);
-			loadCustomSpells();
+		InputStream xmlReader = tryLoadXML("/" + name);
+		defaultSpellDoc = parseXml(xmlReader);
+		NodeActionList defaultSpells = new NodeActionList();
+		Helper.iterateNodes(defaultSpellDoc.getDocumentElement().getChildNodes(), defaultSpells);
+		initiateTree(defaultSpells);
+		loadCustomSpells();
 	}
 
 	private InputStream tryLoadXML(String path) throws FileNotFoundException {
@@ -118,8 +117,9 @@ public class xmlHolder {
 			nodeToTree.put(spells.listN.get(i), treeNode);
 		}
 	}
+
 	@Override
-	public String toString(){
+	public String toString() {
 		return this.name;
 	}
 
