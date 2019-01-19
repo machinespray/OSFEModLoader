@@ -3,6 +3,7 @@ package com.machinespray.osfeloader.xml;
 import com.machinespray.osfeloader.Helper;
 import com.machinespray.osfeloader.Main;
 import com.machinespray.osfeloader.node.LinkedDefaultMutableNode;
+import com.machinespray.osfeloader.node.LinkedSimpleMutableNode;
 import com.machinespray.osfeloader.node.action.NodeActionList;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -61,7 +62,7 @@ public class XmlHolder {
 	protected void initiateTree(NodeActionList defaultSpells) {
 		DefaultMutableTreeNode defaultNode = new DefaultMutableTreeNode("Categories");
 		//TODO change to LinkedSimpleMutableNode and make softlocks not possible
-		DefaultMutableTreeNode vanilla = new DefaultMutableTreeNode("Vanilla");
+		LinkedSimpleMutableNode vanilla = new LinkedSimpleMutableNode("Vanilla");
 		//nodeToTree.put(null,vanilla);
 		defaultNode.add(vanilla);
 		for (String s : defaultSpells.list)

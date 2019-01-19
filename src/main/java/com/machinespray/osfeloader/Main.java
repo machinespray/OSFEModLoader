@@ -12,6 +12,7 @@ public class Main {
 	public static final XmlHolder spellHolder = new XmlHolder("Spells.xml");
 	public static final XmlHolder artifactHolder = new XmlHolder("Artifacts.xml");
 	public static final XmlHolder structureHolder = new XmlHolder("Structures.xml");
+	private static DialogDisplaySpells dialog;
 
 
 	public static void main(String[] args) {
@@ -26,9 +27,13 @@ public class Main {
 	}
 
 	private static void startUi() {
-		DialogDisplaySpells spellDisplay = new DialogDisplaySpells();
-		spellDisplay.pack();
-		spellDisplay.setVisible(true);
+		dialog = new DialogDisplaySpells();
+		dialog.pack();
+		dialog.setVisible(true);
+	}
+
+	public static DialogDisplaySpells getDialog() {
+		return dialog;
 	}
 
 	//Don't just randomly crash, but instead give users an option to copy the stacktrace to their keyboard;
