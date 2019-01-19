@@ -8,6 +8,8 @@ import com.machinespray.osfeloader.handler.SaveHandler;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.IOException;
+import java.net.URI;
 import java.util.ArrayList;
 
 public class DialogDisplaySpells extends JDialog {
@@ -17,6 +19,8 @@ public class DialogDisplaySpells extends JDialog {
 	private JButton buttonCancel;
 	private JTree artifactDisplay;
 	private JTabbedPane tabbedPane1;
+	private JCheckBox experimental;
+	private JButton buttonHelp;
 	private ArrayList<Image> icons = new ArrayList<>();
 
 
@@ -60,6 +64,35 @@ public class DialogDisplaySpells extends JDialog {
 		MouseHandler mouseHandler = new MouseHandler();
 		spellDisplay.addMouseListener(mouseHandler);
 		artifactDisplay.addMouseListener(mouseHandler);
+		buttonHelp.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				onHelp();
+			}
+		});
+		experimental.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				onExperimentalEnable(e);
+			}
+		});
+	}
+
+	private void onExperimentalEnable(ActionEvent e) {
+		if (getExperimental())
+			JOptionPane.showMessageDialog(null, "Be careful! Not leaving enough of a category enabled can cause issues!");
+	}
+
+	public boolean getExperimental() {
+		return experimental.isSelected();
+	}
+
+	private void onHelp() {
+		try {
+			Desktop.getDesktop().browse(URI.create("https://github.com/machinespray/OSFEModLoader/wiki/Mod-Loading"));
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(null, "Error opening help page!");
+		}
 	}
 
 	private void onOK() {
@@ -98,9 +131,9 @@ public class DialogDisplaySpells extends JDialog {
 		contentPane.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(2, 2, new Insets(10, 10, 10, 10), -1, -1));
 		contentPane.setDoubleBuffered(true);
 		contentPane.setName("SpellList");
-		contentPane.setPreferredSize(new Dimension(250, 250));
+		contentPane.setPreferredSize(new Dimension(350, 250));
 		tabbedPane1 = new JTabbedPane();
-		contentPane.add(tabbedPane1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 2, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, new Dimension(200, 200), null, 0, false));
+		contentPane.add(tabbedPane1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 2, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, new Dimension(300, 200), null, 0, false));
 		final JScrollPane scrollPane1 = new JScrollPane();
 		scrollPane1.setAutoscrolls(false);
 		tabbedPane1.addTab("Spells", scrollPane1);
@@ -112,6 +145,19 @@ public class DialogDisplaySpells extends JDialog {
 		tabbedPane1.addTab("Artifacts", scrollPane2);
 		artifactDisplay.setRootVisible(false);
 		scrollPane2.setViewportView(artifactDisplay);
+		final JPanel panel1 = new JPanel();
+		panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(3, 2, new Insets(0, 0, 0, 0), -1, -1));
+		tabbedPane1.addTab("Info and Settings", panel1);
+		experimental = new JCheckBox();
+		experimental.setText("Allow Disabling Vanilla Spawns");
+		panel1.add(experimental, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+		final com.intellij.uiDesigner.core.Spacer spacer1 = new com.intellij.uiDesigner.core.Spacer();
+		panel1.add(spacer1, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
+		final com.intellij.uiDesigner.core.Spacer spacer2 = new com.intellij.uiDesigner.core.Spacer();
+		panel1.add(spacer2, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+		buttonHelp = new JButton();
+		buttonHelp.setText("Help!");
+		panel1.add(buttonHelp, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
 		buttonOK = new JButton();
 		buttonOK.setText("OK");
 		contentPane.add(buttonOK, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
