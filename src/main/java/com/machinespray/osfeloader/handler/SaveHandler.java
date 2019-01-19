@@ -1,10 +1,10 @@
 package com.machinespray.osfeloader.handler;
 
 import com.machinespray.osfeloader.Helper;
-import com.machinespray.osfeloader.XmlHolder;
 import com.machinespray.osfeloader.node.LinkedDefaultMutableNode;
 import com.machinespray.osfeloader.node.action.NodeActionDisable;
 import com.machinespray.osfeloader.node.action.NodeActionElement;
+import com.machinespray.osfeloader.xml.XmlHolder;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -59,10 +59,9 @@ public class SaveHandler {
 					continue;
 				}
 				LinkedDefaultMutableNode mutableNode = holder.nodeToTree.get(n);
-				if (mutableNode == null)
-					continue;
-				if (!mutableNode.isEnabled())
-					continue;
+				if (mutableNode != null)
+					if (!mutableNode.isEnabled())
+						continue;
 				Node clone = n.cloneNode(true);
 				holder.defaultSpellDoc.adoptNode(clone);
 				holder.defaultSpellDoc.getChildNodes().item(0).appendChild(clone);

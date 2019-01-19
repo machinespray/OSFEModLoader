@@ -1,5 +1,7 @@
-package com.machinespray.osfeloader;
+package com.machinespray.osfeloader.xml;
 
+import com.machinespray.osfeloader.Helper;
+import com.machinespray.osfeloader.Main;
 import com.machinespray.osfeloader.node.LinkedDefaultMutableNode;
 import com.machinespray.osfeloader.node.action.NodeActionList;
 import org.w3c.dom.Document;
@@ -41,14 +43,14 @@ public class XmlHolder {
 		loadCustomSpells();
 	}
 
-	private InputStream tryLoadXML(String path) throws FileNotFoundException {
+	protected InputStream tryLoadXML(String path) throws FileNotFoundException {
 		File f = new File(path);
 		if (!f.isDirectory() && f.exists())
 			return new FileInputStream(f);
 		return Main.class.getResourceAsStream(path);
 	}
 
-	private Document parseXml(InputStream reader) throws ParserConfigurationException, IOException, SAXException {
+	protected Document parseXml(InputStream reader) throws ParserConfigurationException, IOException, SAXException {
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		Document doc = dBuilder.parse(reader);
@@ -56,7 +58,7 @@ public class XmlHolder {
 		return doc;
 	}
 
-	private void initiateTree(NodeActionList defaultSpells) {
+	protected void initiateTree(NodeActionList defaultSpells) {
 		DefaultMutableTreeNode defaultNode = new DefaultMutableTreeNode("Categories");
 		//TODO change to LinkedSimpleMutableNode and make softlocks not possible
 		DefaultMutableTreeNode vanilla = new DefaultMutableTreeNode("Vanilla");
@@ -71,7 +73,7 @@ public class XmlHolder {
 		return new JTree(defaultMutableTreeNode);
 	}
 
-	private void loadCustomSpells() throws IOException, SAXException, ParserConfigurationException {
+	protected void loadCustomSpells() throws IOException, SAXException, ParserConfigurationException {
 		File modsFolder = new File("./Mods");
 		if (modsFolder.isDirectory())
 			for (File f : Objects.requireNonNull(modsFolder.listFiles()))
@@ -87,7 +89,7 @@ public class XmlHolder {
 
 	}
 
-	private void addNodeFromXml(File f, String prefix) throws IOException, SAXException, ParserConfigurationException {
+	protected void addNodeFromXml(File f, String prefix) throws IOException, SAXException, ParserConfigurationException {
 		InputStream xmlReader = tryLoadXML(f.getCanonicalPath());
 		Element doc = parseXml(xmlReader).getDocumentElement();
 		NodeList nodeList = doc.getChildNodes();

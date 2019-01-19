@@ -5,7 +5,7 @@ import org.w3c.dom.Node;
 import java.util.regex.Pattern;
 
 public abstract class ExecutableNodeAction {
-	static final Pattern getID = Pattern.compile("itemID=\"(.+)\"");
+	protected static final Pattern getID = Pattern.compile("itemID=\"(.+)\"");
 
 	public static ExecutableNodeAction print() {
 		return new ExecutableNodeAction() {
