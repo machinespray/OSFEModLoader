@@ -99,6 +99,7 @@ public class DialogDisplaySpells extends JDialog {
 		try {
 			SaveHandler.doOutput(Main.spellHolder);
 			SaveHandler.doOutput(Main.artifactHolder);
+			SaveHandler.doOutput(Main.structureHolder);
 			new LuaHandler().migrateLua();
 		} catch (Exception e) {
 			Main.handleError(e);
