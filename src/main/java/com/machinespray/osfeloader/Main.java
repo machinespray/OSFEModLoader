@@ -8,6 +8,8 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 public class Main {
+	public static final int revision = 1;
+	public static final String targetVersion = "v152";
 	//TODO(there's definitly a better way to do this logistically)
 	public static final XmlHolder spellHolder = new XmlHolder("Spells.xml");
 	public static final XmlHolder artifactHolder = new XmlHolder("Artifacts.xml");
@@ -29,6 +31,9 @@ public class Main {
 	private static void startUi() {
 		dialog = new DialogDisplaySpells();
 		dialog.pack();
+		dialog.setTitle(
+				String.format("OSFE Mod Loader for %s (Rev:%d)",targetVersion,revision)
+		);
 		dialog.setVisible(true);
 	}
 
