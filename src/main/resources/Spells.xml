@@ -2,7 +2,7 @@
 <Spells>
   <Spell itemID="CampaignGun">
     <Stats animMark="BasicCastC" animShot="BasicSpellC" castSound="" shotSound="mark_02"
-      cooldown="0.05" setToGunPoint="Both" yVariance="0"></Stats>
+           cooldown="0.05" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -31,7 +31,7 @@
   </Spell>
   <Spell itemID="TriGun">
     <Stats animMark="BasicCastC" animShot="ShineDiamondS" introSound="mark_02" shotSound=""
-      cooldown="0.05" setToGunPoint="Vertical" yVariance="0"></Stats>
+           cooldown="0.05" setToGunPoint="Vertical" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -60,7 +60,7 @@
   </Spell>
   <Spell itemID="TimeGun">
     <Stats animMark="ShineBallC" animShot="BasicSpellC" castSound="" shotSound="laser_echo_zap"
-      cooldown="0.05" setToGunPoint="Both" yVariance="0"></Stats>
+           cooldown="0.05" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -89,7 +89,7 @@
   </Spell>
   <Spell itemID="CampaignReflector">
     <Stats animMark="" animShot="" castSound="misc_shimmer" shotSound="" cooldown="0.05"
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <Name>Reflector</Name>
     <Tags>Weapon</Tags>
@@ -109,12 +109,11 @@
     <MarkDuration>0</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <DamageType>Zero</DamageType>
-    <OnCast duration="0.25" amount="3">Reflect</OnCast>
-    <OnCast amount="">Anchor</OnCast>
+    <OnCast duration="0.3" amount="3">Reflect</OnCast>
   </Spell>
   <Spell itemID="GodGun">
     <Stats animMark="BasicCastC" animShot="BasicSpellC" castSound="" shotSound="mark_02"
-      cooldown="0.05" setToGunPoint="Both" yVariance="0" hitboxHeight="10"></Stats>
+           cooldown="0.05" setToGunPoint="Both" yVariance="0" hitboxHeight="10"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -144,7 +143,7 @@
   </Spell>
   <Spell itemID="GodSniper">
     <Stats animMark="BasicCastC" animShot="BasicSpellC" castSound="" shotSound="mark_02"
-      cooldown="0.05" setToGunPoint="Both" yVariance="0" hitboxHeight="1"></Stats>
+           cooldown="0.05" setToGunPoint="Both" yVariance="0" hitboxHeight="1"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -174,7 +173,7 @@
   </Spell>
   <Spell itemID="HealHammer">
     <Stats animMark="BasicCastC" animShot="BasicSpellC" castSound="" shotSound="mark_02"
-      cooldown="0.4" setToGunPoint="None" yVariance="0"></Stats>
+           cooldown="0.4" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -203,7 +202,7 @@
   </Spell>
   <Spell itemID="Anubis">
     <Stats animMark="" animShot="SmogBlastS" introSound="beam_impact" castSound=""
-      shotSound="smoke_thud" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="smoke_thud" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -236,7 +235,7 @@
   </Spell>
   <Spell itemID="BackBurner">
     <Stats animMark="FireChargeS" animShot="FireboltS" castSound="thud_low" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -268,7 +267,7 @@
   </Spell>
   <Spell itemID="Backstab">
     <Stats animMark="SmogBlastS" animShot="" castSound="" shotSound="smoke_thud"
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -302,19 +301,22 @@
   </Spell>
   <Spell itemID="BladeRain">
     <Stats animWarning="WarningHealC" animObj="BladeSpinShotS" animMark="RedBlastS"
-      animShot="BladeStuckS" introSound="whirl_monster" castSound="" shotSound="thud_low"
-      setToGunPoint="Both" timeToTravel="1" bending="90"></Stats>
+           animShot="BladeStuckS" introSound="whirl_monster" castSound="" shotSound="thud_low"
+           setToGunPoint="Both" timeToTravel="1" bending="90"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
-    <Name>Blade Rain</Name>
+    <Name>BladeRain</Name>
+    <Tags>Player, Demo</Tags>
     <Action>Mortar</Action>
     <Description></Description>
-    <Meta>Throw multiple axes on player tiles</Meta>
+    <Meta>Throw axes on all tiles and crack them.</Meta>
+    <Flavor>Hey, look up.</Flavor>
+    <Rarity>2</Rarity>
     <Mana>2</Mana>
     <Damage>0</Damage>
-    <Shots>3</Shots>
-    <Tiles>1</Tiles>
+    <Shots>1</Shots>
+    <Tiles>3</Tiles>
     <Pattern>RandAlliedUniqueUnoccupied</Pattern>
     <TimeBetweenShots>0</TimeBetweenShots>
     <ShotVelocity>0</ShotVelocity>
@@ -325,11 +327,43 @@
     <DestroyOnHit>true</DestroyOnHit>
     <WarningDuration>1</WarningDuration>
     <DamageType></DamageType>
+    <OnCast>Consume</OnCast>
     <OnHit value="BladeThrow" amount="1">CastSpell</OnHit>
+  </Spell>
+  <Spell itemID="Bladeskrieg">
+    <Stats animWarning="WarningHealC" animObj="BladeSpinShotS" animMark="RedBlastS"
+           animShot="BladeStuckS" introSound="whirl_monster" castSound="" shotSound="thud_low"
+           setToGunPoint="Both" timeToTravel="1" bending="90"></Stats>
+    <HitAllies>true</HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf>true</HitSelf>
+    <Name>Bladeskrieg</Name>
+    <Tags>Player, Demo, BonusNG</Tags>
+    <Action>Mortar</Action>
+    <Description></Description>
+    <Meta>Throw multiple axes on player tiles</Meta>
+    <Flavor>Hey, look up.</Flavor>
+    <Rarity>4</Rarity>
+    <Mana>4</Mana>
+    <Damage>0</Damage>
+    <Shots>1</Shots>
+    <Tiles>16</Tiles>
+    <Pattern>RandAlliedUnique</Pattern>
+    <TimeBetweenShots>0</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <Duration>4</Duration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <MarkDuration>0.5</MarkDuration>
+    <DestroyOnHit>true</DestroyOnHit>
+    <WarningDuration>1</WarningDuration>
+    <DamageType></DamageType>
+    <OnHit value="BladeThrow" amount="1">CastSpell</OnHit>
+    <TouchTile duration="6">TileCrack</TouchTile>
   </Spell>
   <Spell itemID="BladeThrow">
     <Stats animMark="BladeSpinShotS" animShot="BladeSpinShotS" castSound="" shotSound="slice_clang"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -359,8 +393,8 @@
   </Spell>
   <Spell itemID="BladeCatch">
     <Stats animWarning="WarningHealC" animObj="BladeSpinShotS" animMark="RedBlastS"
-      animShot="BladeStuckS" introSound="whirl_monster" castSound="" shotSound="thud_low"
-      setToGunPoint="Both" timeToTravel="1" bending="90"></Stats>
+           animShot="BladeStuckS" introSound="whirl_monster" castSound="" shotSound="thud_low"
+           setToGunPoint="Both" timeToTravel="1" bending="90"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -386,7 +420,7 @@
   </Spell>
   <Spell itemID="BlastCrystals">
     <Stats animMark="" animShot="SummonGridS" castSound="foom" shotSound="" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -414,8 +448,8 @@
   </Spell>
   <Spell itemID="BombToss">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animShot="SummonGridS"
-      castSound="woosh_large" shotSound="thud_low" setToGunPoint="Both" timeToTravel="0.7"
-      bending="100"></Stats>
+           castSound="woosh_large" shotSound="thud_low" setToGunPoint="Both" timeToTravel="0.7"
+           bending="100"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -425,6 +459,7 @@
     <Action>Mortar</Action>
     <Description></Description>
     <Meta>Throw a destroyable bomb 4 tiles ahead</Meta>
+    <Flavor>Don't Fuze the hostage.</Flavor>
     <Rarity>1</Rarity>
     <Mana>1</Mana>
     <Damage>50</Damage>
@@ -444,7 +479,7 @@
   </Spell>
   <Spell itemID="Boomerang">
     <Stats animMark="FrostboltChargeS" animShot="BoomerangC" castSound="wiffle_buzz_fade"
-      shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -475,7 +510,7 @@
   </Spell>
   <Spell itemID="BoomerangIce">
     <Stats animMark="FrostboltChargeS" animShot="BoomerangC" castSound="wiffle_buzz_fade"
-      shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -488,7 +523,7 @@
     <Flavor>Made in Alaska</Flavor>
     <Rarity>1</Rarity>
     <Brand>Elsanna</Brand>
-    <Mana>3</Mana>
+    <Mana>2</Mana>
     <Damage>40</Damage>
     <Shots>1</Shots>
     <Tiles>1</Tiles>
@@ -507,7 +542,7 @@
   </Spell>
   <Spell itemID="BowSnipe">
     <Stats animMark="BowSnipeS" animShot="BowShotS" castSound="charge_vibe_40ms_low"
-      shotSound="hi_speed_electronic_whoosh" setToGunPoint="Vertical" yVariance="0"></Stats>
+           shotSound="hi_speed_electronic_whoosh" setToGunPoint="Vertical" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -531,13 +566,13 @@
     <ShotDelay></ShotDelay>
     <CastDelay>0.45</CastDelay>
     <MarkDuration>0.65</MarkDuration>
-    <DestroyOnHit>true</DestroyOnHit>
+    <DestroyOnHit>false</DestroyOnHit>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
   <Spell itemID="Breakout">
     <Stats animMark="" animShot="BreakoutShotS" castSound="plasma_explosion" shotSound=""
-      setToGunPoint="None" yVariance="0" hitboxWidth="3" hitboxHeight="3"></Stats>
+           setToGunPoint="None" yVariance="0" hitboxWidth="3" hitboxHeight="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -567,7 +602,7 @@
   </Spell>
   <Spell itemID="CarpetBomb">
     <Stats animObj="ManticoreShotC" animMark="" animShot="ManticoreBlastC" castSound="poof_smoke"
-      shotSound="blast_tiny" setToGunPoint="None" timeToTravel="0.8" bending="70"></Stats>
+           shotSound="blast_tiny" setToGunPoint="None" timeToTravel="0.8" bending="70"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -577,7 +612,6 @@
     <Action>Mortar</Action>
     <Description></Description>
     <Meta>Flames on tiles in front</Meta>
-    <Flavor>Claus</Flavor>
     <Rarity>0</Rarity>
     <Brand>Fenix</Brand>
     <Mana>1</Mana>
@@ -597,7 +631,7 @@
   </Spell>
   <Spell itemID="Castle">
     <Stats animWarning="ExclamationC" animMark="SummonGridS" animShot="" castSound="mark_01"
-      shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.1" bending="10"></Stats>
+           shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.1" bending="10"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -627,7 +661,7 @@
   </Spell>
   <Spell itemID="ColdGrasp">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound="ice_rustle"
-      shotSound="spear_swoosh-0" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="spear_swoosh-0" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -658,7 +692,7 @@
   </Spell>
   <Spell itemID="ColdMedicine">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound="spear_swoosh-0"
-      shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -689,7 +723,7 @@
   </Spell>
   <Spell itemID="ColdSnap">
     <Stats animMark="" animShot="FrostballC" castSound="ice_crackle" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -720,7 +754,7 @@
   </Spell>
   <Spell itemID="Coldstone">
     <Stats animMark="RockboltChargeS" animShot="FrostboltShotS" castSound="spear_swoosh-0"
-      shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -751,7 +785,7 @@
   </Spell>
   <Spell itemID="CounterStrike">
     <Stats animMark="" animShot="ShieldArrowS" castSound="ice_beam" shotSound="zap_fast"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -765,7 +799,7 @@
     <Rarity>1</Rarity>
     <Brand>Phalanx</Brand>
     <Mana>2</Mana>
-    <Damage>80</Damage>
+    <Damage>70</Damage>
     <Shots>1</Shots>
     <Tiles>1</Tiles>
     <Pattern>Player</Pattern>
@@ -781,7 +815,7 @@
   </Spell>
   <Spell itemID="Crossfire">
     <Stats animMark="ArtilleryBlastC" animShot="" castSound="" shotSound="energy_shot"
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -808,7 +842,7 @@
   </Spell>
   <Spell itemID="Cryokinesis">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound="ice_rustle"
-      shotSound="ice_beam" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="ice_beam" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -839,7 +873,7 @@
   </Spell>
   <Spell itemID="DeckSlam">
     <Stats animShot="CardShotS" castSound="" shotSound="knife_throw" setToGunPoint="Both"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -868,7 +902,7 @@
   </Spell>
   <Spell itemID="Devour">
     <Stats animMark="" animShot="BloodShotS" castSound="energy_daggers_6" shotSound="hit_wet"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -898,7 +932,7 @@
   </Spell>
   <Spell itemID="DiagBeam">
     <Stats animMark="DiagBeamChargeS" animShot="DiagBeamShotS" castSound="whirl_monster"
-      shotSound="" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -913,11 +947,11 @@
     <Brand>Elsanna</Brand>
     <Mana>2</Mana>
     <Damage>20</Damage>
-    <Shots>3</Shots>
+    <Shots>5</Shots>
     <Tiles>1</Tiles>
     <Pattern>Front</Pattern>
-    <TimeBetweenShots>0.1</TimeBetweenShots>
-    <ShotVelocity>0.2</ShotVelocity>
+    <TimeBetweenShots>0.05</TimeBetweenShots>
+    <ShotVelocity>0.15</ShotVelocity>
     <Duration>3</Duration>
     <ShotDelay></ShotDelay>
     <CastDelay>0.1</CastDelay>
@@ -928,7 +962,7 @@
   </Spell>
   <Spell itemID="EarthPrayer">
     <Stats animMark="RockboltChargeS" animShot="RockboltS" castSound="" shotSound="spear_swoosh-0"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -959,7 +993,7 @@
   </Spell>
   <Spell itemID="Ember">
     <Stats animShot="FireChargeS" castSound="" shotSound="fire_spray" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -989,7 +1023,7 @@
   </Spell>
   <Spell itemID="Energizer">
     <Stats animMark="ArtilleryBlastC" animShot="PowerShotS" castSound=""
-      shotSound="energy_daggers_6" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="energy_daggers_6" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1018,7 +1052,7 @@
   </Spell>
   <Spell itemID="Entangle">
     <Stats animMark="SummonGridS" animShot="" introSound="beam_shot_low" castSound=""
-      shotSound="energy_shot" setToGunPoint="None"></Stats>
+           shotSound="energy_shot" setToGunPoint="None"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1047,7 +1081,7 @@
   </Spell>
   <Spell itemID="Fimbulveter">
     <Stats animShot="LurkerIceC" introSound="wind_arctic_short" shotSound="ice_crackle"
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1111,7 +1145,7 @@
   </Spell>
   <Spell itemID="ForcePushDown">
     <Stats animMark="" animShot="BasicBulletC" castSound="" shotSound="swish_magical"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1142,7 +1176,7 @@
   </Spell>
   <Spell itemID="ForcePushUp">
     <Stats animMark="" animShot="BasicBulletC" castSound="" shotSound="swish_magical"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1173,7 +1207,7 @@
   </Spell>
   <Spell itemID="Forte">
     <Stats animMark="" animShot="" castSound="zap_fast" shotSound="" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitSelf>true</HitSelf>
     <HitStructures>true</HitStructures>
@@ -1203,7 +1237,7 @@
   </Spell>
   <Spell itemID="Fracture">
     <Stats animMark="RockboltChargeS" animShot="RockboltS" castSound="spear_swoosh-0" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1233,7 +1267,7 @@
   </Spell>
   <Spell itemID="FrostBarrage">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound="ice_beam" shotSound=""
-      setToGunPoint="Vertical" yVariance="0"></Stats>
+           setToGunPoint="Vertical" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1264,7 +1298,7 @@
   </Spell>
   <Spell itemID="FrostVolley">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound="ice_beam" shotSound=""
-      setToGunPoint="Vertical" yVariance="0"></Stats>
+           setToGunPoint="Vertical" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1295,7 +1329,7 @@
   </Spell>
   <Spell itemID="Frostbite">
     <Stats animShot="LurkerIceC" introSound="wind_arctic_short" shotSound="ice_rustle"
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1327,7 +1361,7 @@
   </Spell>
   <Spell itemID="Frostbolt">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound="ice_beam" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1358,7 +1392,7 @@
   </Spell>
   <Spell itemID="Glassify">
     <Stats animMark="FireChargeS" animShot="BloodShotS" castSound="ice_beam" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1388,8 +1422,8 @@
   </Spell>
   <Spell itemID="HealthCatch">
     <Stats animWarning="WarningHealC" animObj="HealthPotionS" animMark="RedBlastS" animShot=""
-      castSound="misc_shimmer" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="1"
-      bending="90"></Stats>
+           castSound="misc_shimmer" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="1"
+           bending="90"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -1399,6 +1433,7 @@
     <Action>Mortar</Action>
     <Description></Description>
     <Meta>Healing potion to random tile</Meta>
+    <Flavor>Are you really playing catch with yourself?</Flavor>
     <Rarity>2</Rarity>
     <Mana>1</Mana>
     <Damage>0</Damage>
@@ -1418,7 +1453,7 @@
   </Spell>
   <Spell itemID="Hellfire">
     <Stats animWarning="ExclamationC" animMark="StormFireS" animShot="" introSound="flare"
-      castSound="foom" shotSound="small_blast" setToGunPoint="None" yVariance="0"></Stats>
+           castSound="foom" shotSound="small_blast" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -1450,7 +1485,7 @@
   </Spell>
   <Spell itemID="Hockey">
     <Stats animMark="FrostballC" animShot="BlueDiscC" castSound="whirl_monster" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1482,7 +1517,7 @@
   </Spell>
   <Spell itemID="HyperBeam">
     <Stats animMark="" animShot="BeamLaserS" introSound="laser_rocket" shotSound="beam_shot_low"
-      setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="3"></Stats>
+           setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1492,7 +1527,7 @@
     <Action>Multishot</Action>
     <Description></Description>
     <Meta>Piercing laser knocks self back</Meta>
-    <Flavor></Flavor>
+    <Flavor>TM15</Flavor>
     <Rarity>2</Rarity>
     <Brand>Kinesys</Brand>
     <Mana>3</Mana>
@@ -1512,7 +1547,7 @@
   </Spell>
   <Spell itemID="InfinityBeam">
     <Stats animMark="" animShot="BeamLaserS" introSound="laser_rocket" shotSound="beam_shot_low"
-      setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="3"></Stats>
+           setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1556,7 +1591,7 @@
   </Spell>
   <Spell itemID="IronWill">
     <Stats animMark="FrostboltChargeS" animShot="ShieldArrowS" castSound="ice_beam" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1586,7 +1621,7 @@
   </Spell>
   <Spell itemID="Jam">
     <Stats animMark="FrostballC" animShot="" introSound="gun_click" shotSound=""
-      setToGunPoint="Vertical" yVariance="0"></Stats>
+           setToGunPoint="Vertical" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitSelf>true</HitSelf>
     <Name>Jam</Name>
@@ -1613,7 +1648,7 @@
   </Spell>
   <Spell itemID="Jambolt">
     <Stats animMark="FireChargeS" animShot="BloodShotS" castSound="silenced_gun" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1642,7 +1677,7 @@
   </Spell>
   <Spell itemID="KillShot">
     <Stats animMark="BloodShotS" animShot="BloodShotS" castSound="silenced_gun" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1661,7 +1696,7 @@
     <Tiles>1</Tiles>
     <Pattern>Current</Pattern>
     <TimeBetweenShots>0.05</TimeBetweenShots>
-    <ShotVelocity>800</ShotVelocity>
+    <ShotVelocity>600</ShotVelocity>
     <Duration>1</Duration>
     <ShotDelay></ShotDelay>
     <CastDelay>0.15</CastDelay>
@@ -1672,9 +1707,9 @@
     <Execute>DoubleCast</Execute>
   </Spell>
   <Spell itemID="KillStep">
-    <Stats animMark="" animShot="Slash2x3C" castSound="" shotSound="sword_laser"
-      setToGunPoint="None" yVariance="0" slashLocation="1" dashDistance="3" hitboxWidth="2"
-      hitboxHeight="3" hitboxOffsetX="0.5" recoveryTime="0.15"></Stats>
+    <Stats animMark="Slash2x3C" animShot="" castSound="" shotSound="sword_laser"
+           setToGunPoint="None" yVariance="0" slashLocation="1" dashDistance="3" hitboxWidth="2"
+           hitboxHeight="3" hitboxOffsetX="0.5" recoveryTime="0.15"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1697,7 +1732,7 @@
     <Duration>0.2</Duration>
     <ShotDelay></ShotDelay>
     <CastDelay>0</CastDelay>
-    <MarkDuration></MarkDuration>
+    <MarkDuration>0.2</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
@@ -1705,7 +1740,7 @@
   </Spell>
   <Spell itemID="KineticWave">
     <Stats animMark="KineticWaveShotS" animShot="" introSound="beam_shot_low" castSound=""
-      shotSound="energy_shot" setToGunPoint="None"></Stats>
+           shotSound="energy_shot" setToGunPoint="None"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1735,7 +1770,7 @@
   </Spell>
   <Spell itemID="Knife">
     <Stats animMark="KnifeMarkS" animShot="KunaiS" castSound="knife_throw" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1764,7 +1799,7 @@
   </Spell>
   <Spell itemID="Kunai">
     <Stats animMark="KunaiMarkS" animShot="KunaiS" castSound="knife_throw" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1792,8 +1827,8 @@
   </Spell>
   <Spell itemID="LaserSolo">
     <Stats animMark="" animShot="SniperShotC" castSound="" shotSound="sniper_ringshot"
-      setToGunPoint="Both" yVariance="0" slashLocation="3" dashDistance="0" hitboxWidth="7"
-      hitboxHeight="1" hitboxOffsetX="0" recoveryTime="0"></Stats>
+           setToGunPoint="Both" yVariance="0" slashLocation="3" dashDistance="0" hitboxWidth="7"
+           hitboxHeight="1" hitboxOffsetX="0" recoveryTime="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1823,8 +1858,8 @@
   </Spell>
   <Spell itemID="LaserTriple">
     <Stats animMark="" animShot="SniperShotC" castSound="" shotSound="laser_triple_shot"
-      setToGunPoint="Both" yVariance="0" slashLocation="3" dashDistance="0" hitboxWidth="7"
-      hitboxHeight="1" hitboxOffsetX="0" recoveryTime="0"></Stats>
+           setToGunPoint="Both" yVariance="0" slashLocation="3" dashDistance="0" hitboxWidth="7"
+           hitboxHeight="1" hitboxOffsetX="0" recoveryTime="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1853,8 +1888,8 @@
     <OnCast></OnCast>
   </Spell>
   <Spell itemID="Leech">
-    <Stats animMark="KunaiMarkC" animShot="BasicBulletC" castSound="energy_daggers_6" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+    <Stats animMark="KunaiMarkC" animShot="BloodShotS" castSound="energy_daggers_6" shotSound=""
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1884,7 +1919,7 @@
   </Spell>
   <Spell itemID="MagicClaw">
     <Stats animMark="MagicClawC" animShot="" castSound="disappear_magical_fast" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1914,8 +1949,8 @@
   </Spell>
   <Spell itemID="ManaLattice">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animMark="ArtilleryBlastS"
-      animShot="SummonGridS" castSound="foom" shotSound="ice_rustle" setToGunPoint="Both"
-      timeToTravel="0.1" bending="10"></Stats>
+           animShot="SummonGridS" castSound="foom" shotSound="ice_rustle" setToGunPoint="Both"
+           timeToTravel="0.1" bending="10"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -1959,7 +1994,7 @@
   </Spell>
   <Spell itemID="ManaSwipe">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound="knife_throw"
-      shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2005,7 +2040,7 @@
   </Spell>
   <Spell itemID="Meditate">
     <Stats animMark="FrostballC" animShot="FrostboltChargeS" introSound="laser_recharge"
-      shotSound="" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitSelf>true</HitSelf>
     <Name>Meditate</Name>
@@ -2051,7 +2086,7 @@
   </Spell>
   <Spell itemID="Mine">
     <Stats animObj="ShineBallC" animMark="" animShot="MineShotS" castSound="poof_smoke" shotSound=""
-      setToGunPoint="Both" yVariance="0" timeToTravel="0.5" bending="50"></Stats>
+           setToGunPoint="Both" yVariance="0" timeToTravel="0.5" bending="50"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2060,7 +2095,7 @@
     <Tags>Player, Demo, Live</Tags>
     <Action>Mortar</Action>
     <Description></Description>
-    <Meta>Place mine on random empty enemy tile for 8 sec</Meta>
+    <Meta>Place mine on random enemy tile</Meta>
     <Flavor>Mine? Mine? Mine?</Flavor>
     <Rarity>2</Rarity>
     <Brand>Hexawan</Brand>
@@ -2071,7 +2106,7 @@
     <Pattern>RandOtherUnique</Pattern>
     <TimeBetweenShots>0</TimeBetweenShots>
     <ShotVelocity>0</ShotVelocity>
-    <Duration>8</Duration>
+    <Duration>9</Duration>
     <ShotDelay></ShotDelay>
     <CastDelay>0</CastDelay>
     <MarkDuration></MarkDuration>
@@ -2082,7 +2117,7 @@
   </Spell>
   <Spell itemID="Minefield">
     <Stats animObj="ShineBallC" animShot="MineMiniS" castSound="poof_smoke" shotSound=""
-      setToGunPoint="Both" yVariance="0" timeToTravel="0.5" bending="50"></Stats>
+           setToGunPoint="Both" yVariance="0" timeToTravel="0.5" bending="50"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2102,7 +2137,7 @@
     <Pattern>RandOtherUnique</Pattern>
     <TimeBetweenShots>0</TimeBetweenShots>
     <ShotVelocity>0</ShotVelocity>
-    <Duration>3</Duration>
+    <Duration>3.5</Duration>
     <ShotDelay></ShotDelay>
     <CastDelay>0</CastDelay>
     <MarkDuration></MarkDuration>
@@ -2113,7 +2148,7 @@
   </Spell>
   <Spell itemID="Minigun">
     <Stats animMark="BasicCastC" animShot="BasicBulletC" introSound="gun_cock_35ms" castSound=""
-      shotSound="rubbery_snap_short" setToGunPoint="Both" yVariance="3"></Stats>
+           shotSound="rubbery_snap_short" setToGunPoint="Both" yVariance="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2143,7 +2178,7 @@
   </Spell>
   <Spell itemID="MirrorDamage">
     <Stats animMark="" animShot="PowerShotS" introSound="magical_double_swish-ideas" castSound=""
-      shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2169,12 +2204,12 @@
     <DestroyOnHit>true</DestroyOnHit>
     <DamageType>Zero</DamageType>
     <OnCast></OnCast>
-    <OnHit duration="2">Link</OnHit>
+    <OnHit duration="4">Link</OnHit>
   </Spell>
   <Spell itemID="MortarIce">
     <Stats animObj="ManticoreShotS" animShot="ArtilleryBlastC" castSound="artillery_shot"
-      shotSound="ice_crash_short" setToGunPoint="Both" yVariance="3" timeToTravel="0.7"
-      bending="100"></Stats>
+           shotSound="ice_crash_short" setToGunPoint="Both" yVariance="3" timeToTravel="0.7"
+           bending="100"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2205,7 +2240,7 @@
   </Spell>
   <Spell itemID="OrbitalBeam">
     <Stats animObj="KineticBallS" animShot="BreakerBeamC" castSound="cardDrop"
-      shotSound="beam_impact" setToGunPoint="Both" yVariance="3" timeToTravel="0.7" bending="100"></Stats>
+           shotSound="beam_impact" setToGunPoint="Both" yVariance="3" timeToTravel="0.7" bending="100"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2236,7 +2271,7 @@
   </Spell>
   <Spell itemID="PekingFire">
     <Stats animMark="FireChargeS" animShot="FireboltS" castSound="flare" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2281,7 +2316,7 @@
   </Spell>
   <Spell itemID="PoisonDart">
     <Stats animMark="" animShot="PoisonShotS" castSound="" shotSound="dash_quick"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2312,7 +2347,7 @@
   </Spell>
   <Spell itemID="Pull">
     <Stats animMark="" animShot="PullShotS" introSound="swish_magical" castSound="" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2343,7 +2378,7 @@
   </Spell>
   <Spell itemID="Pyroblast">
     <Stats animMark="FireChargeS" animShot="FireboltS" castSound="" shotSound="explosion_tiles_long"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2374,7 +2409,7 @@
   </Spell>
   <Spell itemID="Ragnarok">
     <Stats animMark="RagnarokS" animShot="" castSound="foom" shotSound="beam_impact"
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2402,10 +2437,11 @@
     <WarningDuration>0</WarningDuration>
     <DamageType></DamageType>
     <OnCast></OnCast>
+    <TouchTile duration="8">TileBreak</TouchTile>
   </Spell>
   <Spell itemID="Reflector">
     <Stats animMark="" animShot="" castSound="misc_shimmer" shotSound="" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <Name>Reflector</Name>
     <Tags>Player, BonusNG</Tags>
@@ -2430,7 +2466,7 @@
   </Spell>
   <Spell itemID="RockCycle">
     <Stats animMark="RockboltChargeS" animShot="RockboltS" castSound="spear_swoosh-0" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2461,7 +2497,7 @@
   </Spell>
   <Spell itemID="RockTomb">
     <Stats animMark="RockboltChargeS" animShot="RockboltS" castSound="spear_swoosh-1"
-      shotSound="zap_fast" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="zap_fast" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2490,10 +2526,41 @@
     <OnCast></OnCast>
     <Earthbound amount="40">Shield</Earthbound>
   </Spell>
+  <Spell itemID="ShieldBeam">
+    <Stats animMark="BeamLaserS" animShot="" introSound="laser_rocket" shotSound="beam_shot_low"
+           setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="3"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>Shield Beam</Name>
+    <Tags>Player, Demo, Live</Tags>
+    <Action>Multishot</Action>
+    <Description></Description>
+    <Meta>Shoot laser and gain shield on hit</Meta>
+    <Flavor>It attac but it also protec</Flavor>
+    <Rarity>2</Rarity>
+    <Brand>Phalanx</Brand>
+    <Mana>2</Mana>
+    <Damage>10</Damage>
+    <Shots>4</Shots>
+    <Tiles>1</Tiles>
+    <Pattern>Current</Pattern>
+    <TimeBetweenShots>0.11</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <Duration>0.2</Duration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <MarkDuration>0.3</MarkDuration>
+    <DestroyOnHit></DestroyOnHit>
+    <DamageType></DamageType>
+    <OnCast>Anchor</OnCast>
+    <OnHit amount="10">Shield</OnHit>
+  </Spell>
   <Spell itemID="ShieldCatch">
     <Stats animWarning="WarningHealC" animObj="KineticBallS" animMark="ArtilleryBlastC" animShot=""
-      castSound="misc_shimmer" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="1"
-      bending="90"></Stats>
+           castSound="misc_shimmer" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="1"
+           bending="90"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -2503,7 +2570,8 @@
     <Action>Mortar</Action>
     <Description></Description>
     <Meta>Shield to random tile</Meta>
-    <Rarity>2</Rarity>
+    <Flavor>Ever eat popcorn like this?</Flavor>
+    <Rarity>1</Rarity>
     <Mana>1</Mana>
     <Damage>0</Damage>
     <Shots>1</Shots>
@@ -2518,11 +2586,11 @@
     <DestroyOnHit>true</DestroyOnHit>
     <WarningDuration>1</WarningDuration>
     <DamageType>Zero</DamageType>
-    <OnHit amount="60">Shield</OnHit>
+    <OnHit amount="60">ShieldTarget</OnHit>
   </Spell>
   <Spell itemID="ShieldSlam">
     <Stats animMark="Shield" animShot="ShieldShotC" castSound="ice_beam" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2552,7 +2620,7 @@
   </Spell>
   <Spell itemID="ShieldThrow">
     <Stats animMark="Shield" animShot="ShieldShotC" castSound="ice_beam" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2561,7 +2629,7 @@
     <Tags>Player, Demo, Live</Tags>
     <Action>Multishot</Action>
     <Description></Description>
-    <Meta>Deal dmg equal to shield, lose all shield</Meta>
+    <Meta>Deal dmg equal to shield, lose all shield, pierces</Meta>
     <Flavor>When you have no sword and no options</Flavor>
     <Rarity>2</Rarity>
     <Brand>Phalanx</Brand>
@@ -2576,13 +2644,13 @@
     <ShotDelay></ShotDelay>
     <CastDelay>0.1</CastDelay>
     <MarkDuration>0.1</MarkDuration>
-    <DestroyOnHit>true</DestroyOnHit>
+    <DestroyOnHit>false</DestroyOnHit>
     <DamageType>Shield</DamageType>
     <OnCast amount="0">ShieldSet</OnCast>
   </Spell>
   <Spell itemID="ShieldsUp">
     <Stats animMark="" animShot="" castSound="zap_fast" shotSound="" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitSelf>true</HitSelf>
     <HitStructures>true</HitStructures>
@@ -2611,7 +2679,7 @@
   </Spell>
   <Spell itemID="ShieldsUpExte">
     <Stats animMark="" animShot="" castSound="zap_fast" shotSound="" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitSelf>true</HitSelf>
     <HitStructures>true</HitStructures>
@@ -2619,7 +2687,7 @@
     <Action>Multishot</Action>
     <Description></Description>
     <Meta>Gain 60 wide shield</Meta>
-    <Flavor>The best defense is a good defense</Flavor>
+    <Flavor>The best defense is a big defense</Flavor>
     <Rarity>0</Rarity>
     <Brand>Phalanx</Brand>
     <Mana>1</Mana>
@@ -2639,7 +2707,7 @@
   </Spell>
   <Spell itemID="Shine">
     <Stats animMark="FrostballC" animShot="ShineBallC" introSound="light_spell" castSound=""
-      shotSound="" setToGunPoint="None" yVariance="0" diagonal="true" cross="true" delayTime="0.1"></Stats>
+           shotSound="" setToGunPoint="None" yVariance="0" diagonal="true" cross="true" delayTime="0.1"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2669,7 +2737,7 @@
   </Spell>
   <Spell itemID="Shotgun">
     <Stats animMark="ShotgunShotS" animShot="" castSound="explosion_pop" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2700,7 +2768,7 @@
   </Spell>
   <Spell itemID="Shove">
     <Stats animMark="" animShot="BasicBulletC" castSound="swish_magical" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2731,7 +2799,7 @@
   </Spell>
   <Spell itemID="Smog">
     <Stats animMark="" animShot="SmogBlastS" introSound="beam_impact" castSound=""
-      shotSound="spear_swoosh-0" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="spear_swoosh-0" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2763,7 +2831,7 @@
   </Spell>
   <Spell itemID="SoulGun">
     <Stats animMark="FrostboltChargeS" animShot="PowerShotS" castSound=""
-      shotSound="energy_daggers_6" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="energy_daggers_6" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2776,7 +2844,7 @@
     <Flavor>Talk about Han Soulo</Flavor>
     <Rarity>2</Rarity>
     <Mana>2</Mana>
-    <Damage>70</Damage>
+    <Damage>60</Damage>
     <Shots>1</Shots>
     <Tiles>1</Tiles>
     <Pattern>Current</Pattern>
@@ -2789,11 +2857,11 @@
     <DestroyOnHit>true</DestroyOnHit>
     <DamageType></DamageType>
     <OnCast>Consume</OnCast>
-    <Execute amount="10">PowerUpPerm</Execute>
+    <Execute amount="20">PowerUpPerm</Execute>
   </Spell>
   <Spell itemID="TriRag">
     <Stats animMark="TrinityShotS" animShot="TrinityShotS" castSound="ice_beam" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2822,7 +2890,7 @@
   </Spell>
   <Spell itemID="TriShot">
     <Stats animMark="TrinityShotS" animShot="TrinityShotS" castSound="ice_beam" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2851,7 +2919,7 @@
   </Spell>
   <Spell itemID="TriForce">
     <Stats animMark="TrinityShotS" animShot="TrinityShotS" castSound="ice_beam" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2878,8 +2946,8 @@
   </Spell>
   <Spell itemID="Assassination">
     <Stats animMark="Slash1x1S" animShot="" castSound="woosh_large" shotSound="slice_clang"
-      setToGunPoint="None" yVariance="0" dashDistance="3" hitboxWidth="1" hitboxHeight="1"
-      hitboxOffsetX="1" recoveryTime="0.15"></Stats>
+           setToGunPoint="None" yVariance="0" dashDistance="3" hitboxWidth="1" hitboxHeight="1"
+           hitboxOffsetX="1" recoveryTime="0.15"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2902,15 +2970,15 @@
     <Duration>0.15</Duration>
     <ShotDelay></ShotDelay>
     <CastDelay>0.3</CastDelay>
-    <MarkDuration></MarkDuration>
+    <MarkDuration>0.15</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
   <Spell itemID="StepLacerate">
-    <Stats animMark="" animShot="Slash4x1C" castSound="woosh_large" shotSound="slice_clang"
-      setToGunPoint="None" yVariance="0" dashDistance="3" hitboxWidth="4" hitboxHeight="1"
-      hitboxOffsetX="-0.5" recoveryTime="0.15"></Stats>
+    <Stats animMark="Slash4x1C" animShot="" castSound="woosh_large" shotSound="slice_clang"
+           setToGunPoint="None" yVariance="0" dashDistance="3" hitboxWidth="4" hitboxHeight="1"
+           hitboxOffsetX="-0.5" recoveryTime="0.15"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2933,15 +3001,15 @@
     <Duration>0.15</Duration>
     <ShotDelay></ShotDelay>
     <CastDelay>0</CastDelay>
-    <MarkDuration></MarkDuration>
+    <MarkDuration>0.15</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
   <Spell itemID="StepSlash">
-    <Stats animMark="" animShot="Slash2x3C" castSound="woosh_large" shotSound="slice_clang"
-      setToGunPoint="None" yVariance="0" slashLocation="1" dashDistance="3" hitboxWidth="2"
-      hitboxHeight="3" hitboxOffsetX="0.5" recoveryTime="0.3"></Stats>
+    <Stats animMark="Slash2x3C" animShot="" castSound="woosh_large" shotSound="slice_clang"
+           setToGunPoint="None" yVariance="0" slashLocation="1" dashDistance="3" hitboxWidth="2"
+           hitboxHeight="3" hitboxOffsetX="0.5" recoveryTime="0.3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2964,15 +3032,15 @@
     <Duration>0.2</Duration>
     <ShotDelay></ShotDelay>
     <CastDelay>0</CastDelay>
-    <MarkDuration></MarkDuration>
+    <MarkDuration>0.2</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
   <Spell itemID="StepRise">
-    <Stats animMark="" animShot="Slash2x3C" castSound="woosh_large" shotSound="slice_clang"
-      setToGunPoint="None" yVariance="0" slashLocation="1" dashDistance="0" dashHeight="0"
-      hitboxWidth="2" hitboxHeight="4" hitboxOffsetX="0.5" hitboxOffsety="2" recoveryTime="0.3"></Stats>
+    <Stats animMark="Slash2x3C" animShot="" castSound="woosh_large" shotSound="slice_clang"
+           setToGunPoint="None" yVariance="0" slashLocation="1" dashDistance="0" dashHeight="0"
+           hitboxWidth="2" hitboxHeight="4" hitboxOffsetX="0.5" hitboxOffsety="2" recoveryTime="0.3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -2993,7 +3061,7 @@
     <Duration>0.2</Duration>
     <ShotDelay></ShotDelay>
     <CastDelay>0</CastDelay>
-    <MarkDuration></MarkDuration>
+    <MarkDuration>0.2</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
@@ -3001,8 +3069,8 @@
   </Spell>
   <Spell itemID="StepSpin">
     <Stats animMark="SlashSpinC" animShot="" castSound="woosh_large" shotSound="slice_clang"
-      setToGunPoint="None" yVariance="0" dashDistance="3" hitboxWidth="3" hitboxHeight="3"
-      hitboxOffsetX="0" recoveryTime="0.4"></Stats>
+           setToGunPoint="None" yVariance="0" dashDistance="3" hitboxWidth="3" hitboxHeight="3"
+           hitboxOffsetX="0" recoveryTime="0.4"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3032,7 +3100,7 @@
   </Spell>
   <Spell itemID="StormBlizzard">
     <Stats animMark="StormIceS" animShot="ArtilleryBlastC" castSound="" shotSound="ice_crash_short"
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3064,7 +3132,7 @@
   </Spell>
   <Spell itemID="StormFire">
     <Stats animMark="StormFireS" animShot="" castSound="" shotSound="small_blast"
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3096,7 +3164,7 @@
   </Spell>
   <Spell itemID="StormIce">
     <Stats animMark="StormIceS" animShot="" castSound="" shotSound="ice_beam" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3128,7 +3196,7 @@
   </Spell>
   <Spell itemID="StormThunder">
     <Stats animMark="LightningC" animShot="ThunderC" castSound="thunderclap" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3159,7 +3227,7 @@
   </Spell>
   <Spell itemID="Strike">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound=""
-      shotSound="spear_swoosh-0" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="spear_swoosh-0" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3188,8 +3256,8 @@
   </Spell>
   <Spell itemID="SumTurretGun">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animShot="SummonGridS"
-      castSound="mark_01" shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.1"
-      bending="10"></Stats>
+           castSound="mark_01" shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.1"
+           bending="10"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3221,8 +3289,8 @@
   </Spell>
   <Spell itemID="SumTurretLaser">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animShot="SummonGridS"
-      castSound="mark_01" shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.1"
-      bending="10"></Stats>
+           castSound="mark_01" shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.1"
+           bending="10"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3253,8 +3321,8 @@
   </Spell>
   <Spell itemID="SumWall">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animShot="SummonGridS"
-      castSound="mark_01" shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.1"
-      bending="10"></Stats>
+           castSound="mark_01" shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.1"
+           bending="10"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3284,7 +3352,7 @@
   </Spell>
   <Spell itemID="Sunshine">
     <Stats animMark="StormSunshineS" animShot="" introSound="shimmer_wind_chimes" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3315,7 +3383,7 @@
   </Spell>
   <Spell itemID="SuperMinigun">
     <Stats animMark="BasicCastC" animShot="BasicBulletC" introSound="gun_cock_50ms" castSound=""
-      shotSound="rubbery_snap_short" setToGunPoint="Both" yVariance="3"></Stats>
+           shotSound="rubbery_snap_short" setToGunPoint="Both" yVariance="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3345,7 +3413,7 @@
   </Spell>
   <Spell itemID="Switchbait">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound="knife_throw"
-      shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3373,7 +3441,7 @@
   </Spell>
   <Spell itemID="Thunder">
     <Stats animObj="LightningC" animShot="ThunderC" castSound="" shotSound="thunderclap"
-      setToGunPoint="None" yVariance="" timeToTravel="0.2" bending="1000"></Stats>
+           setToGunPoint="None" yVariance="" timeToTravel="0.2" bending="1000"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3403,7 +3471,7 @@
   </Spell>
   <Spell itemID="ThunderLight">
     <Stats animObj="LightningC" animShot="ThunderC" castSound="" shotSound="thunderclap_light"
-      setToGunPoint="None" yVariance="" timeToTravel="0.2" bending="1000"></Stats>
+           setToGunPoint="None" yVariance="" timeToTravel="0.2" bending="1000"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3433,7 +3501,7 @@
   </Spell>
   <Spell itemID="TileBreaker">
     <Stats animMark="" animShot="" castSound="" shotSound="blast_tiny" setToGunPoint="None"
-      yVariance=""></Stats>
+           yVariance=""></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3464,7 +3532,7 @@
   </Spell>
   <Spell itemID="TileCracker">
     <Stats animMark="" animShot="" castSound="" shotSound="blast_tiny" setToGunPoint="None"
-      yVariance=""></Stats>
+           yVariance=""></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3495,7 +3563,7 @@
   </Spell>
   <Spell itemID="Transfuse">
     <Stats animMark="KunaiMarkC" animShot="BloodShotS" castSound="hit_wet" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitSelf></HitSelf>
     <Name>Transfuse</Name>
@@ -3513,7 +3581,7 @@
   </Spell>
   <Spell itemID="Tundra">
     <Stats animMark="ArtilleryBlastC" animShot="" castSound="" shotSound="ice_crash_short"
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3543,7 +3611,7 @@
   </Spell>
   <Spell itemID="Twinferno">
     <Stats animMark="Explosion3x3S" animShot="" introSound="" castSound=""
-      shotSound="explosion_bump" hitboxWidth="3" hitboxHeight="3" setToGunPoint="Vertical"></Stats>
+           shotSound="explosion_bump" hitboxWidth="3" hitboxHeight="3" setToGunPoint="Vertical"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3572,7 +3640,7 @@
   </Spell>
   <Spell itemID="Venomance">
     <Stats animMark="" animShot="PoisonShotS" castSound="" shotSound="phaser_slurp"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3603,7 +3671,7 @@
   </Spell>
   <Spell itemID="Viruspell">
     <Stats animMark="KunaiMarkC" animShot="PowerShotS" castSound="" shotSound="phaser_slurp"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3632,7 +3700,7 @@
   </Spell>
   <Spell itemID="Whirl">
     <Stats animMark="WhirlS" animShot="" castSound="" shotSound="whirl_monster" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3662,7 +3730,7 @@
   </Spell>
   <Spell itemID="Armorer">
     <Stats animMark="ShieldUpC" animShot="" castSound="ice_beam" shotSound="" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies>true</HitAllies>
     <HitSelf>true</HitSelf>
     <Name>Armorer</Name>
@@ -3688,8 +3756,8 @@
   </Spell>
   <Spell itemID="Artillery">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animMark="ArtilleryBlastC"
-      animShot="" castSound="energy_shot" shotSound="ice_crash_short" setToGunPoint="Both"
-      timeToTravel="0.9" bending="100"></Stats>
+           animShot="" castSound="energy_shot" shotSound="ice_crash_short" setToGunPoint="Both"
+           timeToTravel="0.9" bending="100"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3715,8 +3783,8 @@
   </Spell>
   <Spell itemID="Artillery2">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animMark="ArtilleryBlastC"
-      animShot="" castSound="energy_shot" shotSound="explosion_bump" setToGunPoint="Both"
-      timeToTravel="0.8" bending="100"></Stats>
+           animShot="" castSound="energy_shot" shotSound="explosion_bump" setToGunPoint="Both"
+           timeToTravel="0.8" bending="100"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3742,8 +3810,8 @@
   </Spell>
   <Spell itemID="Artillery3">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animMark="ArtilleryBlastC"
-      animShot="" castSound="energy_shot" shotSound="explosion_bump" setToGunPoint="Both"
-      timeToTravel="0.7" bending="100"></Stats>
+           animShot="" castSound="energy_shot" shotSound="explosion_bump" setToGunPoint="Both"
+           timeToTravel="0.7" bending="100"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3769,7 +3837,7 @@
   </Spell>
   <Spell itemID="BlastCrystalShot">
     <Stats animMark="FireChargeS" animShot="FireboltS" castSound="explosion_pop" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3796,7 +3864,7 @@
   </Spell>
   <Spell itemID="BombExplosion">
     <Stats animMark="Explosion3x3S" animShot="" castSound="explosion_bump" shotSound=""
-      setToGunPoint="None" yVariance="0" hitboxHeight="3" hitboxWidth="3"></Stats>
+           setToGunPoint="None" yVariance="0" hitboxHeight="3" hitboxWidth="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -3822,8 +3890,8 @@
   </Spell>
   <Spell itemID="BossHealSelf">
     <Stats animWarning="ExclamationC" animObj="HealOrbC" animMark="" animShot="HealOrbC"
-      castSound="energy_shot" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="0.6"
-      bending="60"></Stats>
+           castSound="energy_shot" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="0.6"
+           bending="60"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -3850,8 +3918,8 @@
   </Spell>
   <Spell itemID="BossHealShot">
     <Stats animWarning="ExclamationC" animObj="HealOrbC" animMark="" animShot="HealOrbC"
-      castSound="energy_shot" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="0.6"
-      bending="60"></Stats>
+           castSound="energy_shot" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="0.6"
+           bending="60"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3878,7 +3946,7 @@
   </Spell>
   <Spell itemID="BreakerFollow">
     <Stats animWarning="ExclamationC" animMark="" animShot="BreakerBeamC" castSound=""
-      shotSound="laser_echo_zap" setToGunPoint="None"></Stats>
+           shotSound="laser_echo_zap" setToGunPoint="None"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3907,7 +3975,7 @@
   </Spell>
   <Spell itemID="BreakerBlaster">
     <Stats animWarning="ExclamationC" animMark="" animShot="BreakerBeamC" castSound="mark_01"
-      shotSound="beam_shot_low" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="beam_shot_low" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3934,7 +4002,7 @@
   </Spell>
   <Spell itemID="BreakerPattern">
     <Stats animWarning="ExclamationC" animMark="" animShot="BreakerBeamC" castSound="mark_01"
-      shotSound="beam_shot_low" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="beam_shot_low" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -3962,7 +4030,7 @@
   </Spell>
   <Spell itemID="BreakerOrbitals">
     <Stats animMark="BlueDiscC" animShot="BlueDiscC" castSound="whirl_monster" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4012,7 +4080,7 @@
   </Spell>
   <Spell itemID="CampfireHeal">
     <Stats animMark="HealSparkleS" animShot="" castSound="energy_shot" shotSound="ice_crash_short"
-      setToGunPoint="None"></Stats>
+           setToGunPoint="None"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4038,7 +4106,7 @@
   </Spell>
   <Spell itemID="Cannon">
     <Stats animWarning="" animMark="" animShot="CannonShotC" castSound="laser_recharge"
-      shotSound="beam_shot_low" setToGunPoint="Both"></Stats>
+           shotSound="beam_shot_low" setToGunPoint="Both"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4062,6 +4130,32 @@
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
+  <Spell itemID="ChargeCannon">
+    <Stats animMark="RedBallChargeS" animShot="RedBallShotS" castSound="charge_8bit_30ms"
+           shotSound="energy_shot" setToGunPoint="Both" yVariance="0"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>ChargeCannonShot</Name>
+    <Tags>Cpu</Tags>
+    <Action>Multishot</Action>
+    <Description></Description>
+    <Meta>Charge for 3 seconds than fire a slow shot</Meta>
+    <Damage>200</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <Pattern>Current</Pattern>
+    <TimeBetweenShots>0</TimeBetweenShots>
+    <ShotVelocity>80</ShotVelocity>
+    <Duration>8</Duration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>3</CastDelay>
+    <MarkDuration>3</MarkDuration>
+    <DestroyOnHit>true</DestroyOnHit>
+    <DamageType></DamageType>
+    <OnCast>Anchor</OnCast>
+  </Spell>
   <Spell itemID="ChestCursed">
     <HitAllies></HitAllies>
     <HitSelf></HitSelf>
@@ -4069,7 +4163,7 @@
     <Tags>Cpu</Tags>
     <Action>AddArtifactLoot</Action>
     <Description></Description>
-    <Meta>Timerbar</Meta>
+    <Meta>Add Artifact</Meta>
     <Damage>0</Damage>
     <Shots>1</Shots>
     <Tiles>1</Tiles>
@@ -4082,7 +4176,7 @@
   </Spell>
   <Spell itemID="ChestCursedShot">
     <Stats animWarning="ExclamationC" animShot="BreakerBeamC" introSound="laugh_shrieking"
-      castSound="" shotSound="laser_echo_zap" setToGunPoint="Both"></Stats>
+           castSound="" shotSound="laser_echo_zap" setToGunPoint="Both"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4109,7 +4203,7 @@
   </Spell>
   <Spell itemID="ChestCursedShot2">
     <Stats animWarning="ExclamationC" animShot="ArtilleryBlastC" introSound="laugh_shrieking"
-      castSound="" shotSound="laser_echo_zap" setToGunPoint="Both"></Stats>
+           castSound="" shotSound="laser_echo_zap" setToGunPoint="Both"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4136,8 +4230,8 @@
   </Spell>
   <Spell itemID="ChestCursedShot3">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animMark="ArtilleryBlastC"
-      animShot="" introSound="laugh_shrieking" castSound="energy_shot" shotSound="explosion_bump"
-      setToGunPoint="Both" timeToTravel="0.7" bending="90"></Stats>
+           animShot="" introSound="laugh_shrieking" castSound="energy_shot" shotSound="explosion_bump"
+           setToGunPoint="Both" timeToTravel="0.7" bending="90"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4175,14 +4269,14 @@
     <ShotDelay></ShotDelay>
     <MarkDuration></MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params closetime="8"></Params>
+    <Params closetime="9"></Params>
     <DamageType></DamageType>
     <OnCast></OnCast>
   </Spell>
   <Spell itemID="ChestHealShot">
     <Stats animWarning="WarningHealC" animObj="HealOrbC" animShot="HealOrbC"
-      castSound="misc_shimmer" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="0.6"
-      bending="60"></Stats>
+           castSound="misc_shimmer" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="0.6"
+           bending="60"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4256,7 +4350,7 @@
   </Spell>
   <Spell itemID="Colossus">
     <Stats animWarning="ExclamationC" animMark="LightningC" animShot="ThunderC"
-      warningSound="mark_01" castSound="" shotSound="thunderclap_light"></Stats>
+           warningSound="mark_01" castSound="" shotSound="thunderclap_light"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4286,7 +4380,7 @@
   </Spell>
   <Spell itemID="DarkBomb">
     <Stats animMark="FrostboltChargeS" animShot="FrostboltShotS" castSound="ice_beam" shotSound=""
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4313,7 +4407,7 @@
   </Spell>
   <Spell itemID="DeathExplosion">
     <Stats animMark="Explosion3x3S" animShot="" castSound="explosion_bump" shotSound=""
-      setToGunPoint="None" yVariance="0" hitboxHeight="3" hitboxWidth="3"></Stats>
+           setToGunPoint="None" yVariance="0" hitboxHeight="3" hitboxWidth="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4339,7 +4433,7 @@
   </Spell>
   <Spell itemID="DeathFlame">
     <Stats animMark="" animShot="" castSound="small_blast" shotSound="" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4379,7 +4473,7 @@
   </Spell>
   <Spell itemID="HitExplosion">
     <Stats animMark="Explosion3x3S" animShot="" castSound="explosion_bump" shotSound=""
-      setToGunPoint="None" yVariance="0" hitboxHeight="3" hitboxWidth="3"></Stats>
+           setToGunPoint="None" yVariance="0" hitboxHeight="3" hitboxWidth="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -4405,7 +4499,7 @@
   </Spell>
   <Spell itemID="Hockeyer">
     <Stats animMark="DiagBeamShotS" animShot="DiagBeamShotS" castSound="charge_vibe_40ms_low"
-      shotSound="whirl_monster" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="whirl_monster" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4437,12 +4531,81 @@
     <Tags>Cpu</Tags>
     <Action>MessagePop</Action>
     <Description></Description>
-    <Meta>Shows help message in talk bubble</Meta>
+    <Meta>Shows help message in talk bubble 1sec</Meta>
     <ShotDelay></ShotDelay>
     <CastDelay>0</CastDelay>
     <MarkDuration></MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <Params messageText="Hostage_help" messageDuration="1"></Params>
+    <DamageType></DamageType>
+    <OnCast></OnCast>
+  </Spell>
+  <Spell itemID="HostageDistressTimed">
+    <HitAllies></HitAllies>
+    <HitSelf></HitSelf>
+    <Name>HostageDistressTimed</Name>
+    <Tags>Cpu</Tags>
+    <Action>Timerbar</Action>
+    <Description></Description>
+    <Meta>Timerbar</Meta>
+    <Damage>0</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <ShotDelay></ShotDelay>
+    <MarkDuration></MarkDuration>
+    <DestroyOnHit></DestroyOnHit>
+    <Params closetime="7"></Params>
+    <DamageType></DamageType>
+    <OnCast></OnCast>
+  </Spell>
+  <Spell itemID="HostageMessageDistress">
+    <HitAllies></HitAllies>
+    <HitSelf></HitSelf>
+    <Name>Hostage Message Distress</Name>
+    <Tags>Cpu</Tags>
+    <Action>MessagePop</Action>
+    <Description></Description>
+    <Meta>Shows help message in talk bubble 2sec</Meta>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <MarkDuration></MarkDuration>
+    <DestroyOnHit></DestroyOnHit>
+    <Params messageText="Hostage_help" messageDuration="3"></Params>
+    <DamageType></DamageType>
+    <OnCast></OnCast>
+  </Spell>
+  <Spell itemID="HostageDistressItemDrop">
+    <HitAllies></HitAllies>
+    <HitSelf></HitSelf>
+    <Name>HostageDistressItem</Name>
+    <Tags>Cpu</Tags>
+    <Action>AddArtifactLoot</Action>
+    <Action>DropItems</Action>
+    <Description></Description>
+    <Meta>Add Artifact and drop it</Meta>
+    <Damage>0</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <ShotDelay></ShotDelay>
+    <MarkDuration></MarkDuration>
+    <DestroyOnHit></DestroyOnHit>
+    <Params rarity="2"></Params>
+    <DamageType></DamageType>
+    <OnCast></OnCast>
+  </Spell>
+  <Spell itemID="HostageDistressThanks">
+    <HitAllies></HitAllies>
+    <HitSelf></HitSelf>
+    <Name>HostageDistressMessage</Name>
+    <Tags>Cpu</Tags>
+    <Action>MessagePop</Action>
+    <Description></Description>
+    <Meta>Shows thanks message in talk bubble</Meta>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <MarkDuration></MarkDuration>
+    <DestroyOnHit></DestroyOnHit>
+    <Params messageText="Hostage_distressThanks" messageDuration="1"></Params>
     <DamageType></DamageType>
     <OnCast></OnCast>
   </Spell>
@@ -4488,7 +4651,7 @@
   </Spell>
   <Spell itemID="IceFactory">
     <Stats animWarning="SummonGridS" animMark="" animShot="SummonGridS" castSound="mark_01"
-      shotSound="mark_02"></Stats>
+           shotSound="mark_02"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4515,7 +4678,7 @@
   </Spell>
   <Spell itemID="IceFactoryRunt">
     <Stats animWarning="" animMark="PupperShotC" animShot="PupperShotC" castSound=""
-      shotSound="electrical_burst" setToGunPoint="Both"></Stats>
+           shotSound="electrical_burst" setToGunPoint="Both"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4541,8 +4704,8 @@
   </Spell>
   <Spell itemID="IceMaker">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animMark="" animShot="SummonGridS"
-      castSound="mark_01" shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.9"
-      bending="100"></Stats>
+           castSound="mark_01" shotSound="ice_rustle" setToGunPoint="Both" timeToTravel="0.9"
+           bending="100"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4582,7 +4745,7 @@
   </Spell>
   <Spell itemID="Lurker">
     <Stats animWarning="ExclamationC" animMark="LurkerIceC" animShot="" castSound="mark_01"
-      shotSound="ice_crash_hi"></Stats>
+           shotSound="ice_crash_hi"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4610,7 +4773,7 @@
   </Spell>
   <Spell itemID="Lurker2">
     <Stats animWarning="ExclamationC" animMark="LurkerIceC" animShot="" castSound="mark_01"
-      shotSound="ice_crash_hi"></Stats>
+           shotSound="ice_crash_hi"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4639,7 +4802,7 @@
   </Spell>
   <Spell itemID="Lurker3">
     <Stats animWarning="ExclamationC" animMark="LurkerIceC" animShot="" castSound="mark_01"
-      shotSound="ice_crash_hi"></Stats>
+           shotSound="ice_crash_hi"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4668,8 +4831,8 @@
   </Spell>
   <Spell itemID="Manticore">
     <Stats animWarning="ExclamationC" animObj="ManticoreShotC" animMark="ManticoreBlastC"
-      animShot="" introSound="" castSound="quick_swish" shotSound="ice_crash_short"
-      setToGunPoint="Both" timeToTravel="0.8" bending="70"></Stats>
+           animShot="" introSound="" castSound="quick_swish" shotSound="ice_crash_short"
+           setToGunPoint="Both" timeToTravel="0.8" bending="70"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4696,8 +4859,8 @@
   </Spell>
   <Spell itemID="Manticore2">
     <Stats animWarning="ExclamationC" animObj="ManticoreShotC" animMark="ManticoreBlastC"
-      animShot="" introSound="" castSound="quick_swish" shotSound="ice_crash_short"
-      setToGunPoint="Both" timeToTravel="0.8" bending="70"></Stats>
+           animShot="" introSound="" castSound="quick_swish" shotSound="ice_crash_short"
+           setToGunPoint="Both" timeToTravel="0.8" bending="70"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4724,8 +4887,8 @@
   </Spell>
   <Spell itemID="Manticore3">
     <Stats animWarning="ExclamationC" animObj="ManticoreShotC" animMark="ManticoreBlastC"
-      animShot="" introSound="" castSound="quick_swish" shotSound="ice_crash_short"
-      setToGunPoint="Both" timeToTravel="0.8" bending="70"></Stats>
+           animShot="" introSound="" castSound="quick_swish" shotSound="ice_crash_short"
+           setToGunPoint="Both" timeToTravel="0.8" bending="70"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4752,7 +4915,7 @@
   </Spell>
   <Spell itemID="MineVisual">
     <Stats animMark="ShockwaveShotS" animShot="" animWarning="" castSound="explosion_pop"
-      shotSound="" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4779,8 +4942,8 @@
   </Spell>
   <Spell itemID="MonolithGunX">
     <Stats animWarning="ExclamationC" animObj="RedBallShotS" animMark="GunRicoC" animShot=""
-      castSound="" shotSound="silenced_gun" setToGunPoint="Both" yVariance="0" timeToTravel="0.4"
-      bending="0"></Stats>
+           castSound="" shotSound="silenced_gun" setToGunPoint="Both" yVariance="0" timeToTravel="0.4"
+           bending="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4807,8 +4970,8 @@
   </Spell>
   <Spell itemID="MonolithIceX">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animMark="" animShot=""
-      warningSound="mark_01" castSound="" shotSound="ice_crash_hi" setToGunPoint="Both"
-      yVariance="0" timeToTravel="0.6" bending="0"></Stats>
+           warningSound="mark_01" castSound="" shotSound="ice_crash_hi" setToGunPoint="Both"
+           yVariance="0" timeToTravel="0.6" bending="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4870,7 +5033,7 @@
   </Spell>
   <Spell itemID="Reaper">
     <Stats animMark="SlashSpinC" animShot="" introSound="woosh_large" castSound=""
-      shotSound="woosh_fast" recoveryTime="0.4" hitboxWidth="3" hitboxHeight="3" hitboxOffsetX="0"></Stats>
+           shotSound="woosh_fast" recoveryTime="0.4" hitboxWidth="3" hitboxHeight="3" hitboxOffsetX="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4898,7 +5061,7 @@
   </Spell>
   <Spell itemID="Reaper2">
     <Stats animMark="SlashSpinC" animShot="" introSound="woosh_large" castSound=""
-      shotSound="woosh_fast" recoveryTime="0.4" hitboxWidth="3" hitboxHeight="3" hitboxOffsetX="0"></Stats>
+           shotSound="woosh_fast" recoveryTime="0.4" hitboxWidth="3" hitboxHeight="3" hitboxOffsetX="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4926,7 +5089,7 @@
   </Spell>
   <Spell itemID="Reaper3">
     <Stats animMark="SlashSpinC" animShot="" introSound="woosh_large" castSound=""
-      shotSound="woosh_fast" recoveryTime="0.4" hitboxWidth="3" hitboxHeight="3" hitboxOffsetX="0"></Stats>
+           shotSound="woosh_fast" recoveryTime="0.4" hitboxWidth="3" hitboxHeight="3" hitboxOffsetX="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4954,7 +5117,7 @@
   </Spell>
   <Spell itemID="ReflectShot">
     <Stats animMark="" animShot="ReflectShotS" castSound="" shotSound="laser_echo_zap"
-      setToGunPoint="None" yVariance="0" hitboxHeight="1"></Stats>
+           setToGunPoint="None" yVariance="0" hitboxHeight="1"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -4980,7 +5143,7 @@
   </Spell>
   <Spell itemID="ReflectShotTall">
     <Stats animMark="" animShot="ReflectShotTallS" castSound="" shotSound="laser_echo_zap"
-      setToGunPoint="None" yVariance="0" hitboxHeight="3"></Stats>
+           setToGunPoint="None" yVariance="0" hitboxHeight="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5022,7 +5185,7 @@
   </Spell>
   <Spell itemID="Runt">
     <Stats animWarning="" animMark="ShineBallC" animShot="ShineBallC" castSound=""
-      shotSound="electrical_burst" setToGunPoint="Both"></Stats>
+           shotSound="electrical_burst" setToGunPoint="Both"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5046,10 +5209,40 @@
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
+  <Spell itemID="SaffronOMGGun">
+    <Stats animMark="BowSnipeS" animShot="BowShotS" castSound="charge_vibe_40ms_low"
+           shotSound="hi_speed_electronic_whoosh" setToGunPoint="Vertical" yVariance="0"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>OMGGun</Name>
+    <Tags>Cpu</Tags>
+    <Action>Multishot</Action>
+    <Description></Description>
+    <Meta>Deals 9999 dmg pretty slowly, maybe they reflect who knows.</Meta>
+    <Flavor>When you want to kill someone</Flavor>
+    <Rarity>2</Rarity>
+    <Brand></Brand>
+    <Mana>0</Mana>
+    <Damage>9999</Damage>
+    <Shots>4</Shots>
+    <Tiles>1</Tiles>
+    <Pattern>FrontVertical</Pattern>
+    <TimeBetweenShots>0</TimeBetweenShots>
+    <ShotVelocity>400</ShotVelocity>
+    <Duration>1</Duration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0.45</CastDelay>
+    <MarkDuration>0.65</MarkDuration>
+    <DestroyOnHit>true</DestroyOnHit>
+    <DamageType></DamageType>
+    <OnCast></OnCast>
+  </Spell>
   <Spell itemID="ShielderArtillery">
     <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animMark="ArtilleryBlastC"
-      animShot="" castSound="energy_shot" shotSound="ice_beam" setToGunPoint="Both" timeToTravel="2"
-      bending="100"></Stats>
+           animShot="" castSound="energy_shot" shotSound="ice_beam" setToGunPoint="Both" timeToTravel="2"
+           bending="100"></Stats>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
     <HitStructures>true</HitStructures>
@@ -5074,7 +5267,7 @@
   </Spell>
   <Spell itemID="ShielderBeamDown">
     <Stats animMark="DiagBeamChargeS" animShot="DiagBeamShotS" introSound="charge_vibe_40ms_low"
-      castSound="whirl_monster" shotSound="" setToGunPoint="None" yVariance="0"></Stats>
+           castSound="whirl_monster" shotSound="" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5101,7 +5294,7 @@
   </Spell>
   <Spell itemID="ShielderBeamUp">
     <Stats animMark="" animShot="DiagBeamShotS" castSound="whirl_monster" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5128,7 +5321,7 @@
   </Spell>
   <Spell itemID="ShielderBeamBot">
     <Stats animMark="" animShot="DiagBeamShotS" introSound="charge_vibe_40ms_low" castSound=""
-      shotSound="" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5155,7 +5348,7 @@
   </Spell>
   <Spell itemID="ShielderBeamTop">
     <Stats animMark="" animShot="DiagBeamShotS" introSound="charge_vibe_40ms_low" castSound=""
-      shotSound="" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5182,7 +5375,7 @@
   </Spell>
   <Spell itemID="ShielderBigShield">
     <Stats animMark="" animShot="" castSound="zap_fast" shotSound="" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitSelf>true</HitSelf>
     <HitStructures>true</HitStructures>
@@ -5210,7 +5403,7 @@
   </Spell>
   <Spell itemID="ShielderReflect">
     <Stats animMark="" animShot="" castSound="misc_shimmer" shotSound="" setToGunPoint="None"
-      yVariance="0"></Stats>
+           yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <Name>ShielderReflect</Name>
     <Tags>Cpu</Tags>
@@ -5233,7 +5426,7 @@
   </Spell>
   <Spell itemID="ShielderSlam">
     <Stats animMark="ShockwaveShotS" animShot="" animWarning="" introSound="plasma_explosion"
-      castSound="" shotSound="thud_low" setToGunPoint="None" yVariance="0"></Stats>
+           castSound="" shotSound="thud_low" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5260,8 +5453,8 @@
   </Spell>
   <Spell itemID="ShielderSummon">
     <Stats animWarning="ExclamationC" animObj="DiagBeamShotS" animMark="DiagBeamShotS"
-      animShot="SummonGridS" castSound="mark_01" shotSound="mark_02" setToGunPoint="Both"
-      timeToTravel="0.3" bending="30"></Stats>
+           animShot="SummonGridS" castSound="mark_01" shotSound="mark_02" setToGunPoint="Both"
+           timeToTravel="0.3" bending="30"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5290,7 +5483,7 @@
   </Spell>
   <Spell itemID="ShielderThrow">
     <Stats animMark="" animShot="ShieldLargeS" castSound="beam_shot_loud" shotSound=""
-      setToGunPoint="None" yVariance="0" hitboxHeight="3"></Stats>
+           setToGunPoint="None" yVariance="0" hitboxHeight="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5317,7 +5510,7 @@
   </Spell>
   <Spell itemID="ShopkeeperFinalBeam">
     <Stats animMark="" animShot="BeamLaserS" castSound="" shotSound="laser_rocket"
-      setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="4"></Stats>
+           setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="4"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5344,7 +5537,7 @@
   </Spell>
   <Spell itemID="ShopkeeperFinalWarning">
     <Stats animWarning="ExclamationC" animMark="" animShot="" castSound="mark_01" introSound=""
-      shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5371,8 +5564,8 @@
   </Spell>
   <Spell itemID="ShopkeeperThrow">
     <Stats animWarning="ExclamationC" animObj="TabletShotS" animMark="" animShot="ArtilleryBlastC"
-      introSound="" castSound="quick_swish" shotSound="explosion_bump" setToGunPoint="Both"
-      timeToTravel="0.2" bending="10"></Stats>
+           introSound="" castSound="quick_swish" shotSound="explosion_bump" setToGunPoint="Both"
+           timeToTravel="0.2" bending="10"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5400,7 +5593,7 @@
   </Spell>
   <Spell itemID="ShopkeeperBoomerang">
     <Stats animMark="DiagBeamChargeS" animShot="DiagBeamShotS" castSound="wiffle_buzz_fade"
-      shotSound="" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5429,7 +5622,7 @@
   </Spell>
   <Spell itemID="ShopkeeperBeamDown">
     <Stats animMark="DiagBeamChargeS" animShot="DiagBeamShotS" introSound="charge_vibe_40ms_low"
-      castSound="whirl_monster" shotSound="" setToGunPoint="None" yVariance="0"></Stats>
+           castSound="whirl_monster" shotSound="" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5456,7 +5649,7 @@
   </Spell>
   <Spell itemID="ShopkeeperBeamUp">
     <Stats animMark="" animShot="DiagBeamShotS" castSound="whirl_monster" shotSound=""
-      setToGunPoint="None" yVariance="0"></Stats>
+           setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5483,7 +5676,7 @@
   </Spell>
   <Spell itemID="ShopkeeperPull">
     <Stats animMark="" animShot="PullShotS" introSound="beam_shot_low" shotSound="beam_shot_low"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5512,7 +5705,7 @@
   </Spell>
   <Spell itemID="ShopkeeperSlam">
     <Stats animMark="ShockwaveShotS" animShot="" animWarning="" introSound="plasma_explosion"
-      castSound="" shotSound="thud_low" setToGunPoint="None" yVariance="0"></Stats>
+           castSound="" shotSound="thud_low" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5539,7 +5732,7 @@
   </Spell>
   <Spell itemID="ShopkeeperSummon">
     <Stats animWarning="ExclamationC" ObjMark="DiagBeamShotS" animMark="" animShot="SummonGridS"
-      castSound="mark_01" shotSound="mark_02" setToGunPoint="Both" timeToTravel="0.3" bending="30"></Stats>
+           castSound="mark_01" shotSound="mark_02" setToGunPoint="Both" timeToTravel="0.3" bending="30"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5567,7 +5760,7 @@
   </Spell>
   <Spell itemID="ShopkeeperFinale">
     <Stats animMark="" animShot="BeamLaserS" introSound="laser_rocket" shotSound="beam_shot_low"
-      setToGunPoint="Both" yVariance="0" hitboxWidth="9" hitboxHeight="1" hitboxOffsetX="3"></Stats>
+           setToGunPoint="Both" yVariance="0" hitboxWidth="9" hitboxHeight="1" hitboxOffsetX="3"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5594,7 +5787,7 @@
   </Spell>
   <Spell itemID="ShopkeeperPattern">
     <Stats animWarning="ExclamationC" animMark="" animShot="BreakerBeamC" castSound="mark_01"
-      shotSound="beam_shot_low" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="beam_shot_low" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5622,7 +5815,7 @@
   </Spell>
   <Spell itemID="ShopkeeperPatternShort">
     <Stats animWarning="ExclamationC" animMark="" animShot="BreakerBeamC" castSound="mark_01"
-      shotSound="beam_shot_low" setToGunPoint="None" yVariance="0"></Stats>
+           shotSound="beam_shot_low" setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5650,8 +5843,8 @@
   </Spell>
   <Spell itemID="SiloMissile">
     <Stats animObj="ManticoreShotC" animMark="ManticoreShotC" animShot="ThunderC" castSound=""
-      shotSound="thunderclap" setToGunPoint="None" yVariance="" timeToTravel="6" bending="70"
-      hitboxWidth="20" hitboxHeight="10"></Stats>
+           shotSound="thunderclap" setToGunPoint="None" yVariance="" timeToTravel="6" bending="70"
+           hitboxWidth="20" hitboxHeight="10"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -5679,8 +5872,8 @@
   </Spell>
   <Spell itemID="Slasher">
     <Stats animWarning="ExclamationC" animMark="ArtilleryShotC" animShot="SlasherShotS"
-      warningSound="" castSound="" shotSound="hi_speed_electronic_whoosh" setToGunPoint="Both"
-      hitboxHeight="2" hitboxOffsetY="0.5"></Stats>
+           warningSound="" castSound="" shotSound="hi_speed_electronic_whoosh" setToGunPoint="Both"
+           hitboxHeight="2" hitboxOffsetY="0.5"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5709,7 +5902,7 @@
   </Spell>
   <Spell itemID="Sniper">
     <Stats animWarning="ExclamationC" animMark="RedBallChargeS" animShot="RedBallShotS"
-      warningSound="" castSound="charge_8bit_30ms" shotSound="energy_shot" setToGunPoint="Both"></Stats>
+           warningSound="" castSound="charge_8bit_30ms" shotSound="energy_shot" setToGunPoint="Both"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5737,8 +5930,8 @@
   </Spell>
   <Spell itemID="Spearper">
     <Stats animMark="SpearSlashS" animShot="" introSound="woosh_large" castSound=""
-      shotSound="hi_speed_electronic_whoosh" recoveryTime="0.4" slashLocation="2"
-      setToGunPoint="Both" hitboxWidth="4" hitboxHeight="1" hitboxOffsetX="0"></Stats>
+           shotSound="hi_speed_electronic_whoosh" recoveryTime="0.4" slashLocation="2"
+           setToGunPoint="Both" hitboxWidth="4" hitboxHeight="1" hitboxOffsetX="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5767,7 +5960,7 @@
   </Spell>
   <Spell itemID="Stalker">
     <Stats animWarning="ExclamationC" animMark="StormIceS" animShot="" warningSound="mark_01"
-      castSound="mark_01" shotSound="ice_beam"></Stats>
+           castSound="mark_01" shotSound="ice_beam"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -5797,7 +5990,7 @@
   </Spell>
   <Spell itemID="StalkerX">
     <Stats animWarning="ExclamationC" animMark="StormIceS" animShot="" warningSound="mark_01"
-      castSound="mark_01" shotSound="ice_beam"></Stats>
+           castSound="mark_01" shotSound="ice_beam"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -5845,7 +6038,7 @@
   </Spell>
   <Spell itemID="TileExplosion">
     <Stats animMark="Explosion3x3S" animShot="" castSound="explosion_bump" shotSound=""
-      setToGunPoint="None" yVariance="0" hitboxHeight="3" hitboxWidth="3"></Stats>
+           setToGunPoint="None" yVariance="0" hitboxHeight="3" hitboxWidth="3"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf>true</HitSelf>
@@ -5871,7 +6064,7 @@
   </Spell>
   <Spell itemID="TinyShot">
     <Stats animMark="BasicCastC" animShot="WhiteBulletC" castSound="" shotSound="mark_02"
-      setToGunPoint="Both" yVariance="1"></Stats>
+           setToGunPoint="Both" yVariance="1"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5880,10 +6073,10 @@
     <Tags>Cpu, Drone</Tags>
     <Action>Multishot</Action>
     <Description></Description>
-    <Meta>Fires a 1 dmg shot</Meta>
+    <Meta>Fires a 2 dmg shot</Meta>
     <Flavor>Hey you can't read this!</Flavor>
     <Brand>Hexawan</Brand>
-    <Damage>1</Damage>
+    <Damage>2</Damage>
     <Shots>1</Shots>
     <Tiles>1</Tiles>
     <Pattern>Current</Pattern>
@@ -5898,7 +6091,7 @@
   </Spell>
   <Spell itemID="Tracker">
     <Stats animWarning="ExclamationC" animMark="ManticoreShotC" animShot="ManticoreBlastC"
-      castSound="energy_shot" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="0.8"></Stats>
+           castSound="energy_shot" shotSound="ice_crash_short" setToGunPoint="Both" timeToTravel="0.8"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5925,7 +6118,7 @@
   </Spell>
   <Spell itemID="TurretGun">
     <Stats animMark="" animShot="WhiteBulletC" castSound="" shotSound="mark_02_low"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5951,7 +6144,7 @@
   </Spell>
   <Spell itemID="TurretLaser">
     <Stats animMark="" animShot="BeamLaserS" castSound="" shotSound="sniper_ringshot"
-      setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="3.5"></Stats>
+           setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="3.5"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -5978,7 +6171,7 @@
   </Spell>
   <Spell itemID="ViNoteShot">
     <Stats animMark="FrostboltChargeS" animShot="NoteSoloShotS" castSound="" shotSound="cowbell"
-      setToGunPoint="Both" yVariance="0"></Stats>
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -6007,8 +6200,8 @@
   </Spell>
   <Spell itemID="Volcano">
     <Stats animWarning="ExclamationC" animObj="ManticoreShotC" animMark=""
-      animShot="ManticoreBlastC" castSound="energy_shot" shotSound="ice_crash_short"
-      setToGunPoint="Both" timeToTravel="0.8" bending="70"></Stats>
+           animShot="ManticoreBlastC" castSound="energy_shot" shotSound="ice_crash_short"
+           setToGunPoint="Both" timeToTravel="0.8" bending="70"></Stats>
     <HitAllies>true</HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>

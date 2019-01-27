@@ -43,7 +43,7 @@
     <MustDestroy>True</MustDestroy>
     <DeathDelay>1</DeathDelay>
     <Stats localGunPointPos="0,-4" localTimerPos="0,-4" animName="Chest-Common"
-      dieSound="explode_fire"></Stats>
+           dieSound="explode_fire"></Stats>
   </Being>
   <Being beingID="ChestRare">
     <Name>Chest</Name>
@@ -60,7 +60,7 @@
     <MustDestroy>True</MustDestroy>
     <DeathDelay>1</DeathDelay>
     <Stats localGunPointPos="0,-4" localTimerPos="0,-4" animName="Chest-Rare"
-      dieSound="explode_fire"></Stats>
+           dieSound="explode_fire"></Stats>
   </Being>
   <Being beingID="ChestEpic">
     <Name>Chest</Name>
@@ -77,7 +77,7 @@
     <MustDestroy>True</MustDestroy>
     <DeathDelay>1</DeathDelay>
     <Stats localGunPointPos="0,-4" localTimerPos="0,-4" animName="Chest-Epic"
-      dieSound="explode_fire"></Stats>
+           dieSound="explode_fire"></Stats>
   </Being>
   <Being beingID="ChestLegendary">
     <Name>Chest</Name>
@@ -94,7 +94,7 @@
     <MustDestroy>True</MustDestroy>
     <DeathDelay>1</DeathDelay>
     <Stats localGunPointPos="0,-4" localTimerPos="0,-4" animName="Chest-Legendary"
-      dieSound="explode_fire"></Stats>
+           dieSound="explode_fire"></Stats>
   </Being>
   <Being beingID="ChestHeal">
     <Name>Chest Heal</Name>
@@ -107,8 +107,8 @@
     <Defense></Defense>
     <LerpTime></LerpTime>
     <Stagger>false</Stagger>
-    <Timeout>ClearSelf</Timeout>
     <Deathrattle>ChestHealShot</Deathrattle>
+    <Timeout>ClearSelf</Timeout>
     <OnDeath></OnDeath>
     <MustDestroy>True</MustDestroy>
     <DeathDelay>1.15</DeathDelay>
@@ -117,7 +117,7 @@
   <Being beingID="ChestCursed">
     <Name>Chest Cursed</Name>
     <Startup>ChestCursed</Startup>
-    <Health>200</Health>
+    <Health>100</Health>
     <Experience>200</Experience>
     <Money>20</Money>
     <StartDelay>1</StartDelay>
@@ -133,7 +133,7 @@
   <Being beingID="ChestCursed2">
     <Name>Chest Cursed</Name>
     <Startup>ChestCursed</Startup>
-    <Health>200</Health>
+    <Health>100</Health>
     <Experience>200</Experience>
     <Money>20</Money>
     <StartDelay>1</StartDelay>
@@ -149,7 +149,7 @@
   <Being beingID="ChestCursed3">
     <Name>Chest Cursed</Name>
     <Startup>ChestCursed</Startup>
-    <Health>200</Health>
+    <Health>100</Health>
     <Experience>200</Experience>
     <Money>20</Money>
     <StartDelay>1</StartDelay>
@@ -165,7 +165,7 @@
   <Being beingID="ChestCursedHell">
     <Name>Chest Cursed Hell</Name>
     <Startup>ChestCursed</Startup>
-    <Health>200</Health>
+    <Health>100</Health>
     <Experience>200</Experience>
     <Money>20</Money>
     <StartDelay>1</StartDelay>
@@ -220,6 +220,27 @@
     <Defense></Defense>
     <LerpTime></LerpTime>
     <Stagger>true</Stagger>
+    <ClearSpell>ChestHealShot</ClearSpell>
+    <ClearSpell>HostageThanks</ClearSpell>
+    <ClearSpell>HostageSaved</ClearSpell>
+    <OnDeath></OnDeath>
+    <DeathDelay>2</DeathDelay>
+    <Stats localGunPointPos="0,-4" animName="Hostage"></Stats>
+  </Being>
+  <Being beingID="HostageDistress">
+    <Name>Hostage</Name>
+    <Startup>HostageDistressTimed</Startup>
+    <Health>90</Health>
+    <Deck>HostageMessageDistress</Deck>
+    <Experience>0</Experience>
+    <Money>3</Money>
+    <StartDelay>2</StartDelay>
+    <LoopDelay>21</LoopDelay>
+    <Defense></Defense>
+    <LerpTime></LerpTime>
+    <Stagger>true</Stagger>
+    <Timeout>ClearSelf</Timeout>
+    <ClearSpell>HostageDistressItemDrop</ClearSpell>
     <ClearSpell>ChestHealShot</ClearSpell>
     <ClearSpell>HostageThanks</ClearSpell>
     <ClearSpell>HostageSaved</ClearSpell>
@@ -349,7 +370,7 @@
     <Stats localGunPointPos="0,20" animName="Campfire" dieSound="explode_fire"></Stats>
   </Being>
   <Being beingID="Silo">
-    <Name>Silo</Name>
+    <Name>Timebomb</Name>
     <Startup>SiloMissile</Startup>
     <Health>1000</Health>
     <Experience>0</Experience>

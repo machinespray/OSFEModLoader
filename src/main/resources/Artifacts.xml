@@ -71,7 +71,7 @@
   <Artifact itemID="AdaptiveArmor">
     <Name>Adaptive Armor</Name>
     <App trigger="OnPlayerHit" effect="Shield" amount="2"></App>
-    <Description>Gain 2 shield on hit</Description>
+    <Description>Gain 2 shield when you get hit</Description>
     <Flavor>You're only making me stronger! (by 999999999)</Flavor>
     <Rarity>3</Rarity>
   </Artifact>
@@ -179,6 +179,14 @@
     <Rarity>2</Rarity>
     <Brand></Brand>
   </Artifact>
+  <Artifact itemID="Eschaton">
+    <Name>Eschaton</Name>
+    <App trigger="OnMove" effect="Shield" amount="1"></App>
+    <Description>Gain shield on move</Description>
+    <Flavor>Reva's shield, it has a name.</Flavor>
+    <Rarity>3</Rarity>
+    <Brand></Brand>
+  </Artifact>
   <Artifact itemID="ExplosiveTendons">
     <Name>Explosive Tendons</Name>
     <Tags>Demo</Tags>
@@ -209,6 +217,8 @@
     <Tags>Demo, Negative</Tags>
     <App trigger="OnEquip" effect="Heal" amount="9999"></App>
     <App trigger="OnEquip" effect="Defense" amount="-5"></App>
+    <App trigger="OnEquip" effect="SpellPower" amount="1"></App>
+    <App trigger="OnEquip" effect="AtkDmg" amount="1"></App>
     <Description>Heal to full health, -5 Defense</Description>
     <Flavor>Worth... right?</Flavor>
     <Rarity>3</Rarity>
@@ -218,6 +228,7 @@
     <Name>Honing Steel</Name>
     <Tags>Demo</Tags>
     <App trigger="OnEquip" effect="AtkDmg" amount="2"></App>
+    <App trigger="OnEquip" effect="ManaRegen" amount="0.05"></App>
     <Description>+2 Basic Attack</Description>
     <Flavor>if you have a good idea for a name for this item, email me at OneStepFromEden@gmail.com</Flavor>
     <Rarity>1</Rarity>
@@ -269,7 +280,7 @@
     <Tags>BonusRe</Tags>
     <App trigger="OnEquip" effect="HoverTile"></App>
     <Description>Walk over broken/empty tiles</Description>
-    <Flavor>(BonusRe)</Flavor>
+    <Flavor></Flavor>
     <Rarity>3</Rarity>
     <Brand></Brand>
   </Artifact>
@@ -388,7 +399,7 @@
     <Rarity>2</Rarity>
     <Brand></Brand>
   </Artifact>
-  <Artifact itemID="SpazDrone">
+  <Artifact itemID="StepDrone">
     <Name>Spaz Drone</Name>
     <Tags>Demo</Tags>
     <App trigger="OnMove" effect="CastSpell" value="TinyShot"></App>
@@ -426,7 +437,6 @@
   </Artifact>
   <Artifact itemID="SubTank">
     <Name>Sub Tank</Name>
-    <Tags>Demo</Tags>
     <App trigger="OnPlayerDeath" effect="Heal" amount="600"></App>
     <App trigger="OnPlayerDeath" effect="Deplete"></App>
     <Description>Come back to life and heal 600 hp on death, only works once</Description>
