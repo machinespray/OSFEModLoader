@@ -87,8 +87,37 @@
     <DamageType></DamageType>
     <OnCast duration="3" amount="0.5">Chrono</OnCast>
   </Spell>
+  <Spell itemID="FreezeGun">
+    <Stats animMark="ShineBallC" animShot="BasicSpellC" castSound="" shotSound="laser_echo_zap"
+           cooldown="0.05" setToGunPoint="Both" yVariance="0"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>Time Gun</Name>
+    <Tags>Weapon</Tags>
+    <Action>Multishot</Action>
+    <Description></Description>
+    <Meta>Slows time</Meta>
+    <Flavor>MAtrix</Flavor>
+    <Brand></Brand>
+    <Mana>0</Mana>
+    <Damage>0</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <Pattern>Current</Pattern>
+    <TimeBetweenShots>0.02</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <Duration>0</Duration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <MarkDuration>1</MarkDuration>
+    <DestroyOnHit>false</DestroyOnHit>
+    <DamageType></DamageType>
+    <OnCast duration="3" amount="0.001">Chrono</OnCast>
+  </Spell>
   <Spell itemID="CampaignReflector">
-    <Stats animMark="" animShot="" castSound="misc_shimmer" shotSound="" cooldown="0.05"
+    <Stats animMark="" animShot="" castSound="misc_shimmer" shotSound="" cooldown="0.2"
            setToGunPoint="None" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <Name>Reflector</Name>
@@ -105,7 +134,7 @@
     <ShotVelocity>0</ShotVelocity>
     <Duration>0</Duration>
     <ShotDelay></ShotDelay>
-    <CastDelay>0.3</CastDelay>
+    <CastDelay>0</CastDelay>
     <MarkDuration>0</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <DamageType>Zero</DamageType>
@@ -447,9 +476,8 @@
     <OnCast amount="60" value="BlastCrystal">Summon</OnCast>
   </Spell>
   <Spell itemID="BombToss">
-    <Stats animWarning="ExclamationC" animObj="ArtilleryShotC" animShot="SummonGridS"
-           castSound="woosh_large" shotSound="thud_low" setToGunPoint="Both" timeToTravel="0.7"
-           bending="100"></Stats>
+    <Stats animWarning="ExclamationC" animObj="BombS" animShot="SummonGridS" castSound="woosh_large"
+           shotSound="thud_low" setToGunPoint="Both" timeToTravel="0.7" bending="100"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -461,8 +489,8 @@
     <Meta>Throw a destroyable bomb 4 tiles ahead</Meta>
     <Flavor>Don't Fuze the hostage.</Flavor>
     <Rarity>1</Rarity>
-    <Mana>1</Mana>
-    <Damage>50</Damage>
+    <Mana>2</Mana>
+    <Damage>150</Damage>
     <Shots>1</Shots>
     <Tiles>4</Tiles>
     <Pattern>Front</Pattern>
@@ -957,7 +985,7 @@
     <CastDelay>0.1</CastDelay>
     <MarkDuration></MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="Right" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpRight" lerpPattern="Ricochet" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
   </Spell>
   <Spell itemID="EarthPrayer">
@@ -3875,7 +3903,7 @@
     <Description></Description>
     <Meta>3x3 explosion on last target hit</Meta>
     <Mana>0</Mana>
-    <Damage>100</Damage>
+    <Damage>150</Damage>
     <Shots>1</Shots>
     <Tiles>1</Tiles>
     <Pattern>Current</Pattern>
@@ -4524,22 +4552,6 @@
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
-  <Spell itemID="HostageMessage">
-    <HitAllies></HitAllies>
-    <HitSelf></HitSelf>
-    <Name>Hostage Message</Name>
-    <Tags>Cpu</Tags>
-    <Action>MessagePop</Action>
-    <Description></Description>
-    <Meta>Shows help message in talk bubble 1sec</Meta>
-    <ShotDelay></ShotDelay>
-    <CastDelay>0</CastDelay>
-    <MarkDuration></MarkDuration>
-    <DestroyOnHit></DestroyOnHit>
-    <Params messageText="Hostage_help" messageDuration="1"></Params>
-    <DamageType></DamageType>
-    <OnCast></OnCast>
-  </Spell>
   <Spell itemID="HostageDistressTimed">
     <HitAllies></HitAllies>
     <HitSelf></HitSelf>
@@ -4589,7 +4601,7 @@
     <ShotDelay></ShotDelay>
     <MarkDuration></MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params rarity="2"></Params>
+    <Params rarity="-1"></Params>
     <DamageType></DamageType>
     <OnCast></OnCast>
   </Spell>
@@ -4606,6 +4618,22 @@
     <MarkDuration></MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <Params messageText="Hostage_distressThanks" messageDuration="1"></Params>
+    <DamageType></DamageType>
+    <OnCast></OnCast>
+  </Spell>
+  <Spell itemID="HostageMessage">
+    <HitAllies></HitAllies>
+    <HitSelf></HitSelf>
+    <Name>Hostage Message</Name>
+    <Tags>Cpu</Tags>
+    <Action>MessagePop</Action>
+    <Description></Description>
+    <Meta>Shows help message in talk bubble 1sec</Meta>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <MarkDuration></MarkDuration>
+    <DestroyOnHit></DestroyOnHit>
+    <Params messageText="Hostage_help" messageDuration="1"></Params>
     <DamageType></DamageType>
     <OnCast></OnCast>
   </Spell>
@@ -4985,7 +5013,7 @@
     <Shots>9999</Shots>
     <Tiles>1</Tiles>
     <Pattern>PlayerCrossSmall</Pattern>
-    <TimeBetweenShots>4</TimeBetweenShots>
+    <TimeBetweenShots>5</TimeBetweenShots>
     <ShotVelocity>0.1</ShotVelocity>
     <Duration>0.2</Duration>
     <ShotDelay></ShotDelay>
@@ -5288,7 +5316,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="Down" lerpPattern="ReverseRicochet" lerpDelay="0"></Params>
+    <Params lerpDirection="DownLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5643,7 +5671,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="Down" lerpPattern="ReverseRicochet" lerpDelay="0"></Params>
+    <Params lerpDirection="DownLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -6169,6 +6197,31 @@
     <DamageType></DamageType>
     <OnCast></OnCast>
   </Spell>
+  <Spell itemID="ViNoteBeam">
+    <Stats animMark="BeamLaserS" animShot="" introSound="trance-kick" shotSound="beam_shot_low"
+           setToGunPoint="Both" yVariance="0" hitboxWidth="7" hitboxHeight="1" hitboxOffsetX="3"></Stats>
+    <HitAllies></HitAllies>
+    <HitEnemies>true</HitEnemies>
+    <HitSelf></HitSelf>
+    <HitStructures>true</HitStructures>
+    <Name>NoteBeam</Name>
+    <Tags>Cpu</Tags>
+    <Action>Multishot</Action>
+    <Description></Description>
+    <Meta>Shoot laser, vi</Meta>
+    <Damage>50</Damage>
+    <Shots>1</Shots>
+    <Tiles>1</Tiles>
+    <Pattern>Current</Pattern>
+    <TimeBetweenShots>0</TimeBetweenShots>
+    <ShotVelocity>0</ShotVelocity>
+    <Duration>0.05</Duration>
+    <ShotDelay></ShotDelay>
+    <CastDelay>0</CastDelay>
+    <MarkDuration>0.3</MarkDuration>
+    <DestroyOnHit></DestroyOnHit>
+    <DamageType></DamageType>
+  </Spell>
   <Spell itemID="ViNoteShot">
     <Stats animMark="FrostboltChargeS" animShot="NoteSoloShotS" castSound="" shotSound="cowbell"
            setToGunPoint="Both" yVariance="0"></Stats>
@@ -6176,7 +6229,7 @@
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
     <HitStructures>true</HitStructures>
-    <Name>Strike</Name>
+    <Name>NoteShot</Name>
     <Tags>Cpu</Tags>
     <Action>Multishot</Action>
     <Description></Description>

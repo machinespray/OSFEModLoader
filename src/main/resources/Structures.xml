@@ -242,7 +242,7 @@
     <Timeout>ClearSelf</Timeout>
     <ClearSpell>HostageDistressItemDrop</ClearSpell>
     <ClearSpell>ChestHealShot</ClearSpell>
-    <ClearSpell>HostageThanks</ClearSpell>
+    <ClearSpell>HostageDistressThanks</ClearSpell>
     <ClearSpell>HostageSaved</ClearSpell>
     <OnDeath></OnDeath>
     <DeathDelay>2</DeathDelay>
