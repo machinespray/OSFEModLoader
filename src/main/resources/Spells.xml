@@ -1538,7 +1538,7 @@
     <CastDelay>0</CastDelay>
     <MarkDuration></MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="Down" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="DownRight" lerpPattern="Ricochet" lerpDelay="0"></Params>
     <DamageType></DamageType>
     <OnCast></OnCast>
     <OnHit>Frost</OnHit>
@@ -4080,7 +4080,7 @@
     <MarkDuration></MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <WarningDuration>0.3</WarningDuration>
-    <Params lerpDirection="Up" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -4548,7 +4548,7 @@
     <CastDelay>0.3</CastDelay>
     <MarkDuration>0.3</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="Up" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5343,7 +5343,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="Up" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5370,7 +5370,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="Down" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="DownRight" lerpPattern="Ricochet" lerpDelay="0"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5397,7 +5397,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="Right" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpRight" lerpPattern="Ricochet" lerpDelay="0"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5698,7 +5698,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="Up" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>

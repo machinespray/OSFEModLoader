@@ -9,7 +9,7 @@ import java.io.StringWriter;
 
 public class Main {
 	public static final int revision = 1;
-	public static final String targetVersion = "v153";
+	public static final String targetVersion = "v155";
 	//TODO(there's definitly a better way to do this logistically)
 	public static final XmlHolder spellHolder = new XmlHolder("Spells.xml");
 	public static final XmlHolder artifactHolder = new XmlHolder("Artifacts.xml");
