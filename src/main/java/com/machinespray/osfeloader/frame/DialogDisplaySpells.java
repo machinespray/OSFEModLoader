@@ -4,6 +4,7 @@ import com.machinespray.osfeloader.Main;
 import com.machinespray.osfeloader.handler.LuaHandler;
 import com.machinespray.osfeloader.handler.MouseHandler;
 import com.machinespray.osfeloader.handler.SaveHandler;
+import com.machinespray.osfeloader.xml.XmlHolder;
 
 import javax.swing.*;
 import java.awt.*;
@@ -97,9 +98,8 @@ public class DialogDisplaySpells extends JDialog {
 
 	private void onOK() {
 		try {
-			SaveHandler.doOutput(Main.spellHolder);
-			SaveHandler.doOutput(Main.artifactHolder);
-			SaveHandler.doOutput(Main.structureHolder);
+			for (XmlHolder holder : Main.simpleSolutions)
+				SaveHandler.doOutput(holder);
 			new LuaHandler().migrateLua();
 		} catch (Exception e) {
 			Main.handleError(e);
@@ -115,8 +115,8 @@ public class DialogDisplaySpells extends JDialog {
 	}
 
 	private void createUIComponents() {
-		spellDisplay = Main.spellHolder.getTree();
-		artifactDisplay = Main.artifactHolder.getTree();
+		spellDisplay = Main.simpleSolutions[0].getTree();
+		artifactDisplay = Main.simpleSolutions[1].getTree();
 	}
 
 	/**

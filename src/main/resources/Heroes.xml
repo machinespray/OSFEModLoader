@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Beings>
+  <Being beingID="SaffronDemo">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Demo</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>1200</Health>
+    <MaxHealth>1200</MaxHealth>
+    <Money>0</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.65</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Thunder</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>StepSlash</Deck>
+    <Deck>Frostbolt</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronDemoAlt">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Demo</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>1200</Health>
+    <MaxHealth>1200</MaxHealth>
+    <Money>0</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.65</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Thunder</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>StepSlash</Deck>
+    <Deck>BladeThrow</Deck>
+    <Deck>BladeThrow</Deck>
+    <Artifacts></Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronDemoTest">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Demo</Description>
+    <Weapon>GodGun</Weapon>
+    <Health>400</Health>
+    <MaxHealth>1200</MaxHealth>
+    <Money>0</Money>
+    <MaxMana>9</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>5</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Glassify</Deck>
+    <Deck>Minigun</Deck>
+    <Deck>Knife</Deck>
+    <Deck>Knife</Deck>
+    <Deck>Knife</Deck>
+    <Deck>Knife</Deck>
+    <Deck>Knife</Deck>
+    <Deck>Knife</Deck>
+    <Deck>Knife</Deck>
+    <Deck>Knife</Deck>
+    <Deck>Kunai</Deck>
+    <Deck>Kunai</Deck>
+    <Deck>BowSnipe</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="RevaDemo">
+    <Name>Reva</Name>
+    <Tags>Test</Tags>
+    <Description>Demo Reva</Description>
+    <Weapon>CampaignReflector</Weapon>
+    <Health>800</Health>
+    <MaxHealth>800</MaxHealth>
+    <Money>0</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.65</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>2</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>ShieldCatch</Deck>
+    <Deck>ShieldThrow</Deck>
+    <Deck>DiagBeam</Deck>
+    <Deck>ShieldBeam</Deck>
+    <Artifacts>Eschaton</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Reva" splashSprite="ShielderSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronDemoLive">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Demo</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>1400</Health>
+    <MaxHealth>1400</MaxHealth>
+    <Money>0</Money>
+    <MaxMana>4</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.65</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Thunder</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>StepSlash</Deck>
+    <Deck>Frostbolt</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronCampaign">
+    <Name>Saffron</Name>
+    <Tags>Campaign,  Saffron</Tags>
+    <Description>A military scientist, she's adept with all types of spells.</Description>
+    <Weapon>GodGun</Weapon>
+    <Health>800</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>10000</Money>
+    <MaxMana>8</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.65</ManaRegen>
+    <ShuffleTime>0.5</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>PekingFire</Deck>
+    <Deck>ShieldsUp</Deck>
+    <Deck>DeckSlam</Deck>
+    <Deck>Viruspell</Deck>
+    <Deck>BombToss</Deck>
+    <Deck>BombToss</Deck>
+    <Deck>BombToss</Deck>
+    <Deck>BombToss</Deck>
+    <Deck>Pyroblast</Deck>
+    <Artifacts>Bandaids</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronEx01">
+    <Name>Saffron</Name>
+    <Tags>Test, Saffron</Tags>
+    <Description>She took her tried and true spells that would take her through any situation.</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>800</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>100</Money>
+    <MaxMana>6</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>2</ManaRegen>
+    <ShuffleTime>0.5</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Thunder</Deck>
+    <Deck>Frostbolt</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>StepSlash</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronEx02">
+    <Name>Saffron</Name>
+    <Tags>Test, Saffron</Tags>
+    <Description>She took her tried and true spells that would take her through any situation.</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>120</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>100</Money>
+    <MaxMana>6</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>2</ManaRegen>
+    <ShuffleTime>0.5</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Ragnarok</Deck>
+    <Deck>Minigun</Deck>
+    <Deck>FrostBarrage</Deck>
+    <Deck>BowSnipe</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>Breakout</Deck>
+    <Deck>InfinityBeam</Deck>
+    <Deck>StepSpin</Deck>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>ManaGem</Artifacts>
+    <Artifacts>ManaVein</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronEx03">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Ex03</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>470</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>4</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>1.2</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>KineticWave</Deck>
+    <Deck>BoomerangIce</Deck>
+    <Deck>Reflector</Deck>
+    <Deck>StepSlash</Deck>
+    <Deck>Ragnarok</Deck>
+    <Deck>Viruspell</Deck>
+    <Deck>BladeRain</Deck>
+    <Deck>Knife</Deck>
+    <Deck>Knife</Deck>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>ManaGem</Artifacts>
+    <Artifacts>ManaVein</Artifacts>
+    <Artifacts>ColdPressedJuice</Artifacts>
+    <Artifacts>Scales</Artifacts>
+    <Artifacts>Champagne</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronRR">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Blank RR</Description>
+    <Weapon>GodGun</Weapon>
+    <Health>800</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>10000</Money>
+    <MaxMana>8</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>10.7</ManaRegen>
+    <ShuffleTime>0.5</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>StepRise</Deck>
+    <Deck>StepRise</Deck>
+    <Deck>PoisonDart</Deck>
+    <Deck>SumTurretGun</Deck>
+    <Deck>MagicClaw</Deck>
+    <Artifacts>SaigonArmor</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronLos">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Lots of spells</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>540</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>1.5</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Crossfire</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>InfinityBeam</Deck>
+    <Deck>Reflector</Deck>
+    <Deck>StepSlash</Deck>
+    <Deck>SumTurretGun</Deck>
+    <Deck>MagicClaw</Deck>
+    <Deck>DeckSlam</Deck>
+    <Deck>BowSnipe</Deck>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>ManaGem</Artifacts>
+    <Artifacts>ManaVein</Artifacts>
+    <Artifacts>Thornmail</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronWeak">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Weak</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>80</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.9</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Glassify</Deck>
+    <Deck>Thunder</Deck>
+    <Deck>StepSlash</Deck>
+    <Deck>PekingFire</Deck>
+    <Artifacts>ManaGem</Artifacts>
+    <Artifacts>HoningSteel</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronMed">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Medium</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>420</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.6</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Thunder</Deck>
+    <Deck>Minigun</Deck>
+    <Deck>Frostbolt</Deck>
+    <Deck>DeckSlam</Deck>
+    <Deck>Viruspell</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>Viruspell</Deck>
+    <Deck>Viruspell</Deck>
+    <Deck>Breakout</Deck>
+    <Artifacts>Scales</Artifacts>
+    <Artifacts>ManaGem</Artifacts>
+    <Artifacts>Bismuth</Artifacts>
+    <Artifacts>LaserPointer</Artifacts>
+    <Artifacts>Mjolnir</Artifacts>
+    <Artifacts>Ruby</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronCombo01">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Combos</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>420</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.8</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Pull</Deck>
+    <Deck>Minefield</Deck>
+    <Deck>Thunder</Deck>
+    <Deck>StepLacerate</Deck>
+    <Artifacts>ManaGem</Artifacts>
+    <Artifacts>HoningSteel</Artifacts>
+    <Artifacts>MiningRig</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronCombo02">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Combos</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>420</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.8</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>KineticWave</Deck>
+    <Deck>Mine</Deck>
+    <Deck>Shotgun</Deck>
+    <Deck>Backstab</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Artifacts>MiningRig</Artifacts>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>Thornmail</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronCombo03">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Combos</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>760</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.8</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>BlastCrystals</Deck>
+    <Deck>BombToss</Deck>
+    <Deck>Breakout</Deck>
+    <Deck>PekingFire</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Artifacts>MiningRig</Artifacts>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>Thornmail</Artifacts>
+    <Artifacts>Scales</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="RevaCombo0S">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Combos</Description>
+    <Weapon>CampaignReflector</Weapon>
+    <Health>800</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.8</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>ShieldsUp</Deck>
+    <Deck>CounterStrike</Deck>
+    <Deck>Forte</Deck>
+    <Deck>Transfuse</Deck>
+    <Deck>ShieldThrow</Deck>
+    <Artifacts>Deflector</Artifacts>
+    <Artifacts>MiningRig</Artifacts>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>Thornmail</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Reva" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronCombo0C">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Combos</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>760</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.8</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>MirrorDamage</Deck>
+    <Deck>Reflector</Deck>
+    <Deck>HyperBeam</Deck>
+    <Deck>BowSnipe</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Artifacts>HandCrank</Artifacts>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>MiningRig</Artifacts>
+    <Artifacts>EmptyBottle</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronFrost">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Combos</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>760</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.8</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>MirrorDamage</Deck>
+    <Deck>Reflector</Deck>
+    <Deck>HyperBeam</Deck>
+    <Deck>BowSnipe</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Artifacts>HandCrank</Artifacts>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>MiningRig</Artifacts>
+    <Artifacts>EmptyBottle</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronLink">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Combos</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>420</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.8</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>HyperBeam</Deck>
+    <Deck>MirrorDamage</Deck>
+    <Deck>BowSnipe</Deck>
+    <Deck>Pyroblast</Deck>
+    <Artifacts>SubTank</Artifacts>
+    <Artifacts>MiningRig</Artifacts>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>HandCrank</Artifacts>
+    <Artifacts>EmptyBottle</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronWe">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Saffron Weather</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>420</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.8</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Sunshine</Deck>
+    <Deck>StormIce</Deck>
+    <Deck>Hellfire</Deck>
+    <Deck>StormThunder</Deck>
+    <Artifacts>ManaVein</Artifacts>
+    <Artifacts>ManaGem</Artifacts>
+    <Artifacts>Ruby</Artifacts>
+    <Artifacts>Bandaids</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronArt">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>I am going to Eden to survive.</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>420</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.6</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Thunder</Deck>
+    <Deck>OrbitalBeam</Deck>
+    <Deck>Frostbolt</Deck>
+    <Deck>Viruspell</Deck>
+    <Deck>ManaLattice</Deck>
+    <Artifacts>DartFrog</Artifacts>
+    <Artifacts>SpazDrone</Artifacts>
+    <Artifacts>Bismuth</Artifacts>
+    <Artifacts>SpazDrone</Artifacts>
+    <Artifacts>Mjolnir</Artifacts>
+    <Artifacts>GhostCostume</Artifacts>
+    <Artifacts>LaserPointer</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronTest">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>I am going to Eden to survive.</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>800</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>2</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Pull</Deck>
+    <Deck>HealthCatch</Deck>
+    <Deck>Ragnarok</Deck>
+    <Deck>Ragnarok</Deck>
+    <Deck>Ragnarok</Deck>
+    <Deck>Ragnarok</Deck>
+    <Artifacts>KnifeBelt</Artifacts>
+    <Artifacts>DartFrog</Artifacts>
+    <Artifacts>SpazDrone</Artifacts>
+    <Artifacts>Bismuth</Artifacts>
+    <Artifacts>SpazDrone</Artifacts>
+    <Artifacts>Mjolnir</Artifacts>
+    <Artifacts>GhostCostume</Artifacts>
+    <Artifacts>LaserPointer</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronVid0">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Vid0</Description>
+    <Weapon>GodGun</Weapon>
+    <Health>650</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>1.5</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Hockey</Deck>
+    <Deck>StepLacerate</Deck>
+    <Deck>InfinityBeam</Deck>
+    <Deck>MagicClaw</Deck>
+    <Deck>Cryokinesis</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>Breakout</Deck>
+    <Deck>Ragnarok</Deck>
+    <Deck>Sunshine</Deck>
+    <Artifacts>KnifeBelt</Artifacts>
+    <Artifacts>LaserPointer</Artifacts>
+    <Artifacts>ManaGem</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronVid1">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Vid0</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>800</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>1.5</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>PekingFire</Deck>
+    <Deck>StepSlash</Deck>
+    <Deck>Entangle</Deck>
+    <Deck>Glassify</Deck>
+    <Artifacts>ManaVein</Artifacts>
+    <Artifacts>HandCrank</Artifacts>
+    <Artifacts>MiningRig</Artifacts>
+    <Artifacts>EmptyBottle</Artifacts>
+    <Artifacts>Riffle</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronVid2">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Vid0</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>650</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>1.5</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Hockey</Deck>
+    <Deck>StepLacerate</Deck>
+    <Deck>InfinityBeam</Deck>
+    <Deck>Entangle</Deck>
+    <Deck>StormBlizzard</Deck>
+    <Deck>MagicClaw</Deck>
+    <Deck>SumTurretGun</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>BombToss</Deck>
+    <Artifacts>ManaVein</Artifacts>
+    <Artifacts>ManaGem</Artifacts>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>Riffle</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronVid3">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Lots of spells</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>660</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>6</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>1.7</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>OrbitalBeam</Deck>
+    <Deck>StormThunder</Deck>
+    <Deck>Sunshine</Deck>
+    <Deck>StepSlash</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>Backstab</Deck>
+    <Deck>Smog</Deck>
+    <Deck>ShieldsUp</Deck>
+    <Artifacts>Burner</Artifacts>
+    <Artifacts>BlueBlood</Artifacts>
+    <Artifacts>ManaVein</Artifacts>
+    <Artifacts>Champagne</Artifacts>
+    <Artifacts>Mjolnir</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronVid4">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>Lots of spells</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>530</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>1.7</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>BladeThrow</Deck>
+    <Deck>BladeRain</Deck>
+    <Deck>FrostBarrage</Deck>
+    <Deck>ShieldsUp</Deck>
+    <Deck>StepLacerate</Deck>
+    <Deck>Smog</Deck>
+    <Artifacts>Bandaids</Artifacts>
+    <Artifacts>LaserPointer</Artifacts>
+    <Artifacts>DartFrog</Artifacts>
+    <Artifacts>ManaVein</Artifacts>
+    <Artifacts>Riffle</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronAllSpell">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>SaffronAllSpell</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>800</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>7</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>12</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Forte</Deck>
+    <Deck>BowSnipe</Deck>
+    <Deck>FrostBarrage</Deck>
+    <Deck>Forte</Deck>
+    <Deck>StepSlash</Deck>
+    <Deck>KineticWave</Deck>
+    <Deck>Backstab</Deck>
+    <Deck>Smog</Deck>
+    <Deck>ShieldsUp</Deck>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronFrost">
+    <Name>Saffron</Name>
+    <Tags>Test</Tags>
+    <Description>I am going to Eden to survive.</Description>
+    <Weapon>GodGun</Weapon>
+    <Health>420</Health>
+    <MaxHealth>1000</MaxHealth>
+    <Money>99</Money>
+    <MaxMana>5</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.9</ManaRegen>
+    <ShuffleTime>1</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Cryokinesis</Deck>
+    <Deck>Frostbolt</Deck>
+    <Deck>Frostbolt</Deck>
+    <Deck>Frostbolt</Deck>
+    <Deck>ColdSnap</Deck>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="SaffronCampaignOld">
+    <Name>Saffron</Name>
+    <Tags>CampaignOld</Tags>
+    <Description>A military scientist, she's adept with all types of spells.</Description>
+    <Weapon>GodGun</Weapon>
+    <Health>2000</Health>
+    <MaxHealth>2000</MaxHealth>
+    <Money>0</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.5</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>0</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Frostbolt</Deck>
+    <Deck>Thunder</Deck>
+    <Deck>KineticWave</Deck>
+    <Artifacts>SaigonArmor</Artifacts>
+    <Artifacts>SaigonArmor</Artifacts>
+    <Artifacts>SaigonArmor</Artifacts>
+    <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+  </Being>
+  <Being beingID="RevaCampaign">
+    <Name>Reva</Name>
+    <Tags>Campaign</Tags>
+    <Description>I am going to Eden to protect.</Description>
+    <Weapon>CampaignReflector</Weapon>
+    <Health>2500</Health>
+    <MaxHealth>2500</MaxHealth>
+    <Money>0</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.5</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>1</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>ShieldsUp</Deck>
+    <Deck>ShieldThrow</Deck>
+    <Deck>DiagBeam</Deck>
+    <Deck>CounterStrike</Deck>
+    <Stats localGunPointPos="30,30" animName="Reva" splashSprite="ShielderSplash"></Stats>
+  </Being>
+  <Being beingID="HazelCampaign">
+    <Name>Hazel</Name>
+    <Tags>Campaign</Tags>
+    <Description>I am going to eden to build.</Description>
+    <Weapon>HealHammer</Weapon>
+    <Health>1800</Health>
+    <MaxHealth>1800</MaxHealth>
+    <Money>10</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.5</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>1</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Minigun</Deck>
+    <Deck>SumTurretGun</Deck>
+    <Deck>ForcePushUp</Deck>
+    <Deck>ForcePushDown</Deck>
+    <Stats localGunPointPos="30,30" animName="Mechanicy" splashSprite="HazelSplash"></Stats>
+  </Being>
+  <Being beingID="IreliaCampaign">
+    <Name>Selicy</Name>
+    <Tags>Campaign</Tags>
+    <Description>Master of frost! Freeze the enemies to death!</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>1700</Health>
+    <MaxHealth>1700</MaxHealth>
+    <Money>0</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.5</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>1</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>Frostbolt</Deck>
+    <Deck>ColdGrasp</Deck>
+    <Deck>ColdMedicine</Deck>
+    <Stats localGunPointPos="30,30" animName="Selicy" splashSprite="IreliaSplash"></Stats>
+  </Being>
+  <Being beingID="SerifCampaign">
+    <Name>Serif</Name>
+    <Tags>Campaign</Tags>
+    <Description>Melee, risky but high damage!</Description>
+    <Weapon>CampaignGun</Weapon>
+    <Health>1900</Health>
+    <MaxHealth>1900</MaxHealth>
+    <Money>0</Money>
+    <MaxMana>3</MaxMana>
+    <BasicCooldown>0.1</BasicCooldown>
+    <ManaRegen>0.5</ManaRegen>
+    <ShuffleTime>2</ShuffleTime>
+    <InvulLength>0.05</InvulLength>
+    <Defense>1</Defense>
+    <LerpTime>0.1</LerpTime>
+    <Deck>StepSlash</Deck>
+    <Deck>StepLacerate</Deck>
+    <Deck>StepSpin</Deck>
+    <Stats localGunPointPos="30,30" animName="BossBreaker" splashSprite="SerifSplash"></Stats>
+  </Being>
+</Beings>

@@ -59,8 +59,8 @@
     <OnCast></OnCast>
   </Spell>
   <Spell itemID="TimeGun">
-    <Stats animMark="ShineBallC" animShot="BasicSpellC" castSound="" shotSound="laser_echo_zap"
-           cooldown="0.05" setToGunPoint="Both" yVariance="0"></Stats>
+    <Stats animMark="" animShot="" castSound="" shotSound="laser_echo_zap" cooldown="0.05"
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
@@ -88,18 +88,18 @@
     <OnCast duration="3" amount="0.5">Chrono</OnCast>
   </Spell>
   <Spell itemID="FreezeGun">
-    <Stats animMark="ShineBallC" animShot="BasicSpellC" castSound="" shotSound="laser_echo_zap"
-           cooldown="0.05" setToGunPoint="Both" yVariance="0"></Stats>
+    <Stats animMark="" animShot="" castSound="" shotSound="laser_echo_zap" cooldown="0.05"
+           setToGunPoint="Both" yVariance="0"></Stats>
     <HitAllies></HitAllies>
     <HitEnemies>true</HitEnemies>
     <HitSelf></HitSelf>
     <HitStructures>true</HitStructures>
-    <Name>Time Gun</Name>
+    <Name>Freeze Ray</Name>
     <Tags>Weapon</Tags>
     <Action>Multishot</Action>
     <Description></Description>
-    <Meta>Slows time</Meta>
-    <Flavor>MAtrix</Flavor>
+    <Meta>Freeze time</Meta>
+    <Flavor>Laundry Day</Flavor>
     <Brand></Brand>
     <Mana>0</Mana>
     <Damage>0</Damage>
@@ -114,7 +114,7 @@
     <MarkDuration>1</MarkDuration>
     <DestroyOnHit>false</DestroyOnHit>
     <DamageType></DamageType>
-    <OnCast duration="3" amount="0.001">Chrono</OnCast>
+    <OnCast duration="3" amount="0.3">Chrono</OnCast>
   </Spell>
   <Spell itemID="CampaignReflector">
     <Stats animMark="" animShot="" castSound="misc_shimmer" shotSound="" cooldown="0.2"
@@ -1538,7 +1538,7 @@
     <CastDelay>0</CastDelay>
     <MarkDuration></MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="DownRight" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="DownRight" lerpPattern="Ricochet" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
     <OnCast></OnCast>
     <OnHit>Frost</OnHit>
@@ -4548,7 +4548,7 @@
     <CastDelay>0.3</CastDelay>
     <MarkDuration>0.3</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5316,7 +5316,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="DownLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="DownLeft" lerpPattern="Ricochet" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5343,7 +5343,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5370,7 +5370,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="DownRight" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="DownRight" lerpPattern="Ricochet" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5397,7 +5397,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="UpRight" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpRight" lerpPattern="Ricochet" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5644,7 +5644,7 @@
     <MarkDuration>0.5</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
     <WarningDuration></WarningDuration>
-    <Params lerpDirection="Left" lerpPattern="BounceGrid" lerpDelay="0"></Params>
+    <Params lerpDirection="Left" lerpPattern="BounceGrid" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
     <OnCast></OnCast>
   </Spell>
@@ -5671,7 +5671,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="DownLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="DownLeft" lerpPattern="Ricochet" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -5698,7 +5698,7 @@
     <CastDelay>0.5</CastDelay>
     <MarkDuration>0.55</MarkDuration>
     <DestroyOnHit></DestroyOnHit>
-    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0"></Params>
+    <Params lerpDirection="UpLeft" lerpPattern="Ricochet" lerpDelay="0" hovering="false"></Params>
     <DamageType></DamageType>
     <OnCast>Anchor</OnCast>
   </Spell>
@@ -6056,11 +6056,11 @@
     <Description></Description>
     <Meta>Change to shield world</Meta>
     <Damage>100</Damage>
-    <Tiles>98</Tiles>
     <ShotDelay></ShotDelay>
     <CastDelay>1</CastDelay>
     <MarkDuration></MarkDuration>
     <DestroyOnHit></DestroyOnHit>
+    <Params worldNum="999"></Params>
     <DamageType></DamageType>
     <OnCast></OnCast>
   </Spell>
@@ -6102,7 +6102,6 @@
     <Action>Multishot</Action>
     <Description></Description>
     <Meta>Fires a 2 dmg shot</Meta>
-    <Flavor>Hey you can't read this!</Flavor>
     <Brand>Hexawan</Brand>
     <Damage>2</Damage>
     <Shots>1</Shots>

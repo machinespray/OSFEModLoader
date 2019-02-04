@@ -9,23 +9,26 @@ import java.io.StringWriter;
 
 public class Main {
 	public static final int revision = 1;
-	public static final String targetVersion = "v155";
+	public static final String targetVersion = "v158";
 	//TODO(there's definitly a better way to do this logistically)
-	public static final XmlHolder spellHolder = new XmlHolder("Spells.xml");
-	public static final XmlHolder artifactHolder = new XmlHolder("Artifacts.xml");
-	public static final XmlHolder structureHolder = new XmlHolder("Structures.xml");
+	public static final XmlHolder[] simpleSolutions = initXml(new String[]{"Spells.xml", "Artifacts.xml", "Structures.xml", "Heroes.xml"});
 	private static DialogDisplaySpells dialog;
 
 
 	public static void main(String[] args) {
 		try {
-			spellHolder.initXMLObjects();
-			artifactHolder.initXMLObjects();
-			structureHolder.initXMLObjects();
+			for(XmlHolder holder : simpleSolutions)
+				holder.initXMLObjects();
 			startUi();
 		} catch (Exception e) {
 			handleError(e);
 		}
+	}
+	private static XmlHolder[] initXml(String[] locations){
+		XmlHolder[] temp = new XmlHolder[locations.length];
+		for(int i = 0;i<locations.length;i++)
+			temp[i] = new XmlHolder(locations[i]);
+		return temp;
 	}
 
 	private static void startUi() {
