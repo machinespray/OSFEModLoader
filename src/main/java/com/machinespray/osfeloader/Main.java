@@ -17,16 +17,17 @@ public class Main {
 
 	public static void main(String[] args) {
 		try {
-			for(XmlHolder holder : simpleSolutions)
+			for (XmlHolder holder : simpleSolutions)
 				holder.initXMLObjects();
 			startUi();
 		} catch (Exception e) {
 			handleError(e);
 		}
 	}
-	private static XmlHolder[] initXml(String[] locations){
+
+	private static XmlHolder[] initXml(String[] locations) {
 		XmlHolder[] temp = new XmlHolder[locations.length];
-		for(int i = 0;i<locations.length;i++)
+		for (int i = 0; i < locations.length; i++)
 			temp[i] = new XmlHolder(locations[i]);
 		return temp;
 	}
@@ -35,7 +36,7 @@ public class Main {
 		dialog = new DialogDisplaySpells();
 		dialog.pack();
 		dialog.setTitle(
-				String.format("OSFE Mod Loader for %s (Rev:%d)",targetVersion,revision)
+				String.format("OSFE Mod Loader for %s (Rev:%d)", targetVersion, revision)
 		);
 		dialog.setVisible(true);
 	}

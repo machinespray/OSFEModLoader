@@ -1,556 +1,556 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Artifacts>
-  <Artifact itemID="Deflector">
-    <Name>Deflector</Name>
-    <Tags>Base</Tags>
-    <App trigger="OnEquip" effect="Defense" amount="2"></App>
-    <Description></Description>
-    <Meta>+2 Defense</Meta>
-    <Flavor>Each one increases the angle of your armor by a couple degrees</Flavor>
-    <Rarity>0</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="ManaGem">
-    <Name>Mana Gem</Name>
-    <Tags>Base</Tags>
-    <App trigger="OnEquip" effect="MaxMana" amount="1"></App>
-    <Description></Description>
-    <Meta>+1 Max Mana</Meta>
-    <Flavor>They're gems Ginnie! </Flavor>
-    <Rarity>0</Rarity>
-  </Artifact>
-  <Artifact itemID="ManaVein">
-    <Name>Mana Vein</Name>
-    <Tags>Base</Tags>
-    <App trigger="OnEquip" effect="ManaRegen" amount="0.1"></App>
-    <Description></Description>
-    <Meta>+0.1 Mana Regen</Meta>
-    <Flavor>I can feel it coursing through my veins!</Flavor>
-    <Rarity>0</Rarity>
-  </Artifact>
-  <Artifact itemID="Medkit">
-    <Name>Medkit</Name>
-    <Tags>Base</Tags>
-    <App trigger="OnEquip" effect="Heal" amount="250"></App>
-    <Description></Description>
-    <Meta>Heal 250 health right now.</Meta>
-    <Flavor>I don't need it, I don't need it... I NEEEEEED IIIIIT!</Flavor>
-    <Rarity>0</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="Bandaids">
-    <Name>Bandaids</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnBattleStart" effect="Heal" amount="20"></App>
-    <Description></Description>
-    <Meta>Heal 20 hp on battle start.</Meta>
-    <Flavor>It's free heal estate.</Flavor>
-    <Rarity>0</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="BlueBlood">
-    <Name>Blue Blood</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnBattleStart" effect="Mana" amount="99"></App>
-    <Description></Description>
-    <Meta>Start battle with full mana</Meta>
-    <Flavor>Blue blood burns bluetifully</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="BlueFlame">
-    <Name>Blue Flame</Name>
-    <Tags>Demo, Negative</Tags>
-    <App trigger="OnEquip" effect="MaxMana" amount="-1"></App>
-    <App trigger="OnEquip" effect="ManaRegen" amount="0.3"></App>
-    <Description></Description>
-    <Meta>max mana - 1, mana regen +0.3</Meta>
-    <Flavor>Blue flame floods flew</Flavor>
-    <Rarity>2</Rarity>
-  </Artifact>
-  <Artifact itemID="Bulwark">
-    <Name>Bulwark</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnBattleStart" effect="Shield" amount="40"></App>
-    <Description></Description>
-    <Meta>Start battle with 40 shield</Meta>
-    <Flavor>It's free shield estate.</Flavor>
-    <Rarity>0</Rarity>
-  </Artifact>
-  <Artifact itemID="AdaptiveArmor">
-    <Name>Adaptive Armor</Name>
-    <App trigger="OnPlayerHit" effect="Shield" amount="2"></App>
-    <Description></Description>
-    <Meta>Gain 2 shield when you get hit</Meta>
-    <Flavor>You're only making me stronger! (by 999999999)</Flavor>
-    <Rarity>3</Rarity>
-  </Artifact>
-  <Artifact itemID="Amethyst">
-    <Name>Amethyst</Name>
-    <Tags>Demo, Gem</Tags>
-    <App trigger="OnSpellCast" effect="Mana" amount="0.1"></App>
-    <Description></Description>
-    <Meta>Gain 0.1 mana on spell cast</Meta>
-    <Flavor>Made in the Prime Kindergarten</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="Bismuth">
-    <Name>Bismuth</Name>
-    <Tags>Demo, Gem</Tags>
-    <App trigger="OnSpellCast" effect="Shield" amount="3"></App>
-    <Description></Description>
-    <Meta>Gain 3 shield on spell cast</Meta>
-    <Flavor>Made of honor</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="Burner">
-    <Name>Burner</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnEnemyKill" effect="CastSpell" value="DeathFlame"></App>
-    <Description></Description>
-    <Meta>Dead enemies leave flame behind</Meta>
-    <Flavor>No chill</Flavor>
-    <Rarity>0</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="CardThrower">
-    <Name>Card Thrower</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnConsume" effect="HitRandomEnemy" amount="40"></App>
-    <Description></Description>
-    <Meta>Deal 40 dmg to a random enemy every time u consume a card</Meta>
-    <Flavor>Gambit with a twist of fate</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="Champagne">
-    <Name>Champagne</Name>
-    <Tags>BonusRe</Tags>
-    <App trigger="OnEnemySpawn" effect="Fragile" amount="1"></App>
-    <Description></Description>
-    <Meta>Apply 1 fragile to all enemies at start of battle</Meta>
-    <Flavor></Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="ColdBlooded">
-    <Name>Cold Blooded</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnEnemySpawn" effect="Frost"></App>
-    <Description></Description>
-    <Meta>All enemies start with 1 frost</Meta>
-    <Flavor>Reptilia</Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="ColdPressedJuice">
-    <Name>Cold Pressed Juice</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnFrost" effect="Heal" amount="20"></App>
-    <Description></Description>
-    <Meta>Heal 20 hp whenever Frost bonus dmg is dealt (after 3 stacks)</Meta>
-    <Flavor>Overpriced but delicious</Flavor>
-    <Rarity>2</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="CreditCard">
-    <Name>Credit Card</Name>
-    <App trigger="OnEquip" effect="Money" amount="200"></App>
-    <Description></Description>
-    <Meta>Get 200 Sera</Meta>
-    <Flavor>Your mom's</Flavor>
-    <Rarity>0</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="DartFrog">
-    <Name>Dart Frog</Name>
-    <Tags>BonusRe</Tags>
-    <App trigger="OnEnemyHit" effect="Poison" amount="4"></App>
-    <Description></Description>
-    <Meta>4 poison on enemy hit</Meta>
-    <Flavor>Don't lick it</Flavor>
-    <Rarity>2</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="DoubleEdge">
-    <Name>Double Edge</Name>
-    <Tags>Demo, Negative</Tags>
-    <App trigger="OnEquip" effect="SpellPower" amount="2"></App>
-    <App trigger="OnEquip" effect="Defense" amount="-2"></App>
-    <Description></Description>
-    <Meta>+2 Power, -2 Defense</Meta>
-    <Flavor>People say a claymore can be a double-edged sword</Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="Elysium">
-    <Name>Elysium</Name>
-    <App trigger="OnEarthbound" effect="TriggerEarthbound" chance="0.25"></App>
-    <Description></Description>
-    <Meta>25% chance to trigger Earthbound twice</Meta>
-    <Flavor></Flavor>
-    <Rarity>2</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="EmptyBottle">
-    <Name>Empty Bottle</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnEnemyKill" effect="Mana" amount="1"></App>
-    <Description></Description>
-    <Meta>Gain 1 mana on every kill</Meta>
-    <Flavor>I sure hope there are fairies in this game</Flavor>
-    <Rarity>2</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="Eschaton">
-    <Name>Eschaton</Name>
-    <App trigger="OnMove" effect="Shield" amount="1"></App>
-    <Description></Description>
-    <Meta>Gain shield on move</Meta>
-    <Flavor>Reva's shield, it has a name.</Flavor>
-    <Rarity>3</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="ExplosiveTendons">
-    <Name>Explosive Tendons</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnEnemyKill" effect="CastSpell" value="DeathExplosion"></App>
-    <Description></Description>
-    <Meta>Enemies explode on death, dealing 40 dmg</Meta>
-    <Flavor>"Gotta Blast!" - Donkey Kong</Flavor>
-    <Rarity>2</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="GhostCostume">
-    <Name>Ghost Costume</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnBattleStart" effect="Invincible" duration="7"></App>
-    <Description></Description>
-    <Meta>Start battle invincible for 7 seconds</Meta>
-    <Flavor>Boo! urns.</Flavor>
-    <Rarity>2</Rarity>
-  </Artifact>
-  <Artifact itemID="HandCrank">
-    <Name>Hand Crank</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnReshuffle" effect="Mana" amount="1"></App>
-    <Description></Description>
-    <Meta>Gain 1 mana on reshuffle</Meta>
-    <Rarity>0</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="HeartOfGold">
-    <Name>Heart of Gold</Name>
-    <Tags>Demo, Negative</Tags>
-    <App trigger="OnEquip" effect="Heal" amount="9999"></App>
-    <App trigger="OnEquip" effect="Defense" amount="-5"></App>
-    <App trigger="OnEquip" effect="SpellPower" amount="1"></App>
-    <App trigger="OnEquip" effect="AtkDmg" amount="1"></App>
-    <Description></Description>
-    <Meta>Heal to full health, -5 Defense</Meta>
-    <Flavor>Worth... right?</Flavor>
-    <Rarity>3</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="HoningSteel">
-    <Name>Honing Steel</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnEquip" effect="AtkDmg" amount="2"></App>
-    <App trigger="OnEquip" effect="ManaRegen" amount="0.05"></App>
-    <Description></Description>
-    <Meta>+2 Basic Attack</Meta>
-    <Flavor>if you have a good idea for a name for this item, email me at OneStepFromEden@gmail.com</Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="KnifeBelt">
-    <Name>Knife Belt</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnBattleStart" effect="AddToDeck" amount="3" value="Kunai"></App>
-    <Description></Description>
-    <Meta>Add 3 Kunais to your deck at start of battle</Meta>
-    <Flavor>Stop calling me a mall ninja!</Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="LaserPointer">
-    <Name>Laser Pointer</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnSpellCast" effect="CastSpell" chance="0.25" value="LaserSolo"></App>
-    <Description></Description>
-    <Meta>25% chance to shoot laser on spellcast</Meta>
-    <Flavor>Go for the eyes!</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="Luna">
-    <Name>Luna</Name>
-    <App trigger="OnEarthbound" effect="Mana" amount="0.2"></App>
-    <Description></Description>
-    <Meta>Restore 0.2 mana when Earthbound is triggered</Meta>
-    <Flavor></Flavor>
-    <Rarity>0</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="MiningRig">
-    <Name>Mining Rig</Name>
-    <App trigger="OnBattleEnd" effect="Money" amount="10"></App>
-    <Description></Description>
-    <Meta>Gain 10 Sera(Money) after every battle</Meta>
-    <Flavor></Flavor>
-    <Rarity>0</Rarity>
-  </Artifact>
-  <Artifact itemID="Mjolnir">
-    <Name>Mjolnir</Name>
-    <Tags>BonusRe</Tags>
-    <App trigger="WhileBattle" effect="CastSpell" duration="3" value="ThunderLight"></App>
-    <Description></Description>
-    <Meta>Hit 4 tiles in front every 3 sec with lightning</Meta>
-    <Flavor>Note to self: something about thor</Flavor>
-    <Rarity>3</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="MoonBoots">
-    <Name>Moon Boots</Name>
-    <Tags>BonusRe</Tags>
-    <App trigger="OnEquip" effect="HoverTile"></App>
-    <Description></Description>
-    <Meta>Walk over broken/empty tiles</Meta>
-    <Flavor></Flavor>
-    <Rarity>3</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="Mother">
-    <Name>Mother</Name>
-    <App trigger="OnSpellCast" effect="SetEarthbound"></App>
-    <App trigger="OnEquip" effect="ManaRegen" amount="-0.2"></App>
-    <Description></Description>
-    <Meta>All spells are Earthbound, lower mana regen</Meta>
-    <Flavor></Flavor>
-    <Rarity>3</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="PoisonVial">
-    <Name>Poison Vial</Name>
-    <Tags>BonusRe</Tags>
-    <App trigger="OnEnemySpawn" effect="Poison" amount="20"></App>
-    <Description></Description>
-    <Meta>All enemies start with 20 poison</Meta>
-    <Flavor>Never get involved in a land war in Asia</Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="PowerShard">
-    <Name>Power Shard</Name>
-    <App trigger="OnEnemyHit" effect="HitTarget" amount="5"></App>
-    <Description></Description>
-    <Meta>Deal 5 damage on spell hits</Meta>
-    <Flavor></Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="Riffle">
-    <Name>Riffle</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnReshuffle" effect="DamageEnemies" amount="20"></App>
-    <Description></Description>
-    <Meta>Damage all enemies on reshuffle</Meta>
-    <Flavor>Rigged.</Flavor>
-    <Rarity>0</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="RollerBlades">
-    <Name>Roller Blades</Name>
-    <Tags>BonusRe</Tags>
-    <App trigger="OnMove" effect="Haste" duration="0.4"></App>
-    <Description></Description>
-    <Meta>Haste for 0.4s on move</Meta>
-    <Flavor>Classic Lan</Flavor>
-    <Rarity>2</Rarity>
-  </Artifact>
-  <Artifact itemID="Rose">
-    <Name>Rose</Name>
-    <Tags>Demo, Flower, Negative</Tags>
-    <App trigger="OnEquip" effect="Heal" amount="9999"></App>
-    <App trigger="OnEquip" effect="ChangeMaxHP" amount="-250"></App>
-    <Description></Description>
-    <Meta>Heal to full health, -250 max hp</Meta>
-    <Flavor>Lovely</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="RouletteWheel">
-    <Name>Roulette Wheel</Name>
-    <Tags>Negative</Tags>
-    <App trigger="OnEquip" effect="Money" amount="-500" chance=""></App>
-    <App trigger="OnEquip" effect="Money" amount="1000" chance="0.5"></App>
-    <Description></Description>
-    <Meta>50% chance of 500 Sera(Money) or -500 Sera(Money</Meta>
-    <Flavor></Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="Ruby">
-    <Name>Ruby</Name>
-    <Tags>Demo, Gem</Tags>
-    <App trigger="OnSpellCast" effect="DamageEnemies" amount="5"></App>
-    <Description></Description>
-    <Meta>5 dmg to all enemies on spell cast</Meta>
-    <Flavor>RWBY?</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="RevasShield">
-    <Name>Reva's Shield</Name>
-    <Tags>Negative</Tags>
-    <App trigger="OnBattleStart" effect="Shield" amount="500"></App>
-    <App trigger="OnEquip" effect="MaxHP" amount="-250"></App>
-    <Description></Description>
-    <Meta>Gain 500 shield at the start of every battle, Set Max HP to 1</Meta>
-    <Flavor>Not working with max hp.</Flavor>
-    <Rarity>3</Rarity>
-  </Artifact>
-  <Artifact itemID="PocketSand">
-    <Name>Pocket Sand</Name>
-    <Tags>BonusRe</Tags>
-    <App trigger="OnReshuffle" effect="Invincible" duration="1"></App>
-    <Description></Description>
-    <Meta>Gain invincibility for 1 second on reshuffle</Meta>
-    <Flavor>Give em their "just deserts"</Flavor>
-    <Rarity>2</Rarity>
-  </Artifact>
-  <Artifact itemID="SaigonArmor">
-    <Name>Saigon Armor</Name>
-    <Tags>Demo, Negative</Tags>
-    <App trigger="OnEquip" effect="Defense" amount="4"></App>
-    <App trigger="OnEquip" effect="ShuffleTimeReduction" amount="-1"></App>
-    <Description></Description>
-    <Meta>+4 Defense, +1 shuffle time</Meta>
-    <Flavor>Saigon Restaurant, South Plainfield NJ</Flavor>
-    <Rarity>2</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="Scales">
-    <Name>Scales</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnReshuffle" effect="Shield" amount="20"></App>
-    <Description></Description>
-    <Meta>Gain 20 shield every time you shuffle</Meta>
-    <Flavor>Instead of dodging, just press spacebar!</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="SoulFood">
-    <Name>Soul Food</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnEnemyKill" effect="ChangeMaxHP" amount="5" limit="100"></App>
-    <App trigger="OnEnemyKill" effect="Heal" amount="5"></App>
-    <Description></Description>
-    <Meta>+5 max health every kill</Meta>
-    <Flavor>High in starch, fat, sodium, cholesterol, and calories</Flavor>
-    <Rarity>2</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="StepDrone">
-    <Name>Spaz Drone</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnMove" effect="CastSpell" value="TinyShot"></App>
-    <Description></Description>
-    <Meta>Shoots whenever you move</Meta>
-    <Flavor>Ever play FFR?</Flavor>
-    <Rarity>2</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="SpeedLoader">
-    <Name>Speed Loader</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnEquip" effect="ShuffleTimeReduction" amount="1"></App>
-    <Description></Description>
-    <Meta>Shuffle 1 second faster</Meta>
-    <Flavor>Lock n load baby.</Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="SpellthiefLicense">
-    <Name>Spellthief License</Name>
-    <Tags></Tags>
-    <App trigger="OnRemoveSpell" effect="Heal" amount="50"></App>
-    <Description></Description>
-    <Meta>Heal 50 hp whenever a spell is removed</Meta>
-    <Flavor></Flavor>
-    <Rarity>0</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="Stimpack">
-    <Name>Stimpack</Name>
-    <Tags>Demo, Negative</Tags>
-    <App trigger="OnEquip" effect="ChangeMaxHP" amount="-300"></App>
-    <App trigger="OnEquip" effect="SpellPower" amount="2"></App>
-    <Description></Description>
-    <Meta>-300 max hp, all spells do +2 damage</Meta>
-    <Flavor>*TSS* Ahh, that's the stuff!</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="SubTank">
-    <Name>Sub Tank</Name>
-    <App trigger="OnPlayerDeath" effect="Heal" amount="600"></App>
-    <App trigger="OnPlayerDeath" effect="Deplete"></App>
-    <Description></Description>
-    <Meta>Come back to life and heal 600 hp on death, only works once</Meta>
-    <Flavor>It's dangerous to go alone! Take this.</Flavor>
-    <Rarity>2</Rarity>
-  </Artifact>
-  <Artifact itemID="Thorn">
-    <Name>Thorn</Name>
-    <Tags>BonusRe</Tags>
-    <App trigger="OnBattleStart" effect="SpellPowerBattle" amount="1"></App>
-    <Description></Description>
-    <Meta>Start battle with +1 spellPower</Meta>
-    <Flavor></Flavor>
-    <Rarity>0</Rarity>
-  </Artifact>
-  <Artifact itemID="Thornmail">
-    <Name>Thornmail</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnPlayerHit" effect="DamageEnemies" amount="10"></App>
-    <Description></Description>
-    <Meta>Dmg all enemies for 10 whenever you take dmg</Meta>
-    <Flavor>Stop hitting yourself</Flavor>
-    <Rarity>2</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="TightPants">
-    <Name>Tight Pants</Name>
-    <Tags>BonusRe, Negative</Tags>
-    <App trigger="OnMove" effect="DamageSelf" amount="1"></App>
-    <App trigger="OnBattleStart" effect="Heal" amount="100"></App>
-    <Description></Description>
-    <Meta>Heal 100 HP on Battle Start, but lose 1 hp every time you move.</Meta>
-    <Flavor>At least I look GOOD.</Flavor>
-    <Rarity>3</Rarity>
-  </Artifact>
-  <Artifact itemID="Violet">
-    <Name>Violet</Name>
-    <Tags>Demo, Flower, Negative</Tags>
-    <App trigger="OnEquip" effect="ChangeMaxHP" amount="-300"></App>
-    <App trigger="OnEquip" effect="MaxMana" amount="2"></App>
-    <Description></Description>
-    <Meta>+2 Max mana, -300 max hp</Meta>
-    <Flavor>Alluring</Flavor>
-    <Rarity>1</Rarity>
-  </Artifact>
-  <Artifact itemID="Virtue">
-    <Name>Virtue</Name>
-    <Tags>Demo</Tags>
-    <App trigger="OnIdle" effect="Mana" amount="1" duration="1"></App>
-    <Description></Description>
-    <Meta>Restore 1 mana if idle for 1 seconds</Meta>
-    <Flavor>Patience young padawan.</Flavor>
-    <Rarity>1</Rarity>
-    <Brand></Brand>
-  </Artifact>
-  <Artifact itemID="WepTriGun">
-    <Name>Wep: TriGun</Name>
-    <Tags>Demo, Negative</Tags>
-    <App trigger="OnEquip" effect="EquipWep" value="TriGun"></App>
-    <Description></Description>
-    <Meta>Equip TriGun</Meta>
-    <Flavor>three is better than one</Flavor>
-    <Rarity>3</Rarity>
-    <Brand></Brand>
-  </Artifact>
+    <Artifact itemID="Deflector">
+        <Name>Deflector</Name>
+        <Tags>Base</Tags>
+        <App trigger="OnEquip" effect="Defense" amount="2"></App>
+        <Description></Description>
+        <Meta>+2 Defense</Meta>
+        <Flavor>Each one increases the angle of your armor by a couple degrees</Flavor>
+        <Rarity>0</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="ManaGem">
+        <Name>Mana Gem</Name>
+        <Tags>Base</Tags>
+        <App trigger="OnEquip" effect="MaxMana" amount="1"></App>
+        <Description></Description>
+        <Meta>+1 Max Mana</Meta>
+        <Flavor>They're gems Ginnie!</Flavor>
+        <Rarity>0</Rarity>
+    </Artifact>
+    <Artifact itemID="ManaVein">
+        <Name>Mana Vein</Name>
+        <Tags>Base</Tags>
+        <App trigger="OnEquip" effect="ManaRegen" amount="0.1"></App>
+        <Description></Description>
+        <Meta>+0.1 Mana Regen</Meta>
+        <Flavor>I can feel it coursing through my veins!</Flavor>
+        <Rarity>0</Rarity>
+    </Artifact>
+    <Artifact itemID="Medkit">
+        <Name>Medkit</Name>
+        <Tags>Base</Tags>
+        <App trigger="OnEquip" effect="Heal" amount="250"></App>
+        <Description></Description>
+        <Meta>Heal 250 health right now.</Meta>
+        <Flavor>I don't need it, I don't need it... I NEEEEEED IIIIIT!</Flavor>
+        <Rarity>0</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Bandaids">
+        <Name>Bandaids</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnBattleStart" effect="Heal" amount="20"></App>
+        <Description></Description>
+        <Meta>Heal 20 hp on battle start.</Meta>
+        <Flavor>It's free heal estate.</Flavor>
+        <Rarity>0</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="BlueBlood">
+        <Name>Blue Blood</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnBattleStart" effect="Mana" amount="99"></App>
+        <Description></Description>
+        <Meta>Start battle with full mana</Meta>
+        <Flavor>Blue blood burns bluetifully</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="BlueFlame">
+        <Name>Blue Flame</Name>
+        <Tags>Demo, Negative</Tags>
+        <App trigger="OnEquip" effect="MaxMana" amount="-1"></App>
+        <App trigger="OnEquip" effect="ManaRegen" amount="0.3"></App>
+        <Description></Description>
+        <Meta>max mana - 1, mana regen +0.3</Meta>
+        <Flavor>Blue flame floods flew</Flavor>
+        <Rarity>2</Rarity>
+    </Artifact>
+    <Artifact itemID="Bulwark">
+        <Name>Bulwark</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnBattleStart" effect="Shield" amount="40"></App>
+        <Description></Description>
+        <Meta>Start battle with 40 shield</Meta>
+        <Flavor>It's free shield estate.</Flavor>
+        <Rarity>0</Rarity>
+    </Artifact>
+    <Artifact itemID="AdaptiveArmor">
+        <Name>Adaptive Armor</Name>
+        <App trigger="OnPlayerHit" effect="Shield" amount="2"></App>
+        <Description></Description>
+        <Meta>Gain 2 shield when you get hit</Meta>
+        <Flavor>You're only making me stronger! (by 999999999)</Flavor>
+        <Rarity>3</Rarity>
+    </Artifact>
+    <Artifact itemID="Amethyst">
+        <Name>Amethyst</Name>
+        <Tags>Demo, Gem</Tags>
+        <App trigger="OnSpellCast" effect="Mana" amount="0.1"></App>
+        <Description></Description>
+        <Meta>Gain 0.1 mana on spell cast</Meta>
+        <Flavor>Made in the Prime Kindergarten</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="Bismuth">
+        <Name>Bismuth</Name>
+        <Tags>Demo, Gem</Tags>
+        <App trigger="OnSpellCast" effect="Shield" amount="3"></App>
+        <Description></Description>
+        <Meta>Gain 3 shield on spell cast</Meta>
+        <Flavor>Made of honor</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="Burner">
+        <Name>Burner</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnEnemyKill" effect="CastSpell" value="DeathFlame"></App>
+        <Description></Description>
+        <Meta>Dead enemies leave flame behind</Meta>
+        <Flavor>No chill</Flavor>
+        <Rarity>0</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="CardThrower">
+        <Name>Card Thrower</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnConsume" effect="HitRandomEnemy" amount="40"></App>
+        <Description></Description>
+        <Meta>Deal 40 dmg to a random enemy every time u consume a card</Meta>
+        <Flavor>Gambit with a twist of fate</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="Champagne">
+        <Name>Champagne</Name>
+        <Tags>BonusRe</Tags>
+        <App trigger="OnEnemySpawn" effect="Fragile" amount="1"></App>
+        <Description></Description>
+        <Meta>Apply 1 fragile to all enemies at start of battle</Meta>
+        <Flavor></Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="ColdBlooded">
+        <Name>Cold Blooded</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnEnemySpawn" effect="Frost"></App>
+        <Description></Description>
+        <Meta>All enemies start with 1 frost</Meta>
+        <Flavor>Reptilia</Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="ColdPressedJuice">
+        <Name>Cold Pressed Juice</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnFrost" effect="Heal" amount="20"></App>
+        <Description></Description>
+        <Meta>Heal 20 hp whenever Frost bonus dmg is dealt (after 3 stacks)</Meta>
+        <Flavor>Overpriced but delicious</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="CreditCard">
+        <Name>Credit Card</Name>
+        <App trigger="OnEquip" effect="Money" amount="200"></App>
+        <Description></Description>
+        <Meta>Get 200 Sera</Meta>
+        <Flavor>Your mom's</Flavor>
+        <Rarity>0</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="DartFrog">
+        <Name>Dart Frog</Name>
+        <Tags>BonusRe</Tags>
+        <App trigger="OnEnemyHit" effect="Poison" amount="4"></App>
+        <Description></Description>
+        <Meta>4 poison on enemy hit</Meta>
+        <Flavor>Don't lick it</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="DoubleEdge">
+        <Name>Double Edge</Name>
+        <Tags>Demo, Negative</Tags>
+        <App trigger="OnEquip" effect="SpellPower" amount="2"></App>
+        <App trigger="OnEquip" effect="Defense" amount="-2"></App>
+        <Description></Description>
+        <Meta>+2 Power, -2 Defense</Meta>
+        <Flavor>People say a claymore can be a double-edged sword</Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Elysium">
+        <Name>Elysium</Name>
+        <App trigger="OnEarthbound" effect="TriggerEarthbound" chance="0.25"></App>
+        <Description></Description>
+        <Meta>25% chance to trigger Earthbound twice</Meta>
+        <Flavor></Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="EmptyBottle">
+        <Name>Empty Bottle</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnEnemyKill" effect="Mana" amount="1"></App>
+        <Description></Description>
+        <Meta>Gain 1 mana on every kill</Meta>
+        <Flavor>I sure hope there are fairies in this game</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Eschaton">
+        <Name>Eschaton</Name>
+        <App trigger="OnMove" effect="Shield" amount="1"></App>
+        <Description></Description>
+        <Meta>Gain shield on move</Meta>
+        <Flavor>Reva's shield, it has a name.</Flavor>
+        <Rarity>3</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="ExplosiveTendons">
+        <Name>Explosive Tendons</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnEnemyKill" effect="CastSpell" value="DeathExplosion"></App>
+        <Description></Description>
+        <Meta>Enemies explode on death, dealing 40 dmg</Meta>
+        <Flavor>"Gotta Blast!" - Donkey Kong</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="GhostCostume">
+        <Name>Ghost Costume</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnBattleStart" effect="Invincible" duration="7"></App>
+        <Description></Description>
+        <Meta>Start battle invincible for 7 seconds</Meta>
+        <Flavor>Boo! urns.</Flavor>
+        <Rarity>2</Rarity>
+    </Artifact>
+    <Artifact itemID="HandCrank">
+        <Name>Hand Crank</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnReshuffle" effect="Mana" amount="1"></App>
+        <Description></Description>
+        <Meta>Gain 1 mana on reshuffle</Meta>
+        <Rarity>0</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="HeartOfGold">
+        <Name>Heart of Gold</Name>
+        <Tags>Demo, Negative</Tags>
+        <App trigger="OnEquip" effect="Heal" amount="9999"></App>
+        <App trigger="OnEquip" effect="Defense" amount="-5"></App>
+        <App trigger="OnEquip" effect="SpellPower" amount="1"></App>
+        <App trigger="OnEquip" effect="AtkDmg" amount="1"></App>
+        <Description></Description>
+        <Meta>Heal to full health, -5 Defense</Meta>
+        <Flavor>Worth... right?</Flavor>
+        <Rarity>3</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="HoningSteel">
+        <Name>Honing Steel</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnEquip" effect="AtkDmg" amount="2"></App>
+        <App trigger="OnEquip" effect="ManaRegen" amount="0.05"></App>
+        <Description></Description>
+        <Meta>+2 Basic Attack</Meta>
+        <Flavor>if you have a good idea for a name for this item, email me at OneStepFromEden@gmail.com</Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="KnifeBelt">
+        <Name>Knife Belt</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnBattleStart" effect="AddToDeck" amount="3" value="Kunai"></App>
+        <Description></Description>
+        <Meta>Add 3 Kunais to your deck at start of battle</Meta>
+        <Flavor>Stop calling me a mall ninja!</Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="LaserPointer">
+        <Name>Laser Pointer</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnSpellCast" effect="CastSpell" chance="0.25" value="LaserSolo"></App>
+        <Description></Description>
+        <Meta>25% chance to shoot laser on spellcast</Meta>
+        <Flavor>Go for the eyes!</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="Luna">
+        <Name>Luna</Name>
+        <App trigger="OnEarthbound" effect="Mana" amount="0.2"></App>
+        <Description></Description>
+        <Meta>Restore 0.2 mana when Earthbound is triggered</Meta>
+        <Flavor></Flavor>
+        <Rarity>0</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="MiningRig">
+        <Name>Mining Rig</Name>
+        <App trigger="OnBattleEnd" effect="Money" amount="10"></App>
+        <Description></Description>
+        <Meta>Gain 10 Sera(Money) after every battle</Meta>
+        <Flavor></Flavor>
+        <Rarity>0</Rarity>
+    </Artifact>
+    <Artifact itemID="Mjolnir">
+        <Name>Mjolnir</Name>
+        <Tags>BonusRe</Tags>
+        <App trigger="WhileBattle" effect="CastSpell" duration="3" value="ThunderLight"></App>
+        <Description></Description>
+        <Meta>Hit 4 tiles in front every 3 sec with lightning</Meta>
+        <Flavor>Note to self: something about thor</Flavor>
+        <Rarity>3</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="MoonBoots">
+        <Name>Moon Boots</Name>
+        <Tags>BonusRe</Tags>
+        <App trigger="OnEquip" effect="HoverTile"></App>
+        <Description></Description>
+        <Meta>Walk over broken/empty tiles</Meta>
+        <Flavor></Flavor>
+        <Rarity>3</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Mother">
+        <Name>Mother</Name>
+        <App trigger="OnSpellCast" effect="SetEarthbound"></App>
+        <App trigger="OnEquip" effect="ManaRegen" amount="-0.2"></App>
+        <Description></Description>
+        <Meta>All spells are Earthbound, lower mana regen</Meta>
+        <Flavor></Flavor>
+        <Rarity>3</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="PoisonVial">
+        <Name>Poison Vial</Name>
+        <Tags>BonusRe</Tags>
+        <App trigger="OnEnemySpawn" effect="Poison" amount="20"></App>
+        <Description></Description>
+        <Meta>All enemies start with 20 poison</Meta>
+        <Flavor>Never get involved in a land war in Asia</Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="PowerShard">
+        <Name>Power Shard</Name>
+        <App trigger="OnEnemyHit" effect="HitTarget" amount="5"></App>
+        <Description></Description>
+        <Meta>Deal 5 damage on spell hits</Meta>
+        <Flavor></Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Riffle">
+        <Name>Riffle</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnReshuffle" effect="DamageEnemies" amount="20"></App>
+        <Description></Description>
+        <Meta>Damage all enemies on reshuffle</Meta>
+        <Flavor>Rigged.</Flavor>
+        <Rarity>0</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="RollerBlades">
+        <Name>Roller Blades</Name>
+        <Tags>BonusRe</Tags>
+        <App trigger="OnMove" effect="Haste" duration="0.4"></App>
+        <Description></Description>
+        <Meta>Haste for 0.4s on move</Meta>
+        <Flavor>Classic Lan</Flavor>
+        <Rarity>2</Rarity>
+    </Artifact>
+    <Artifact itemID="Rose">
+        <Name>Rose</Name>
+        <Tags>Demo, Flower, Negative</Tags>
+        <App trigger="OnEquip" effect="Heal" amount="9999"></App>
+        <App trigger="OnEquip" effect="ChangeMaxHP" amount="-250"></App>
+        <Description></Description>
+        <Meta>Heal to full health, -250 max hp</Meta>
+        <Flavor>Lovely</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="RouletteWheel">
+        <Name>Roulette Wheel</Name>
+        <Tags>Negative</Tags>
+        <App trigger="OnEquip" effect="Money" amount="-500" chance=""></App>
+        <App trigger="OnEquip" effect="Money" amount="1000" chance="0.5"></App>
+        <Description></Description>
+        <Meta>50% chance of 500 Sera(Money) or -500 Sera(Money</Meta>
+        <Flavor></Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Ruby">
+        <Name>Ruby</Name>
+        <Tags>Demo, Gem</Tags>
+        <App trigger="OnSpellCast" effect="DamageEnemies" amount="5"></App>
+        <Description></Description>
+        <Meta>5 dmg to all enemies on spell cast</Meta>
+        <Flavor>RWBY?</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="RevasShield">
+        <Name>Reva's Shield</Name>
+        <Tags>Negative</Tags>
+        <App trigger="OnBattleStart" effect="Shield" amount="500"></App>
+        <App trigger="OnEquip" effect="MaxHP" amount="-250"></App>
+        <Description></Description>
+        <Meta>Gain 500 shield at the start of every battle, Set Max HP to 1</Meta>
+        <Flavor>Not working with max hp.</Flavor>
+        <Rarity>3</Rarity>
+    </Artifact>
+    <Artifact itemID="PocketSand">
+        <Name>Pocket Sand</Name>
+        <Tags>BonusRe</Tags>
+        <App trigger="OnReshuffle" effect="Invincible" duration="1"></App>
+        <Description></Description>
+        <Meta>Gain invincibility for 1 second on reshuffle</Meta>
+        <Flavor>Give em their "just deserts"</Flavor>
+        <Rarity>2</Rarity>
+    </Artifact>
+    <Artifact itemID="SaigonArmor">
+        <Name>Saigon Armor</Name>
+        <Tags>Demo, Negative</Tags>
+        <App trigger="OnEquip" effect="Defense" amount="4"></App>
+        <App trigger="OnEquip" effect="ShuffleTimeReduction" amount="-1"></App>
+        <Description></Description>
+        <Meta>+4 Defense, +1 shuffle time</Meta>
+        <Flavor>Saigon Restaurant, South Plainfield NJ</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Scales">
+        <Name>Scales</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnReshuffle" effect="Shield" amount="20"></App>
+        <Description></Description>
+        <Meta>Gain 20 shield every time you shuffle</Meta>
+        <Flavor>Instead of dodging, just press spacebar!</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="SoulFood">
+        <Name>Soul Food</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnEnemyKill" effect="ChangeMaxHP" amount="5" limit="100"></App>
+        <App trigger="OnEnemyKill" effect="Heal" amount="5"></App>
+        <Description></Description>
+        <Meta>+5 max health every kill</Meta>
+        <Flavor>High in starch, fat, sodium, cholesterol, and calories</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="StepDrone">
+        <Name>Spaz Drone</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnMove" effect="CastSpell" value="TinyShot"></App>
+        <Description></Description>
+        <Meta>Shoots whenever you move</Meta>
+        <Flavor>Ever play FFR?</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="SpeedLoader">
+        <Name>Speed Loader</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnEquip" effect="ShuffleTimeReduction" amount="1"></App>
+        <Description></Description>
+        <Meta>Shuffle 1 second faster</Meta>
+        <Flavor>Lock n load baby.</Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="SpellthiefLicense">
+        <Name>Spellthief License</Name>
+        <Tags></Tags>
+        <App trigger="OnRemoveSpell" effect="Heal" amount="50"></App>
+        <Description></Description>
+        <Meta>Heal 50 hp whenever a spell is removed</Meta>
+        <Flavor></Flavor>
+        <Rarity>0</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Stimpack">
+        <Name>Stimpack</Name>
+        <Tags>Demo, Negative</Tags>
+        <App trigger="OnEquip" effect="ChangeMaxHP" amount="-300"></App>
+        <App trigger="OnEquip" effect="SpellPower" amount="2"></App>
+        <Description></Description>
+        <Meta>-300 max hp, all spells do +2 damage</Meta>
+        <Flavor>*TSS* Ahh, that's the stuff!</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="SubTank">
+        <Name>Sub Tank</Name>
+        <App trigger="OnPlayerDeath" effect="Heal" amount="600"></App>
+        <App trigger="OnPlayerDeath" effect="Deplete"></App>
+        <Description></Description>
+        <Meta>Come back to life and heal 600 hp on death, only works once</Meta>
+        <Flavor>It's dangerous to go alone! Take this.</Flavor>
+        <Rarity>2</Rarity>
+    </Artifact>
+    <Artifact itemID="Thorn">
+        <Name>Thorn</Name>
+        <Tags>BonusRe</Tags>
+        <App trigger="OnBattleStart" effect="SpellPowerBattle" amount="1"></App>
+        <Description></Description>
+        <Meta>Start battle with +1 spellPower</Meta>
+        <Flavor></Flavor>
+        <Rarity>0</Rarity>
+    </Artifact>
+    <Artifact itemID="Thornmail">
+        <Name>Thornmail</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnPlayerHit" effect="DamageEnemies" amount="10"></App>
+        <Description></Description>
+        <Meta>Dmg all enemies for 10 whenever you take dmg</Meta>
+        <Flavor>Stop hitting yourself</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="TightPants">
+        <Name>Tight Pants</Name>
+        <Tags>BonusRe, Negative</Tags>
+        <App trigger="OnMove" effect="DamageSelf" amount="1"></App>
+        <App trigger="OnBattleStart" effect="Heal" amount="100"></App>
+        <Description></Description>
+        <Meta>Heal 100 HP on Battle Start, but lose 1 hp every time you move.</Meta>
+        <Flavor>At least I look GOOD.</Flavor>
+        <Rarity>3</Rarity>
+    </Artifact>
+    <Artifact itemID="Violet">
+        <Name>Violet</Name>
+        <Tags>Demo, Flower, Negative</Tags>
+        <App trigger="OnEquip" effect="ChangeMaxHP" amount="-300"></App>
+        <App trigger="OnEquip" effect="MaxMana" amount="2"></App>
+        <Description></Description>
+        <Meta>+2 Max mana, -300 max hp</Meta>
+        <Flavor>Alluring</Flavor>
+        <Rarity>1</Rarity>
+    </Artifact>
+    <Artifact itemID="Virtue">
+        <Name>Virtue</Name>
+        <Tags>Demo</Tags>
+        <App trigger="OnIdle" effect="Mana" amount="1" duration="1"></App>
+        <Description></Description>
+        <Meta>Restore 1 mana if idle for 1 seconds</Meta>
+        <Flavor>Patience young padawan.</Flavor>
+        <Rarity>1</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="WepTriGun">
+        <Name>Wep: TriGun</Name>
+        <Tags>Demo, Negative</Tags>
+        <App trigger="OnEquip" effect="EquipWep" value="TriGun"></App>
+        <Description></Description>
+        <Meta>Equip TriGun</Meta>
+        <Flavor>three is better than one</Flavor>
+        <Rarity>3</Rarity>
+        <Brand></Brand>
+    </Artifact>
 </Artifacts>
