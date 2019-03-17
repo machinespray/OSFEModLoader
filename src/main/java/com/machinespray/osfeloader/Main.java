@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 public class Main {
-	public static final int revision = 0;
+	public static final int revision = 1;
 	public static final String targetVersion = "v163";
 	//TODO(there's definitly a better way to do this logistically)
 	public static final XmlHolder[] simpleSolutions = initXml(new String[]{"Spells.xml", "Artifacts.xml", "Structures.xml", "Heroes.xml"});
