@@ -16,7 +16,7 @@
         <App trigger="OnEquip" effect="MaxMana" amount="1"></App>
         <Description></Description>
         <Meta>+1 Max Mana</Meta>
-        <Flavor>They're gems Ginnie!</Flavor>
+        <Flavor>They're gems Ginnie! </Flavor>
         <Rarity>0</Rarity>
     </Artifact>
     <Artifact itemID="ManaVein">
@@ -173,10 +173,10 @@
     <Artifact itemID="DoubleEdge">
         <Name>Double Edge</Name>
         <Tags>Demo, Negative</Tags>
-        <App trigger="OnEquip" effect="SpellPower" amount="2"></App>
-        <App trigger="OnEquip" effect="Defense" amount="-2"></App>
+        <App trigger="OnEquip" effect="SpellPower" amount="4"></App>
+        <App trigger="OnEquip" effect="Defense" amount="-3"></App>
         <Description></Description>
-        <Meta>+2 Power, -2 Defense</Meta>
+        <Meta>+Power, -Defense</Meta>
         <Flavor>People say a claymore can be a double-edged sword</Flavor>
         <Rarity>1</Rarity>
         <Brand></Brand>
@@ -196,7 +196,7 @@
         <App trigger="OnEnemyKill" effect="Mana" amount="1"></App>
         <Description></Description>
         <Meta>Gain 1 mana on every kill</Meta>
-        <Flavor>I sure hope there are fairies in this game</Flavor>
+        <Flavor>Wait, that bottle's not empty!</Flavor>
         <Rarity>2</Rarity>
         <Brand></Brand>
     </Artifact>
@@ -217,6 +217,17 @@
         <Meta>Enemies explode on death, dealing 40 dmg</Meta>
         <Flavor>"Gotta Blast!" - Donkey Kong</Flavor>
         <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Frostmail">
+        <Name>Frostmail</Name>
+        <Tags>Demo, Negative, BonusRe</Tags>
+        <App trigger="OnHit" effect="CastSpell" value="Frostbolt"></App>
+        <App trigger="OnEquip" effect="SpellPower" amount="-10"></App>
+        <Description></Description>
+        <Meta>Cast Frostbolt whenever you take damage, reduce spellpower</Meta>
+        <Flavor>Revenge is a dish best served Cold.</Flavor>
+        <Rarity>3</Rarity>
         <Brand></Brand>
     </Artifact>
     <Artifact itemID="GhostCostume">
@@ -418,7 +429,7 @@
         <Name>Saigon Armor</Name>
         <Tags>Demo, Negative</Tags>
         <App trigger="OnEquip" effect="Defense" amount="4"></App>
-        <App trigger="OnEquip" effect="ShuffleTimeReduction" amount="-1"></App>
+        <App trigger="OnEquip" effect="ShuffleTime" amount="1"></App>
         <Description></Description>
         <Meta>+4 Defense, +1 shuffle time</Meta>
         <Flavor>Saigon Restaurant, South Plainfield NJ</Flavor>
@@ -434,6 +445,14 @@
         <Flavor>Instead of dodging, just press spacebar!</Flavor>
         <Rarity>1</Rarity>
     </Artifact>
+    <Artifact itemID="SelfDefense">
+        <Name>Self Defense</Name>
+        <Tags>Cpu</Tags>
+        <App trigger="OnHit" effect="CastSpell" value="Revenge"></App>
+        <Description></Description>
+        <Meta>Fire a mortar at attacker on hit</Meta>
+        <Flavor>Come on, HIT ME!</Flavor>
+    </Artifact>
     <Artifact itemID="SoulFood">
         <Name>Soul Food</Name>
         <Tags>Demo</Tags>
@@ -446,7 +465,7 @@
         <Brand></Brand>
     </Artifact>
     <Artifact itemID="StepDrone">
-        <Name>Spaz Drone</Name>
+        <Name>Step Drone</Name>
         <Tags>Demo</Tags>
         <App trigger="OnMove" effect="CastSpell" value="TinyShot"></App>
         <Description></Description>
@@ -458,7 +477,7 @@
     <Artifact itemID="SpeedLoader">
         <Name>Speed Loader</Name>
         <Tags>Demo</Tags>
-        <App trigger="OnEquip" effect="ShuffleTimeReduction" amount="1"></App>
+        <App trigger="OnEquip" effect="ShuffleTime" amount="-1"></App>
         <Description></Description>
         <Meta>Shuffle 1 second faster</Meta>
         <Flavor>Lock n load baby.</Flavor>
@@ -487,6 +506,7 @@
     </Artifact>
     <Artifact itemID="SubTank">
         <Name>Sub Tank</Name>
+        <Tags></Tags>
         <App trigger="OnPlayerDeath" effect="Heal" amount="600"></App>
         <App trigger="OnPlayerDeath" effect="Deplete"></App>
         <Description></Description>
@@ -494,21 +514,41 @@
         <Flavor>It's dangerous to go alone! Take this.</Flavor>
         <Rarity>2</Rarity>
     </Artifact>
+    <Artifact itemID="TestDrone">
+        <Name>TestDrone</Name>
+        <Tags>Negative</Tags>
+        <App trigger="OnPlayerMove" effect="CastSpell" value="HostageDistressItemDrop"></App>
+        <Description></Description>
+        <Meta>CastOnMove</Meta>
+        <Flavor>heh</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
     <Artifact itemID="Thorn">
         <Name>Thorn</Name>
         <Tags>BonusRe</Tags>
-        <App trigger="OnBattleStart" effect="SpellPowerBattle" amount="1"></App>
+        <App trigger="OnBattleStart" effect="SpellPowerBattle" amount="2"></App>
         <Description></Description>
-        <Meta>Start battle with +1 spellPower</Meta>
+        <Meta>Start battle with +2 spellPower</Meta>
         <Flavor></Flavor>
         <Rarity>0</Rarity>
     </Artifact>
     <Artifact itemID="Thornmail">
         <Name>Thornmail</Name>
         <Tags>Demo</Tags>
-        <App trigger="OnPlayerHit" effect="DamageEnemies" amount="10"></App>
+        <App trigger="OnHit" effect="DamageEnemies" amount="10"></App>
         <Description></Description>
         <Meta>Dmg all enemies for 10 whenever you take dmg</Meta>
+        <Flavor>Stop hitting yourself</Flavor>
+        <Rarity>2</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="Trinergy">
+        <Name>Trinergy</Name>
+        <Tags>Cpu</Tags>
+        <App trigger="OnPlayerMove" effect="Trinity" amount="1"></App>
+        <Description></Description>
+        <Meta>Gain a Trinity when player moves</Meta>
         <Flavor>Stop hitting yourself</Flavor>
         <Rarity>2</Rarity>
         <Brand></Brand>
@@ -516,7 +556,7 @@
     <Artifact itemID="TightPants">
         <Name>Tight Pants</Name>
         <Tags>BonusRe, Negative</Tags>
-        <App trigger="OnMove" effect="DamageSelf" amount="1"></App>
+        <App trigger="OnMove" effect="HitSelf" amount="1"></App>
         <App trigger="OnBattleStart" effect="Heal" amount="100"></App>
         <Description></Description>
         <Meta>Heal 100 HP on Battle Start, but lose 1 hp every time you move.</Meta>
@@ -551,6 +591,14 @@
         <Meta>Equip TriGun</Meta>
         <Flavor>three is better than one</Flavor>
         <Rarity>3</Rarity>
+        <Brand></Brand>
+    </Artifact>
+    <Artifact itemID="JellyGenerator">
+        <Name>JellyGenerator</Name>
+        <Tags>Cpu</Tags>
+        <App trigger="WhileBattle" effect="Heal" duration="1" amount="50"></App>
+        <Description></Description>
+        <Meta>Regen health</Meta>
         <Brand></Brand>
     </Artifact>
 </Artifacts>

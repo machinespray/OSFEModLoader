@@ -12,7 +12,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.65</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Thunder</Deck>
@@ -32,9 +32,9 @@
         <Money>0</Money>
         <MaxMana>3</MaxMana>
         <BasicCooldown>0.1</BasicCooldown>
-        <ManaRegen>0.65</ManaRegen>
+        <ManaRegen>0.9</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Thunder</Deck>
@@ -42,7 +42,6 @@
         <Deck>StepSlash</Deck>
         <Deck>BladeThrow</Deck>
         <Deck>BladeThrow</Deck>
-        <Artifacts></Artifacts>
         <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
     </Being>
     <Being beingID="SaffronDemoTest">
@@ -50,30 +49,20 @@
         <Tags>Test</Tags>
         <Description>Demo</Description>
         <Weapon>GodGun</Weapon>
-        <Health>400</Health>
+        <Health>10</Health>
         <MaxHealth>1200</MaxHealth>
-        <Money>0</Money>
+        <Money>10000</Money>
         <MaxMana>9</MaxMana>
         <BasicCooldown>0.1</BasicCooldown>
-        <ManaRegen>5</ManaRegen>
+        <ManaRegen>1.1</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
-        <Deck>Glassify</Deck>
-        <Deck>Minigun</Deck>
-        <Deck>Knife</Deck>
-        <Deck>Knife</Deck>
-        <Deck>Knife</Deck>
-        <Deck>Knife</Deck>
-        <Deck>Knife</Deck>
-        <Deck>Knife</Deck>
-        <Deck>Knife</Deck>
-        <Deck>Knife</Deck>
-        <Deck>Kunai</Deck>
-        <Deck>Kunai</Deck>
-        <Deck>BowSnipe</Deck>
+        <Deck>Meditate</Deck>
+        <Deck>ZigZag</Deck>
         <Artifacts>SubTank</Artifacts>
+        <Artifacts>SpeedLoader</Artifacts>
         <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
     </Being>
     <Being beingID="RevaDemo">
@@ -88,7 +77,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.65</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>2</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>ShieldCatch</Deck>
@@ -110,7 +99,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.65</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Thunder</Deck>
@@ -122,7 +111,7 @@
     </Being>
     <Being beingID="SaffronCampaign">
         <Name>Saffron</Name>
-        <Tags>Campaign, Saffron</Tags>
+        <Tags>Campaign,  Saffron</Tags>
         <Description>A military scientist, she's adept with all types of spells.</Description>
         <Weapon>GodGun</Weapon>
         <Health>800</Health>
@@ -132,7 +121,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.65</ManaRegen>
         <ShuffleTime>0.5</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>PekingFire</Deck>
@@ -159,7 +148,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>2</ManaRegen>
         <ShuffleTime>0.5</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Thunder</Deck>
@@ -181,7 +170,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>2</ManaRegen>
         <ShuffleTime>0.5</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Ragnarok</Deck>
@@ -209,7 +198,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>1.2</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>KineticWave</Deck>
@@ -241,7 +230,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>10.7</ManaRegen>
         <ShuffleTime>0.5</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>StepRise</Deck>
@@ -264,7 +253,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>1.5</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Crossfire</Deck>
@@ -279,7 +268,6 @@
         <Artifacts>Bandaids</Artifacts>
         <Artifacts>ManaGem</Artifacts>
         <Artifacts>ManaVein</Artifacts>
-        <Artifacts>Thornmail</Artifacts>
         <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
     </Being>
     <Being beingID="SaffronWeak">
@@ -294,7 +282,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.9</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Glassify</Deck>
@@ -317,7 +305,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.6</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Thunder</Deck>
@@ -349,7 +337,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.8</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Pull</Deck>
@@ -373,7 +361,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.8</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>KineticWave</Deck>
@@ -398,7 +386,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.8</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>BlastCrystals</Deck>
@@ -424,7 +412,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.8</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>ShieldsUp</Deck>
@@ -438,6 +426,32 @@
         <Artifacts>Thornmail</Artifacts>
         <Stats localGunPointPos="30,30" animName="Reva" splashSprite="SaffronSplash"></Stats>
     </Being>
+    <Being beingID="RevaDemoVid">
+        <Name>Reva</Name>
+        <Tags>Test</Tags>
+        <Description>Demo Reva</Description>
+        <Weapon>CampaignReflector</Weapon>
+        <Health>600</Health>
+        <MaxHealth>800</MaxHealth>
+        <Money>0</Money>
+        <MaxMana>3</MaxMana>
+        <BasicCooldown>0.1</BasicCooldown>
+        <ManaRegen>0.65</ManaRegen>
+        <ShuffleTime>2</ShuffleTime>
+        <InvulLength>0</InvulLength>
+        <Defense>2</Defense>
+        <LerpTime>0.1</LerpTime>
+        <Deck>ShieldCatch</Deck>
+        <Deck>ShieldThrow</Deck>
+        <Deck>DiagBeam</Deck>
+        <Deck>ShieldsUp</Deck>
+        <Deck>Forte</Deck>
+        <Deck>ShieldBeam</Deck>
+        <Artifacts>Eschaton</Artifacts>
+        <Artifacts>Mjolnir</Artifacts>
+        <Artifacts>StepDrone</Artifacts>
+        <Stats localGunPointPos="30,30" animName="Reva" splashSprite="ShielderSplash"></Stats>
+    </Being>
     <Being beingID="SaffronCombo0C">
         <Name>Saffron</Name>
         <Tags>Test</Tags>
@@ -450,33 +464,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.8</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
-        <Defense>0</Defense>
-        <LerpTime>0.1</LerpTime>
-        <Deck>MirrorDamage</Deck>
-        <Deck>Reflector</Deck>
-        <Deck>HyperBeam</Deck>
-        <Deck>BowSnipe</Deck>
-        <Artifacts>SubTank</Artifacts>
-        <Artifacts>HandCrank</Artifacts>
-        <Artifacts>Bandaids</Artifacts>
-        <Artifacts>MiningRig</Artifacts>
-        <Artifacts>EmptyBottle</Artifacts>
-        <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
-    </Being>
-    <Being beingID="SaffronFrost">
-        <Name>Saffron</Name>
-        <Tags>Test</Tags>
-        <Description>Combos</Description>
-        <Weapon>CampaignGun</Weapon>
-        <Health>760</Health>
-        <MaxHealth>1000</MaxHealth>
-        <Money>99</Money>
-        <MaxMana>5</MaxMana>
-        <BasicCooldown>0.1</BasicCooldown>
-        <ManaRegen>0.8</ManaRegen>
-        <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>MirrorDamage</Deck>
@@ -502,7 +490,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.8</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>HyperBeam</Deck>
@@ -528,7 +516,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.8</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Sunshine</Deck>
@@ -553,7 +541,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.6</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Thunder</Deck>
@@ -582,7 +570,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>2</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Pull</Deck>
@@ -605,7 +593,7 @@
         <Name>Saffron</Name>
         <Tags>Test</Tags>
         <Description>Vid0</Description>
-        <Weapon>GodGun</Weapon>
+        <Weapon>CampaignGun</Weapon>
         <Health>650</Health>
         <MaxHealth>1000</MaxHealth>
         <Money>99</Money>
@@ -613,7 +601,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>1.5</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Hockey</Deck>
@@ -642,12 +630,39 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>1.5</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>PekingFire</Deck>
         <Deck>StepSlash</Deck>
         <Deck>Entangle</Deck>
+        <Deck>Glassify</Deck>
+        <Artifacts>ManaVein</Artifacts>
+        <Artifacts>HandCrank</Artifacts>
+        <Artifacts>MiningRig</Artifacts>
+        <Artifacts>EmptyBottle</Artifacts>
+        <Artifacts>Riffle</Artifacts>
+        <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
+    </Being>
+    <Being beingID="SaffronBlade">
+        <Name>Saffron</Name>
+        <Tags>Test</Tags>
+        <Description>Vid0</Description>
+        <Weapon>CampaignGun</Weapon>
+        <Health>800</Health>
+        <MaxHealth>1000</MaxHealth>
+        <Money>99</Money>
+        <MaxMana>5</MaxMana>
+        <BasicCooldown>0.1</BasicCooldown>
+        <ManaRegen>1.5</ManaRegen>
+        <ShuffleTime>1</ShuffleTime>
+        <InvulLength>0</InvulLength>
+        <Defense>0</Defense>
+        <LerpTime>0.1</LerpTime>
+        <Deck>PekingFire</Deck>
+        <Deck>StepSlash</Deck>
+        <Deck>Bladeskrieg</Deck>
+        <Deck>StepLacerate</Deck>
         <Deck>Glassify</Deck>
         <Artifacts>ManaVein</Artifacts>
         <Artifacts>HandCrank</Artifacts>
@@ -668,7 +683,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>1.5</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Hockey</Deck>
@@ -698,7 +713,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>1.7</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>OrbitalBeam</Deck>
@@ -728,7 +743,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>1.7</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>BladeThrow</Deck>
@@ -756,7 +771,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>12</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Forte</Deck>
@@ -782,14 +797,16 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.9</ManaRegen>
         <ShuffleTime>1</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Cryokinesis</Deck>
-        <Deck>Frostbolt</Deck>
+        <Deck>FrostBarrage</Deck>
         <Deck>Frostbolt</Deck>
         <Deck>Frostbolt</Deck>
         <Deck>ColdSnap</Deck>
+        <Artifacts>GhostCostume</Artifacts>
+        <Artifacts>ManaVein</Artifacts>
         <Stats localGunPointPos="30,30" animName="Saffron" splashSprite="SaffronSplash"></Stats>
     </Being>
     <Being beingID="SaffronCampaignOld">
@@ -804,7 +821,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.5</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Frostbolt</Deck>
@@ -827,7 +844,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.5</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>1</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>ShieldsUp</Deck>
@@ -848,7 +865,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.5</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>1</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Minigun</Deck>
@@ -869,7 +886,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.5</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>1</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>Frostbolt</Deck>
@@ -889,7 +906,7 @@
         <BasicCooldown>0.1</BasicCooldown>
         <ManaRegen>0.5</ManaRegen>
         <ShuffleTime>2</ShuffleTime>
-        <InvulLength>0.05</InvulLength>
+        <InvulLength>0</InvulLength>
         <Defense>1</Defense>
         <LerpTime>0.1</LerpTime>
         <Deck>StepSlash</Deck>

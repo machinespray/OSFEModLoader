@@ -15,6 +15,22 @@
         <DeathDelay>0.1</DeathDelay>
         <Stats localGunPointPos="0,0" animName="Bomb"></Stats>
     </Being>
+    <Being beingID="BombHorizon">
+        <Name>Horizon Bomb</Name>
+        <Health>40</Health>
+        <Experience>0</Experience>
+        <Money>0</Money>
+        <StartDelay>0</StartDelay>
+        <LoopDelay>2</LoopDelay>
+        <Defense>0</Defense>
+        <LerpTime></LerpTime>
+        <Stagger>false</Stagger>
+        <Deathrattle>BombHorizonExplosion</Deathrattle>
+        <Deathrattle>BombHorizonExplosionAlt</Deathrattle>
+        <OnDeath></OnDeath>
+        <DeathDelay>0.4</DeathDelay>
+        <Stats localGunPointPos="0,0" animName="Bomb"></Stats>
+    </Being>
     <Being beingID="Campfire">
         <Name>Campfire</Name>
         <Startup>CampfireHeal</Startup>
@@ -38,8 +54,9 @@
         <LoopDelay>2</LoopDelay>
         <Defense></Defense>
         <Stagger>false</Stagger>
-        <Timeout>ClearSelf</Timeout>
+        <Timeout>ClearSelfDelayed</Timeout>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <MustDestroy>True</MustDestroy>
         <DeathDelay>1</DeathDelay>
         <Stats localGunPointPos="0,-4" localTimerPos="0,-4" animName="Chest-Common"
@@ -55,8 +72,9 @@
         <LoopDelay>2</LoopDelay>
         <Defense></Defense>
         <Stagger>false</Stagger>
-        <Timeout>ClearSelf</Timeout>
+        <Timeout>ClearSelfDelayed</Timeout>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <MustDestroy>True</MustDestroy>
         <DeathDelay>1</DeathDelay>
         <Stats localGunPointPos="0,-4" localTimerPos="0,-4" animName="Chest-Rare"
@@ -72,8 +90,9 @@
         <LoopDelay>2</LoopDelay>
         <Defense></Defense>
         <Stagger>false</Stagger>
-        <Timeout>ClearSelf</Timeout>
+        <Timeout>ClearSelfDelayed</Timeout>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <MustDestroy>True</MustDestroy>
         <DeathDelay>1</DeathDelay>
         <Stats localGunPointPos="0,-4" localTimerPos="0,-4" animName="Chest-Epic"
@@ -89,8 +108,9 @@
         <LoopDelay>2</LoopDelay>
         <Defense>1</Defense>
         <Stagger>false</Stagger>
-        <Timeout>ClearSelf</Timeout>
+        <Timeout>ClearSelfDelayed</Timeout>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <MustDestroy>True</MustDestroy>
         <DeathDelay>1</DeathDelay>
         <Stats localGunPointPos="0,-4" localTimerPos="0,-4" animName="Chest-Legendary"
@@ -108,8 +128,9 @@
         <LerpTime></LerpTime>
         <Stagger>false</Stagger>
         <Deathrattle>ChestHealShot</Deathrattle>
-        <Timeout>ClearSelf</Timeout>
+        <Timeout>ClearSelfDelayed</Timeout>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <MustDestroy>True</MustDestroy>
         <DeathDelay>1.15</DeathDelay>
         <Stats localGunPointPos="0,-7" localTimerPos="0,-7" animName="ChestHeal"></Stats>
@@ -127,6 +148,7 @@
         <Stagger>false</Stagger>
         <Deathrattle>ChestCursedShot</Deathrattle>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>6</DeathDelay>
         <Stats localGunPointPos="0,-4" animName="ChestCursed"></Stats>
     </Being>
@@ -143,6 +165,7 @@
         <Stagger>false</Stagger>
         <Deathrattle>ChestCursedShot2</Deathrattle>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>4.5</DeathDelay>
         <Stats localGunPointPos="0,-4" animName="ChestCursed"></Stats>
     </Being>
@@ -159,6 +182,7 @@
         <Stagger>false</Stagger>
         <Deathrattle>ChestCursedShot3</Deathrattle>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>4</DeathDelay>
         <Stats localGunPointPos="0,-4" animName="ChestCursed"></Stats>
     </Being>
@@ -176,6 +200,7 @@
         <Deathrattle>ChestCursedShot2</Deathrattle>
         <Deathrattle>ChestCursedShot3</Deathrattle>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>4.5</DeathDelay>
         <Stats localGunPointPos="0,-4" animName="ChestCursed"></Stats>
     </Being>
@@ -191,6 +216,7 @@
         <Stagger>false</Stagger>
         <Deathrattle>PortalDarkDR</Deathrattle>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>7</DeathDelay>
         <Stats localGunPointPos="0,-7" animName="PortalDark" dieSound="glass_shatter_echo"></Stats>
     </Being>
@@ -206,6 +232,7 @@
         <Stagger>false</Stagger>
         <ClearSpell>StatueShieldCLR</ClearSpell>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>2.5</DeathDelay>
         <Stats localGunPointPos="0,-7" dieSound="glass_shatter_echo"></Stats>
     </Being>
@@ -224,6 +251,7 @@
         <ClearSpell>HostageThanks</ClearSpell>
         <ClearSpell>HostageSaved</ClearSpell>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>2</DeathDelay>
         <Stats localGunPointPos="0,-4" animName="Hostage"></Stats>
     </Being>
@@ -239,14 +267,29 @@
         <Defense></Defense>
         <LerpTime></LerpTime>
         <Stagger>true</Stagger>
-        <Timeout>ClearSelf</Timeout>
+        <Timeout>ClearSelfDelayed</Timeout>
         <ClearSpell>HostageDistressItemDrop</ClearSpell>
         <ClearSpell>ChestHealShot</ClearSpell>
         <ClearSpell>HostageDistressThanks</ClearSpell>
         <ClearSpell>HostageSaved</ClearSpell>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>2</DeathDelay>
         <Stats localGunPointPos="0,-4" animName="Hostage"></Stats>
+    </Being>
+    <Being beingID="TurretCircuit">
+        <Name>Tuerret C</Name>
+        <Health>999</Health>
+        <Deck>Resound</Deck>
+        <Experience>0</Experience>
+        <Money>0</Money>
+        <StartDelay>0</StartDelay>
+        <LoopDelay>2</LoopDelay>
+        <Defense>0</Defense>
+        <LerpTime>0.1</LerpTime>
+        <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
+        <Stats localGunPointPos="30,21" animName="Shard"></Stats>
     </Being>
     <Being beingID="TurretGun">
         <Name>Tuerret G</Name>
@@ -258,6 +301,7 @@
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <Stats localGunPointPos="30,21"></Stats>
     </Being>
     <Being beingID="TurretLaser">
@@ -269,7 +313,21 @@
         <LoopDelay>2</LoopDelay>
         <Defense>0</Defense>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <Stats localGunPointPos="17,23"></Stats>
+    </Being>
+    <Being beingID="TurretSD">
+        <Name>Turret SD</Name>
+        <Health>999</Health>
+        <Experience>0</Experience>
+        <Money>0</Money>
+        <StartDelay>0</StartDelay>
+        <LoopDelay>0.25</LoopDelay>
+        <Defense>0</Defense>
+        <LerpTime>0.1</LerpTime>
+        <OnDeath></OnDeath>
+        <Artifacts>SelfDefense</Artifacts>
+        <Stats localGunPointPos="30,21" animName="Hostage"></Stats>
     </Being>
     <Being beingID="ManaGem">
         <Name>Mana Gem</Name>
@@ -281,7 +339,21 @@
         <Defense>0</Defense>
         <LerpTime>0.1</LerpTime>
         <OnDeath amount="3">Mana</OnDeath>
+        <Artifacts></Artifacts>
         <Stats localGunPointPos="24,20" dieSound="glass_shatter_echo"></Stats>
+    </Being>
+    <Being beingID="Shard">
+        <Name>Shard</Name>
+        <Startup>ShardTimer</Startup>
+        <Health>10</Health>
+        <Experience>0</Experience>
+        <Money>0</Money>
+        <StartDelay>0</StartDelay>
+        <LoopDelay>0</LoopDelay>
+        <Defense>0</Defense>
+        <LerpTime>0.1</LerpTime>
+        <Timeout>ShardExplosion</Timeout>
+        <Stats localGunPointPos="24,20" dieSound="glass_shatter_echo" animName="Shard"></Stats>
     </Being>
     <Being beingID="ShopKeeper">
         <Name>ShopKeeper</Name>
@@ -295,6 +367,7 @@
         <Stagger>false</Stagger>
         <Deathrattle>CloseShop</Deathrattle>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <Stats localGunPointPos="0,-4" animName="Shopkeeper"></Stats>
     </Being>
     <Being beingID="Tablet">
@@ -306,6 +379,7 @@
         <LoopDelay>0.25</LoopDelay>
         <Defense>0</Defense>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
     </Being>
     <Being beingID="WallBasic">
         <Name>Wall</Name>
@@ -316,6 +390,7 @@
         <LoopDelay>0.25</LoopDelay>
         <Defense>0</Defense>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
     </Being>
     <Being beingID="WallIce">
         <Name>Ice Wall</Name>
@@ -327,6 +402,7 @@
         <LoopDelay>1</LoopDelay>
         <Defense>0</Defense>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
     </Being>
     <Being beingID="BlastCrystal">
         <Name>BlastCrystal</Name>
@@ -341,6 +417,7 @@
         <Stagger>false</Stagger>
         <Deathrattle>BlastCrystalShot</Deathrattle>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>0.4</DeathDelay>
         <Stats localGunPointPos="0,20" dieSound="glass_shatter_echo"></Stats>
     </Being>
@@ -354,6 +431,7 @@
         <Defense></Defense>
         <Stagger>false</Stagger>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <Stats dieSound="small_blast"></Stats>
     </Being>
     <Being beingID="Volcano">
@@ -367,6 +445,7 @@
         <Defense></Defense>
         <Stagger>false</Stagger>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <Stats localGunPointPos="0,20" animName="Campfire" dieSound="explode_fire"></Stats>
     </Being>
     <Being beingID="Silo">
@@ -380,6 +459,7 @@
         <Defense></Defense>
         <Stagger>false</Stagger>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <Stats localGunPointPos="0,20"></Stats>
     </Being>
     <Being beingID="RevaAssist">
@@ -396,9 +476,8 @@
         <LerpTime></LerpTime>
         <Stagger>true</Stagger>
         <ClearSpell>ChestHealShot</ClearSpell>
-        <ClearSpell>HostageThanks</ClearSpell>
-        <ClearSpell>HostageSaved</ClearSpell>
         <OnDeath></OnDeath>
+        <Artifacts></Artifacts>
         <DeathDelay>2</DeathDelay>
         <Stats localGunPointPos="0,-4" animName="Reva"></Stats>
     </Being>
