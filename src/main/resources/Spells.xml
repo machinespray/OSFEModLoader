@@ -3087,7 +3087,7 @@
         <OnCast></OnCast>
         <OnHit amount="40">Poison</OnHit>
     </Spell>
-    <Spell itemID="PoisonTailS">
+    <Spell itemID="PoisonTail">
         <Stats animBlast="SmogBlastS" animShot="" shotSound="smoke_thud" setToGunPoint="None"
                yVariance="0"></Stats>
         <HitAllies></HitAllies>
@@ -3493,7 +3493,7 @@
         <HitSelf>true</HitSelf>
         <HitStructures>true</HitStructures>
         <Name>Shield Catch</Name>
-        <Tags>Player, Demo, Live</Tags>
+        <Tags>Player, Demo</Tags>
         <Action>Mortar</Action>
         <Description></Description>
         <Meta>Shield to random tile</Meta>
@@ -4815,7 +4815,7 @@
         <HitAllies></HitAllies>
         <HitSelf></HitSelf>
         <Name>Transfuse</Name>
-        <Tags>Player, Demo, Live</Tags>
+        <Tags>Player, Demo</Tags>
         <Description></Description>
         <Meta>Lose 5 hp, gain 2 mana</Meta>
         <Flavor>I hate needles</Flavor>
@@ -6855,7 +6855,7 @@
         <OnCast></OnCast>
     </Spell>
     <Spell itemID="IceFactory">
-        <Stats animWarning="SummonGridS" animObj="PupperShotC" animShot="SummonGridS"
+        <Stats animWarning="SummonGridS" animObj="PupperShotS" animShot="SummonGridS"
                castSound="woosh_large" shotSound="thud_low" setToGunPoint="Both" timeToTravel="0.7"
                bending="100"></Stats>
         <HitAllies></HitAllies>
@@ -6885,7 +6885,7 @@
         <TouchTile amount="80" value="IceFactoryRunt">Summon</TouchTile>
     </Spell>
     <Spell itemID="IceFactoryRunt">
-        <Stats animWarning="" animCast="PupperChargeC" animBlast="" animShot="PupperShotC"
+        <Stats animWarning="" animCast="PupperChargeS" animBlast="" animShot="PupperShotS"
                shotSound="electrical_burst" setToGunPoint="Both"></Stats>
         <HitAllies></HitAllies>
         <HitEnemies>true</HitEnemies>

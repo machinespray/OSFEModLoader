@@ -49,7 +49,7 @@
         <Tags>Test</Tags>
         <Description>Demo</Description>
         <Weapon>GodGun</Weapon>
-        <Health>10</Health>
+        <Health>300</Health>
         <MaxHealth>1200</MaxHealth>
         <Money>10000</Money>
         <MaxMana>9</MaxMana>
